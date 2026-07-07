@@ -1,6 +1,13 @@
 [gd_scene format=3 uid="uid://dub2gj7tm0eq"]
 
+[ext_resource type="Texture2D" uid="uid://cvlmj88kfiegl" path="res://pieski-z-psiego-patrolu-e1644911543444.jpg" id="1_tol50"]
+
 [node name="Node2D" type="Node2D" unique_id=1538133884]
 
 [node name="nigger nigger nigger you nigger" type="Window" parent="." unique_id=681818821]
 oversampling_override = 1.0
+position = Vector2i(0, 36)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=658408948]
+position = Vector2(400, 280)
+texture = ExtResource("1_tol50")
