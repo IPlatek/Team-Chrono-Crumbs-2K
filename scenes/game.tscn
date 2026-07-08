@@ -2,9 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://duy6pv5dquk8a" path="res://assets/Gracz 1/Idle_cat.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://c2mv5nl4fmf3q" path="res://icon.svg" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://18tp1yw5tvid" path="res://scenes/kill_zone.tscn" id="3_lnu2h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yqjtg"]
 size = Vector2(127.533325, 120.63306)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lbhrr"]
+distance = 1.0
 
 [node name="Game" type="Node2D" unique_id=2123090632]
 
@@ -22,3 +26,10 @@ texture = ExtResource("2_yqjtg")
 position = Vector2(962.5, 1011.5)
 scale = Vector2(15.000001, 1.0859375)
 shape = SubResource("RectangleShape2D_yqjtg")
+
+[node name="Kill_zone" parent="." unique_id=1141544285 instance=ExtResource("3_lnu2h")]
+position = Vector2(553, 1322)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kill_zone" unique_id=1961872054]
+position = Vector2(416, 1262)
+shape = SubResource("WorldBoundaryShape2D_lbhrr")
