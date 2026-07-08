@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://duy6pv5dquk8a"]
 
+[ext_resource type="Script" uid="uid://qmhkshdt3vu5" path="res://scripts/player 1.gd" id="1_7333i"]
 [ext_resource type="Texture2D" uid="uid://cmp80vuh23mcu" path="res://assets/Gracz 1/prototype.jpeg" id="1_gqdml"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7333i"]
@@ -22,6 +23,7 @@ size = Vector2(334, 217)
 
 [node name="Player 1" type="CharacterBody2D" unique_id=1421348436]
 position = Vector2(960, 545)
+script = ExtResource("1_7333i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=973883693]
 position = Vector2(0.5, -0.5)
