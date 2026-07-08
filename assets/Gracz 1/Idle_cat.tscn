@@ -39,3 +39,4 @@ shape = SubResource("RectangleShape2D_gqdml")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2004406506]
 limit_bottom = 1500
+limit_smoothed = true
