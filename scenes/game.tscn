@@ -3,8 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://duy6pv5dquk8a" path="res://assets/Gracz 1/Idle_cat.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://c2mv5nl4fmf3q" path="res://icon.svg" id="2_yqjtg"]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yqjtg"]
-distance = 63.079163
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yqjtg"]
+size = Vector2(127.533325, 120.63306)
 
 [node name="Game" type="Node2D" unique_id=2123090632]
 
@@ -19,6 +19,6 @@ scale = Vector2(15.000001, 1.0859375)
 texture = ExtResource("2_yqjtg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1784775935]
-position = Vector2(967, 1012.5)
+position = Vector2(962.5, 1011.5)
 scale = Vector2(15.000001, 1.0859375)
-shape = SubResource("WorldBoundaryShape2D_yqjtg")
+shape = SubResource("RectangleShape2D_yqjtg")
