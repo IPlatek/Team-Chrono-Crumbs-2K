@@ -21,9 +21,10 @@ animations = [{
 size = Vector2(334, 217)
 
 [node name="Player 1" type="CharacterBody2D" unique_id=1421348436]
+position = Vector2(960, 545)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=973883693]
-position = Vector2(352.5, -114.5)
+position = Vector2(0.5, -0.5)
 scale = Vector2(0.32714844, 0.21191406)
 sprite_frames = SubResource("SpriteFrames_ndqbq")
 animation = &"idle"
@@ -31,7 +32,7 @@ autoplay = "idle"
 frame_progress = 0.34000507
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=936137006]
-position = Vector2(352, -114.5)
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_gqdml")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2004406506]
