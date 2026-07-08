@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://duy6pv5dquk8a"]
+
+[ext_resource type="Texture2D" uid="uid://cmp80vuh23mcu" path="res://assets/Gracz 1/prototype.jpeg" id="1_gqdml"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7333i"]
+atlas = ExtResource("1_gqdml")
+region = Rect2(0, 0, 1024, 1024)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ndqbq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7333i")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gqdml"]
+size = Vector2(334, 217)
+
+[node name="Player 1" type="CharacterBody2D" unique_id=1421348436]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=973883693]
+position = Vector2(352.5, -114.5)
+scale = Vector2(0.32714844, 0.21191406)
+sprite_frames = SubResource("SpriteFrames_ndqbq")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.34000507
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=936137006]
+position = Vector2(352, -114.5)
+shape = SubResource("RectangleShape2D_gqdml")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2004406506]

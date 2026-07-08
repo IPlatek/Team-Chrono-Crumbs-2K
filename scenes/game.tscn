@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bvkd177pqx506"]
+
+[ext_resource type="PackedScene" uid="uid://duy6pv5dquk8a" path="res://assets/Gracz 1/Idle_cat.tscn" id="1_uwrxv"]
+
+[node name="Game" type="Node2D" unique_id=2123090632]
+
+[node name="Player 1" parent="." unique_id=1421348436 instance=ExtResource("1_uwrxv")]
+position = Vector2(-133, 292)

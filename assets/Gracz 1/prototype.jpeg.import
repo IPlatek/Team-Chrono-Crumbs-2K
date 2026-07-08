@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmp80vuh23mcu"
-path="res://.godot/imported/prototype.jpeg-82409410585ff8d59d8cf46290fee793.ctex"
+path="res://.godot/imported/prototype.jpeg-ac18009e0278d86af11a67f0e231adb7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://prototype.jpeg"
-dest_files=["res://.godot/imported/prototype.jpeg-82409410585ff8d59d8cf46290fee793.ctex"]
+source_file="res://assets/Gracz 1/prototype.jpeg"
+dest_files=["res://.godot/imported/prototype.jpeg-ac18009e0278d86af11a67f0e231adb7.ctex"]
 
 [params]
 
