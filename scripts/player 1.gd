@@ -5,7 +5,7 @@ const SPEED = 500.0
 const JUMP_VELOCITY = -700.0
 const sprint_speed = 1200.00
 var extra_jump_count = 1
-
+@onready var animation_sprite = $AnimatedSprite2D
 
 
 
@@ -24,12 +24,14 @@ func _physics_process(delta: float) -> void:
 	# skakanie
 	if is_on_floor():
 		extra_jump_count = 1
+		
+	
+	
 	
 	if Input.is_action_just_pressed("skok_gracz_1") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		#double jump
 	if Input.is_action_just_pressed("skok_gracz_1") and !is_on_floor() and extra_jump_count > 0:
-		print("skok")
 		velocity.y = JUMP_VELOCITY
 		extra_jump_count = extra_jump_count -1
 		
@@ -44,8 +46,16 @@ func _physics_process(delta: float) -> void:
 				velocity.x = direction * SPEED
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
+		#animacje
+		if direction < 0:
+			animation_sprite.flip_h = true
+		else:
+			animation_sprite.flip_h = false
 	else:
 		velocity.x = 0
+	
+		
+	
 		
 	#teleportowanie na start
 	if Global.lifes <= 0:
