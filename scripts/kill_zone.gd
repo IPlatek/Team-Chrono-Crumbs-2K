@@ -10,7 +10,7 @@ func _on_body_entered(body: Node2D) -> void:
 
 
 func _on_timer_timeout() -> void:
-	Global.lifes -= 1
+	Global.lifes -=1
 	
 		
 	#trzeba dodac by player nie mógł ruszać kamerą jak wejdzie przez kill zone i ogarnąc by po przejsciu i czekaniu tej pół sekundy nie relodowało scenty tylko go tepało

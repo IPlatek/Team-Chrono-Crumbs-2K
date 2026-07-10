@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://qmhkshdt3vu5" path="res://scripts/player 1.gd" id="1_7333i"]
 [ext_resource type="Texture2D" uid="uid://dytjm3d4s132o" path="res://graphics/Idle_cat.png" id="2_ndqbq"]
 [ext_resource type="Texture2D" uid="uid://2fbuklt5ulr0" path="res://graphics/sprint.png" id="3_2drgl"]
+[ext_resource type="Texture2D" uid="uid://ejx7y6vljqfl" path="res://graphics/dash.png" id="3_dy6ds"]
 [ext_resource type="Texture2D" uid="uid://6hnh8m44wowb" path="res://graphics/walk_cat.png" id="3_ndqbq"]
 [ext_resource type="Texture2D" uid="uid://cksqbp7u2qmae" path="res://graphics/jump.png" id="3_unsbi"]
 
@@ -27,32 +28,28 @@ atlas = ExtResource("2_ndqbq")
 region = Rect2(4096, 0, 1024, 1024)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k52ld"]
-atlas = ExtResource("3_unsbi")
+atlas = ExtResource("2_ndqbq")
 region = Rect2(0, 0, 1024, 1024)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qfld2"]
-atlas = ExtResource("3_unsbi")
-region = Rect2(1024, 0, 1024, 1024)
+atlas = ExtResource("3_dy6ds")
+region = Rect2(0, 0, 2000, 1024)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_odkq1"]
-atlas = ExtResource("3_unsbi")
-region = Rect2(2048, 0, 1024, 1024)
+atlas = ExtResource("3_dy6ds")
+region = Rect2(2000, 0, 2000, 1024)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0ixfp"]
-atlas = ExtResource("3_unsbi")
-region = Rect2(3072, 0, 1024, 1024)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qkssl"]
-atlas = ExtResource("3_unsbi")
-region = Rect2(4096, 0, 1024, 1024)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dddcm"]
-atlas = ExtResource("3_unsbi")
-region = Rect2(5120, 0, 1024, 1024)
+atlas = ExtResource("3_dy6ds")
+region = Rect2(4000, 0, 2000, 1024)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n41m1"]
 atlas = ExtResource("3_2drgl")
 region = Rect2(0, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qkssl"]
+atlas = ExtResource("3_unsbi")
+region = Rect2(4096, 0, 1024, 1024)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x0fn1"]
 atlas = ExtResource("3_2drgl")
@@ -132,12 +129,22 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_0ixfp")
+}],
+"loop": true,
+"name": &"dashing",
+"speed": 20.0
 }, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n41m1")
+}],
+"loop": true,
+"name": &"falling",
+"speed": 5.0
+}, {
+"frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qkssl")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dddcm")
 }],
 "loop": true,
 "name": &"jump",
@@ -207,9 +214,10 @@ script = ExtResource("1_7333i")
 position = Vector2(0.5, -50.500008)
 scale = Vector2(0.32714844, 0.30957034)
 sprite_frames = SubResource("SpriteFrames_ndqbq")
-animation = &"jump"
+animation = &"dashing"
 autoplay = "Idle"
-frame_progress = 0.17703451
+frame = 2
+frame_progress = 0.42913476
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=936137006]
 position = Vector2(4.9375, -8)
@@ -220,6 +228,7 @@ limit_bottom = 1500
 limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 2.0
+rotation_smoothing_enabled = true
 
 [node name="dash_timer" type="Timer" parent="." unique_id=767390536]
 wait_time = 0.2
