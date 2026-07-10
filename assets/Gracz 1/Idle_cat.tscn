@@ -88,8 +88,14 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gqdml"]
-size = Vector2(216, 172)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ndqbq"]
+size = Vector2(199.875, 54)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2drgl"]
+size = Vector2(9.9375, 52)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_unsbi"]
+size = Vector2(10, 49)
 
 [node name="Player 1" type="CharacterBody2D" unique_id=1421348436]
 position = Vector2(960, 545)
@@ -103,8 +109,16 @@ animation = &"walk"
 autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=936137006]
-position = Vector2(11, -40)
-shape = SubResource("RectangleShape2D_gqdml")
+position = Vector2(4.9375, -31)
+shape = SubResource("RectangleShape2D_ndqbq")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1098215604]
+position = Vector2(90, 21)
+shape = SubResource("RectangleShape2D_2drgl")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=1965454793]
+position = Vector2(-71, 20.5)
+shape = SubResource("RectangleShape2D_unsbi")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2004406506]
 limit_bottom = 1500

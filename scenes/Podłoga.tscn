@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://mm3xotklt7gq"]
+
+[ext_resource type="Texture2D" uid="uid://butd88rlleewg" path="res://assets/sprites/bitmapa.png" id="1_2q1cg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2q1cg"]
+size = Vector2(55.6, 149.17989)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=261594933]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1998951229]
+position = Vector2(417, 999)
+scale = Vector2(15.000001, 1.0859375)
+shape = SubResource("RectangleShape2D_2q1cg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=260953416]
+position = Vector2(417, 489.99997)
+scale = Vector2(0.100870825, 0.10087081)
+texture = ExtResource("1_2q1cg")
