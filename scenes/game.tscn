@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://mm3xotklt7gq" path="res://scenes/Podłoga.tscn" id="4_lbhrr"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lbhrr"]
-distance = 1.0
+distance = 1081.0
 
 [node name="Game" type="Node2D" unique_id=2123090632]
 
@@ -16,7 +16,7 @@ position = Vector2(962, 544)
 position = Vector2(603, 1343)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Kill_zone" unique_id=1961872054]
-position = Vector2(416, 1262)
+position = Vector2(501, 1356)
 shape = SubResource("WorldBoundaryShape2D_lbhrr")
 
 [node name="StaticBody2D2" parent="." unique_id=261594933 instance=ExtResource("4_lbhrr")]
