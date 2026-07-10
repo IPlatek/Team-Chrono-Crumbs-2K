@@ -47,8 +47,12 @@ func _physics_process(delta: float) -> void:
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 		#animacje
-		if is_on_floor() and direction != 0 and SPEED < 1200:
+		if is_on_floor() and direction != 0 and Input.is_action_pressed("sprint"):
+			animation_sprite.play("sprint")
+		elif is_on_floor() and direction != 0:
 			animation_sprite.play("walk")
+		elif !is_on_floor():
+			animation_sprite.play("jump")
 		elif is_on_floor():
 			animation_sprite.play("Idle")
 		
