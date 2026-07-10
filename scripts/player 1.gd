@@ -6,15 +6,26 @@ const JUMP_VELOCITY = -700.0
 const sprint_speed = 1200.00
 var extra_jump_count = 1
 @onready var animation_sprite = $AnimatedSprite2D
+@onready var dash_timer: Timer = $dash_timer
+@onready var next_dash_timer: Timer = $next_dash_timer
 
+const DASH_SPEED = 1500.0
+var dashing = false
+var can_dash = true
 
+func _process(_delta: float) -> void:
+	#dumbahh died
+	if Global.lifes <= 0:
+		get_tree().reload_current_scene()
+		Global.lifes = 1
+		Global.no_move = false
 
 func _physics_process(delta: float) -> void:
 	
 	var camera_position = $Camera2D.global_position
 	
 	#stopowanie sterowania
-	if camera_position.y > 1300:
+	if camera_position.y > 1500:
 		Global.no_move = true
 	
 	# Grawitacja
@@ -25,15 +36,21 @@ func _physics_process(delta: float) -> void:
 	if is_on_floor():
 		extra_jump_count = 1
 		
-	
-	
-	
+
 	if Input.is_action_just_pressed("skok_gracz_1") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		#double jump
 	if Input.is_action_just_pressed("skok_gracz_1") and !is_on_floor() and extra_jump_count > 0:
 		velocity.y = JUMP_VELOCITY
-		extra_jump_count = extra_jump_count -1
+		extra_jump_count -= 1
+		
+	#dashowanie
+	if Input.is_action_just_pressed("dash") and can_dash:
+		dashing = true
+		can_dash = false
+		dash_timer.start()
+		next_dash_timer.start()
+		
 		
 	#sterowanie
 	if Global.no_move == false:
@@ -42,6 +59,9 @@ func _physics_process(delta: float) -> void:
 			#sprintowanie
 			if Input.is_action_pressed("sprint") and is_on_floor():
 				velocity.x = direction * sprint_speed
+			#dashowanie
+			elif dashing:
+				velocity.x = direction * DASH_SPEED
 			else:
 				velocity.x = direction * SPEED
 		else:
@@ -58,21 +78,20 @@ func _physics_process(delta: float) -> void:
 		
 		if direction < 0:
 			animation_sprite.flip_h = true
-		else:
+		elif direction > 0:
 			animation_sprite.flip_h = false
 	else:
 		velocity.x = 0
 	
-		
 	
-		
-	#teleportowanie na start
-	if Global.lifes <= 0:
-		position.x = 1400
-		position.y = 600
-		velocity.y = 100
-		Global.lifes = 1
-		Global.no_move = false
 	
 
 	move_and_slide()
+
+
+func _on_dash_timer_timeout() -> void:
+	dashing = false
+
+
+func _on_next_dash_timer_timeout() -> void:
+	can_dash = true

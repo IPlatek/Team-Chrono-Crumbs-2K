@@ -6,7 +6,7 @@
 script = ExtResource("1_kebdr")
 
 [node name="Timer" type="Timer" parent="." unique_id=1496179712]
-wait_time = 0.05
+wait_time = 0.2
 one_shot = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
