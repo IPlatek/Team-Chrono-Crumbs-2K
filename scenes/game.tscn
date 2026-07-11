@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://duy6pv5dquk8a" path="res://assets/Gracz 1/Idle_cat.tscn" id="1_uwrxv"]
 [ext_resource type="PackedScene" uid="uid://18tp1yw5tvid" path="res://scenes/kill_zone.tscn" id="3_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://bqhybvgd5ey4b" path="res://scenes/woda.tscn" id="4_iywne"]
 [ext_resource type="PackedScene" uid="uid://mm3xotklt7gq" path="res://scenes/Podłoga.tscn" id="4_lbhrr"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lbhrr"]
@@ -30,3 +31,15 @@ position = Vector2(2093, -465)
 
 [node name="StaticBody2D4" parent="." unique_id=467858826 instance=ExtResource("4_lbhrr")]
 position = Vector2(2927, -465)
+
+[node name="StaticBody2D5" parent="." unique_id=1001088085 instance=ExtResource("4_iywne")]
+position = Vector2(964, 1085)
+
+[node name="StaticBody2D6" parent="." unique_id=379867344 instance=ExtResource("4_iywne")]
+position = Vector2(2884, 1090)
+
+[node name="StaticBody2D7" parent="." unique_id=694462069 instance=ExtResource("4_iywne")]
+position = Vector2(4798, 1093)
+
+[node name="StaticBody2D8" parent="." unique_id=1554826078 instance=ExtResource("4_iywne")]
+position = Vector2(6715, 1099)
