@@ -224,6 +224,7 @@ position = Vector2(4.9375, -8)
 shape = SubResource("RectangleShape2D_ndqbq")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2004406506]
+zoom = Vector2(0.8, 0.8)
 limit_bottom = 1500
 limit_smoothed = true
 position_smoothing_enabled = true
@@ -232,8 +233,11 @@ rotation_smoothing_enabled = true
 
 [node name="dash_timer" type="Timer" parent="." unique_id=767390536]
 wait_time = 0.2
+one_shot = true
 
 [node name="next_dash_timer" type="Timer" parent="." unique_id=282741627]
+wait_time = 0.5
+one_shot = true
 
 [connection signal="timeout" from="dash_timer" to="." method="_on_dash_timer_timeout"]
 [connection signal="timeout" from="next_dash_timer" to="." method="_on_next_dash_timer_timeout"]

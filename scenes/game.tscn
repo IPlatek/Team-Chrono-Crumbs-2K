@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://mm3xotklt7gq" path="res://scenes/Podłoga.tscn" id="4_lbhrr"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lbhrr"]
-distance = 1081.0
 
 [node name="Game" type="Node2D" unique_id=2123090632]
 
@@ -20,26 +19,51 @@ position = Vector2(603, 1343)
 position = Vector2(501, 1356)
 shape = SubResource("WorldBoundaryShape2D_lbhrr")
 
-[node name="StaticBody2D2" parent="." unique_id=261594933 instance=ExtResource("4_lbhrr")]
+[node name="podlogi" type="Node" parent="." unique_id=1306807794]
+
+[node name="Podloga" parent="podlogi" unique_id=261594933 instance=ExtResource("4_lbhrr")]
 position = Vector2(1, 3)
 
-[node name="StaticBody2D" parent="." unique_id=1151701552 instance=ExtResource("4_lbhrr")]
+[node name="Podloga2" parent="podlogi" unique_id=1151701552 instance=ExtResource("4_lbhrr")]
 position = Vector2(1089, 5)
 
-[node name="StaticBody2D3" parent="." unique_id=529164883 instance=ExtResource("4_lbhrr")]
+[node name="Podloga3" parent="podlogi" unique_id=529164883 instance=ExtResource("4_lbhrr")]
 position = Vector2(2093, -465)
 
-[node name="StaticBody2D4" parent="." unique_id=467858826 instance=ExtResource("4_lbhrr")]
+[node name="Podloga4" parent="podlogi" unique_id=467858826 instance=ExtResource("4_lbhrr")]
 position = Vector2(2927, -465)
 
-[node name="StaticBody2D5" parent="." unique_id=1001088085 instance=ExtResource("4_iywne")]
-position = Vector2(964, 1085)
+[node name="Podloga6" parent="podlogi" unique_id=1707119985 instance=ExtResource("4_lbhrr")]
+position = Vector2(3765, -462)
 
-[node name="StaticBody2D6" parent="." unique_id=379867344 instance=ExtResource("4_iywne")]
-position = Vector2(2884, 1090)
+[node name="Podloga7" parent="podlogi" unique_id=1878405296 instance=ExtResource("4_lbhrr")]
+position = Vector2(4602, -458)
 
-[node name="StaticBody2D7" parent="." unique_id=694462069 instance=ExtResource("4_iywne")]
-position = Vector2(4798, 1093)
+[node name="Podloga5" parent="podlogi" unique_id=323620709 instance=ExtResource("4_lbhrr")]
+position = Vector2(5443, -453)
 
-[node name="StaticBody2D8" parent="." unique_id=1554826078 instance=ExtResource("4_iywne")]
-position = Vector2(6715, 1099)
+[node name="Podloga8" parent="podlogi" unique_id=1034466733 instance=ExtResource("4_lbhrr")]
+position = Vector2(6279, -453)
+
+[node name="Podloga9" parent="podlogi" unique_id=1255661901 instance=ExtResource("4_lbhrr")]
+position = Vector2(7115, -449)
+
+[node name="wody" type="Node" parent="." unique_id=1613924765]
+
+[node name="Woda" parent="wody" unique_id=1475904222 instance=ExtResource("4_iywne")]
+position = Vector2(-258, 1069)
+
+[node name="Woda2" parent="wody" unique_id=340705096 instance=ExtResource("4_iywne")]
+position = Vector2(1660, 1058)
+
+[node name="Woda3" parent="wody" unique_id=814834613 instance=ExtResource("4_iywne")]
+position = Vector2(3589, 1064)
+
+[node name="Woda4" parent="wody" unique_id=1185754918 instance=ExtResource("4_iywne")]
+position = Vector2(5504, 1075)
+
+[node name="Woda5" parent="wody" unique_id=1736919263 instance=ExtResource("4_iywne")]
+position = Vector2(7422, 1075)
+
+[node name="Woda6" parent="wody" unique_id=1884285053 instance=ExtResource("4_iywne")]
+position = Vector2(9351, 1069)

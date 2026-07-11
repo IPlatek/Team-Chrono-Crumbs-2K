@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 const SPEED = 500.0
 const JUMP_VELOCITY = -700.0
-const sprint_speed = 1200.00
+const sprint_speed = 1000.0
 var extra_jump_count = 1
 @onready var animation_sprite = $AnimatedSprite2D
 @onready var dash_timer: Timer = $dash_timer
@@ -49,15 +49,16 @@ func _physics_process(delta: float) -> void:
 		dashing = true
 		can_dash = false
 		dash_timer.start()
-		next_dash_timer.start()
-		
 		
 	#sterowanie
 	if Global.no_move == false:
 		var direction := Input.get_axis("lewo_gracz_1", "prawo_gracz_1")
 		if direction:
+			#sprintowanie + dash
+			if Input.is_action_pressed("sprint") and dashing:
+				velocity.x = direction * (sprint_speed + DASH_SPEED)
 			#sprintowanie
-			if Input.is_action_pressed("sprint") and is_on_floor():
+			elif Input.is_action_pressed("sprint"):
 				velocity.x = direction * sprint_speed
 			#dashowanie
 			elif dashing:
@@ -67,10 +68,10 @@ func _physics_process(delta: float) -> void:
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 		#animacje
-		if is_on_floor() and direction != 0 and Input.is_action_pressed("sprint"):
-			animation_sprite.play("sprint")
-		elif dashing == true and direction  != 0:
+		if dashing == true and direction  != 0:
 			animation_sprite.play("dashing")
+		elif is_on_floor() and direction != 0 and Input.is_action_pressed("sprint"):
+			animation_sprite.play("sprint")
 		elif is_on_floor() and direction != 0:
 			animation_sprite.play("walk")
 		elif !is_on_floor() and velocity.y < 0:
@@ -86,15 +87,12 @@ func _physics_process(delta: float) -> void:
 			animation_sprite.flip_h = false
 	else:
 		velocity.x = 0
-	
-	
-	
-
 	move_and_slide()
 
 
 func _on_dash_timer_timeout() -> void:
 	dashing = false
+	next_dash_timer.start()
 
 
 func _on_next_dash_timer_timeout() -> void:

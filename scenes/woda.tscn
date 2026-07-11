@@ -2,15 +2,5 @@
 
 [ext_resource type="Texture2D" uid="uid://05inl7022guc" path="res://assets/sprites/wooda.png" id="1_g4vai"]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_7bt0u"]
-distance = -534.0
-
-[node name="StaticBody2D" type="StaticBody2D" unique_id=1001088085]
-position = Vector2(957, 531)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1465054936]
-shape = SubResource("WorldBoundaryShape2D_7bt0u")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=382910912]
-visibility_layer = 2
+[node name="Woda" type="Sprite2D" unique_id=1475904222]
 texture = ExtResource("1_g4vai")
