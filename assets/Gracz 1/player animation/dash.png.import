@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cksqbp7u2qmae"
-path="res://.godot/imported/jump.png-8a45feab4b2b33c64b518c9d0a690690.ctex"
+uid="uid://ejx7y6vljqfl"
+path="res://.godot/imported/dash.png-c3fe4adfb0908203a1995834df4da814.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/jump.png"
-dest_files=["res://.godot/imported/jump.png-8a45feab4b2b33c64b518c9d0a690690.ctex"]
+source_file="res://assets/Gracz 1/player animation/dash.png"
+dest_files=["res://.godot/imported/dash.png-c3fe4adfb0908203a1995834df4da814.ctex"]
 
 [params]
 

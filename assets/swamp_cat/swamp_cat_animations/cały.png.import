@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dytjm3d4s132o"
-path="res://.godot/imported/Idle_cat.png-d7f3f5c55cbdd59cd99608bc15a1b587.ctex"
+uid="uid://d0k118n5kdmlx"
+path="res://.godot/imported/cały.png-70584f9b7bb2f6cbf48d0e5735bfec5c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Idle_cat.png"
-dest_files=["res://.godot/imported/Idle_cat.png-d7f3f5c55cbdd59cd99608bc15a1b587.ctex"]
+source_file="res://assets/swamp_cat/swamp_cat_animations/cały.png"
+dest_files=["res://.godot/imported/cały.png-70584f9b7bb2f6cbf48d0e5735bfec5c.ctex"]
 
 [params]
 

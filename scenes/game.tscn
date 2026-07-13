@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://18tp1yw5tvid" path="res://scenes/kill_zone.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://bqhybvgd5ey4b" path="res://scenes/woda.tscn" id="4_iywne"]
 [ext_resource type="PackedScene" uid="uid://mm3xotklt7gq" path="res://scenes/Podłoga.tscn" id="4_lbhrr"]
+[ext_resource type="PackedScene" uid="uid://fkkepve2r7ol" path="res://assets/swamp_cat/swamp_cat.tscn" id="5_iywne"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lbhrr"]
 
@@ -67,3 +68,7 @@ position = Vector2(7422, 1075)
 
 [node name="Woda6" parent="wody" unique_id=1884285053 instance=ExtResource("4_iywne")]
 position = Vector2(9351, 1069)
+
+[node name="swamp_cat" parent="." unique_id=156676128 instance=ExtResource("5_iywne")]
+position = Vector2(2565.0002, 266)
+scale = Vector2(1.7153354, 1.6490502)

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6hnh8m44wowb"
-path="res://.godot/imported/walk_cat.png-eb2097487cb5d2063d5795cd77bf3e9b.ctex"
+path="res://.godot/imported/walk_cat.png-02b6f96e569b46088d1cf78fd4a8312b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/walk_cat.png"
-dest_files=["res://.godot/imported/walk_cat.png-eb2097487cb5d2063d5795cd77bf3e9b.ctex"]
+source_file="res://assets/Gracz 1/player animation/walk_cat.png"
+dest_files=["res://.godot/imported/walk_cat.png-02b6f96e569b46088d1cf78fd4a8312b.ctex"]
 
 [params]
 

@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://duy6pv5dquk8a"]
 
 [ext_resource type="Script" uid="uid://qmhkshdt3vu5" path="res://scripts/player 1.gd" id="1_7333i"]
-[ext_resource type="Texture2D" uid="uid://dytjm3d4s132o" path="res://graphics/Idle_cat.png" id="2_ndqbq"]
-[ext_resource type="Texture2D" uid="uid://2fbuklt5ulr0" path="res://graphics/sprint.png" id="3_2drgl"]
-[ext_resource type="Texture2D" uid="uid://ejx7y6vljqfl" path="res://graphics/dash.png" id="3_dy6ds"]
-[ext_resource type="Texture2D" uid="uid://6hnh8m44wowb" path="res://graphics/walk_cat.png" id="3_ndqbq"]
-[ext_resource type="Texture2D" uid="uid://cksqbp7u2qmae" path="res://graphics/jump.png" id="3_unsbi"]
+[ext_resource type="Texture2D" uid="uid://dytjm3d4s132o" path="res://assets/Gracz 1/player animation/Idle_cat.png" id="2_ndqbq"]
+[ext_resource type="Texture2D" uid="uid://2fbuklt5ulr0" path="res://assets/Gracz 1/player animation/sprint.png" id="3_2drgl"]
+[ext_resource type="Texture2D" uid="uid://ejx7y6vljqfl" path="res://assets/Gracz 1/player animation/dash.png" id="3_dy6ds"]
+[ext_resource type="Texture2D" uid="uid://6hnh8m44wowb" path="res://assets/Gracz 1/player animation/walk_cat.png" id="3_ndqbq"]
+[ext_resource type="Texture2D" uid="uid://cksqbp7u2qmae" path="res://assets/Gracz 1/player animation/jump.png" id="3_unsbi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7333i"]
 atlas = ExtResource("2_ndqbq")
@@ -206,6 +206,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ndqbq"]
 size = Vector2(199.875, 100)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_dy6ds"]
+radius = 52.009613
+
 [node name="Player 1" type="CharacterBody2D" unique_id=1421348436]
 position = Vector2(960, 545)
 script = ExtResource("1_7333i")
@@ -238,6 +241,14 @@ one_shot = true
 [node name="next_dash_timer" type="Timer" parent="." unique_id=282741627]
 wait_time = 0.5
 one_shot = true
+
+[node name="hitbox" type="Area2D" parent="." unique_id=338689507 groups=["player_attack"]]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox" unique_id=110080750]
+position = Vector2(99, -8)
+shape = SubResource("CircleShape2D_dy6ds")
+debug_color = Color(0.99597734, 0, 0.2038581, 0.41960785)
 
 [connection signal="timeout" from="dash_timer" to="." method="_on_dash_timer_timeout"]
 [connection signal="timeout" from="next_dash_timer" to="." method="_on_next_dash_timer_timeout"]

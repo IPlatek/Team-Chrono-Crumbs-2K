@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2fbuklt5ulr0"
-path="res://.godot/imported/sprint.png-e9f1d72b1e5a0df0ab952a561e64c228.ctex"
+uid="uid://cksqbp7u2qmae"
+path="res://.godot/imported/jump.png-2acc808c288022521fc6ef48962a20f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/sprint.png"
-dest_files=["res://.godot/imported/sprint.png-e9f1d72b1e5a0df0ab952a561e64c228.ctex"]
+source_file="res://assets/Gracz 1/player animation/jump.png"
+dest_files=["res://.godot/imported/jump.png-2acc808c288022521fc6ef48962a20f5.ctex"]
 
 [params]
 

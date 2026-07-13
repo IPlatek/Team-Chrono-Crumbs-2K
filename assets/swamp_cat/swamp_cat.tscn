@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://fkkepve2r7ol"]
+
+[ext_resource type="Texture2D" uid="uid://d0k118n5kdmlx" path="res://assets/swamp_cat/swamp_cat_animations/cały.png" id="1_4bc7y"]
+
+[sub_resource type="GDScript" id="GDScript_842em"]
+resource_name = "enemy_patrolling"
+script/source = "extends CharacterBody2D
+
+@onready var anim = $AnimatedSprite2D
+
+const  Speed  = 100
+
+var direction = 1
+var health = 1
+var distance = 0
+
+func _add_gravity(delta):
+	if !is_on_floor():
+		velocity += get_gravity() * delta
+
+func _move_enemy():
+	velocity.x = Speed * direction
+	distance += (Speed * direction)/100
+	print(distance)
+		
+func _on_reverse():
+	if distance <= 0 or distance >= 300:
+		direction = -direction
+	if direction > 0:
+		anim.flip_h = true
+	elif direction < 0:
+		anim.flip_h = false
+	
+func _physics_process(delta: float) -> void:
+	_add_gravity(delta)
+	_move_enemy()
+	move_and_slide()
+	_on_reverse()
+	
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfo6x"]
+atlas = ExtResource("1_4bc7y")
+region = Rect2(0, 0, 1024, 1024)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lsri3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qfo6x")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_08xgq"]
+radius = 39.0
+height = 183.0
+
+[node name="swamp_cat" type="CharacterBody2D" unique_id=156676128]
+script = SubResource("GDScript_842em")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1567121522]
+position = Vector2(11.5, 3.5)
+scale = Vector2(0.19238281, 0.19433594)
+sprite_frames = SubResource("SpriteFrames_lsri3")
+animation = &"walking"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1997049412]
+position = Vector2(-3, 11)
+shape = SubResource("CapsuleShape2D_08xgq")

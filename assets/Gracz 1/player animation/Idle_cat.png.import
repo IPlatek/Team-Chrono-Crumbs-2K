@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ejx7y6vljqfl"
-path="res://.godot/imported/dash.png-ae368e74a53163455aadecb7c8a485d7.ctex"
+uid="uid://dytjm3d4s132o"
+path="res://.godot/imported/Idle_cat.png-e7c4ea5928988c35b5d9c6403ca8a3c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/dash.png"
-dest_files=["res://.godot/imported/dash.png-ae368e74a53163455aadecb7c8a485d7.ctex"]
+source_file="res://assets/Gracz 1/player animation/Idle_cat.png"
+dest_files=["res://.godot/imported/Idle_cat.png-e7c4ea5928988c35b5d9c6403ca8a3c4.ctex"]
 
 [params]
 
