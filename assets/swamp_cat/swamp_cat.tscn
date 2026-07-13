@@ -13,6 +13,7 @@ const  Speed  = 100
 var direction = 1
 var health = 1
 var distance = 0
+var max_distance = 300
 
 func _add_gravity(delta):
 	if !is_on_floor():
@@ -21,15 +22,19 @@ func _add_gravity(delta):
 func _move_enemy():
 	velocity.x = Speed * direction
 	distance += (Speed * direction)/100
-	print(distance)
 		
 func _on_reverse():
-	if distance <= 0 or distance >= 300:
+	if distance <= 0 or distance >= max_distance:
 		direction = -direction
 	if direction > 0:
 		anim.flip_h = true
+		$HurtBox/CollisionShape2D.position.x = 20
+		$CollisionShape2D.position.x = 20
 	elif direction < 0:
 		anim.flip_h = false
+		$HurtBox/CollisionShape2D.position.x = -3
+		$CollisionShape2D.position.x = -3
+		
 	
 func _physics_process(delta: float) -> void:
 	_add_gravity(delta)
@@ -58,15 +63,50 @@ animations = [{
 radius = 39.0
 height = 183.0
 
+[sub_resource type="GDScript" id="GDScript_4bc7y"]
+resource_name = "hurtbox"
+script/source = "extends Area2D
+
+@export var health := 1
+
+
+func _on_area_entered(area: Area2D) -> void:
+	if area.is_in_group(\"player_attack\"):
+		print(\"hit\")
+		await get_tree().create_timer(0.01).timeout
+		health -= 1
+
+	if health <= 0:
+		await get_tree().create_timer(0.05).timeout
+		get_parent().queue_free()
+"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_842em"]
+radius = 39.0
+height = 182.0
+
 [node name="swamp_cat" type="CharacterBody2D" unique_id=156676128]
 script = SubResource("GDScript_842em")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1567121522]
 position = Vector2(11.5, 3.5)
-scale = Vector2(0.19238281, 0.19433594)
+scale = Vector2(0.28145668, 0.26972106)
 sprite_frames = SubResource("SpriteFrames_lsri3")
 animation = &"walking"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1997049412]
 position = Vector2(-3, 11)
+scale = Vector2(1.4630033, 1.3879114)
 shape = SubResource("CapsuleShape2D_08xgq")
+
+[node name="HurtBox" type="Area2D" parent="." unique_id=344773428]
+scale = Vector2(1.4630033, 1.3879114)
+collision_layer = 2
+script = SubResource("GDScript_4bc7y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=1349678061]
+position = Vector2(-3, 11)
+shape = SubResource("CapsuleShape2D_842em")
+debug_color = Color(0.29001543, 0.6301915, 7.70092e-07, 0.41960785)
+
+[connection signal="area_entered" from="HurtBox" to="HurtBox" method="_on_area_entered"]

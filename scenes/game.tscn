@@ -70,5 +70,11 @@ position = Vector2(7422, 1075)
 position = Vector2(9351, 1069)
 
 [node name="swamp_cat" parent="." unique_id=156676128 instance=ExtResource("5_iywne")]
-position = Vector2(2565.0002, 266)
-scale = Vector2(1.7153354, 1.6490502)
+position = Vector2(2759, 284)
+
+[node name="swamp_cat2" parent="." unique_id=156454496 instance=ExtResource("5_iywne")]
+position = Vector2(127, 739)
+
+[node name="swamp_cat3" parent="." unique_id=441695752 instance=ExtResource("5_iywne")]
+position = Vector2(7458, 292)
+scale = Vector2(1.0130465, 0.8070778)
