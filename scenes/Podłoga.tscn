@@ -6,6 +6,9 @@
 size = Vector2(55.6, 149.17989)
 
 [node name="Podloga" type="StaticBody2D" unique_id=261594933]
+z_index = 5
+collision_layer = 8
+collision_mask = 0
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1998951229]
 position = Vector2(417, 999)

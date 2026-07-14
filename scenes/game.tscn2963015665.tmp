@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bvkd177pqx506"]
 
+[ext_resource type="Script" uid="uid://domtfjr06cwou" path="res://scripts/game_manager.gd" id="1_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://duy6pv5dquk8a" path="res://assets/Gracz 1/Idle_cat.tscn" id="1_uwrxv"]
 [ext_resource type="PackedScene" uid="uid://18tp1yw5tvid" path="res://scenes/kill_zone.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://bqhybvgd5ey4b" path="res://scenes/woda.tscn" id="4_iywne"]
@@ -11,26 +12,11 @@
 
 [node name="Game" type="Node2D" unique_id=2123090632]
 
+[node name="GameManager" type="Node" parent="." unique_id=1171878625]
+script = ExtResource("1_u5sy4")
+
 [node name="Player 1" parent="." unique_id=1421348436 instance=ExtResource("1_uwrxv")]
 position = Vector2(962, 544)
-
-[node name="Camera2D" type="Camera2D" parent="Player 1" unique_id=1196180372]
-zoom = Vector2(0.8, 0.8)
-limit_bottom = 1500
-limit_smoothed = true
-position_smoothing_enabled = true
-position_smoothing_speed = 2.0
-rotation_smoothing_enabled = true
-
-[node name="CanvasLayer" type="CanvasLayer" parent="Player 1" unique_id=398489455]
-
-[node name="ScoreLabel" type="Label" parent="Player 1/CanvasLayer" unique_id=776311449]
-offset_left = 30.0
-offset_top = 37.0
-offset_right = 352.0
-offset_bottom = 129.0
-theme_override_font_sizes/font_size = 67
-text = "Grzybki: 0"
 
 [node name="Kill_zone" parent="." unique_id=1141544285 instance=ExtResource("3_lnu2h")]
 position = Vector2(603, 1343)

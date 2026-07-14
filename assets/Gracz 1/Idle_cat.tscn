@@ -504,7 +504,9 @@ size = Vector2(199.875, 100)
 radius = 52.009613
 
 [node name="Player 1" type="CharacterBody2D" unique_id=1421348436 groups=["gracz"]]
+z_index = 2
 position = Vector2(960, 545)
+collision_mask = 14
 script = ExtResource("1_7333i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=973883693]
@@ -521,14 +523,6 @@ speed_scale = 0.5
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=936137006]
 position = Vector2(4.9375, -8)
 shape = SubResource("RectangleShape2D_ndqbq")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=2004406506]
-zoom = Vector2(0.8, 0.8)
-limit_bottom = 1500
-limit_smoothed = true
-position_smoothing_enabled = true
-position_smoothing_speed = 2.0
-rotation_smoothing_enabled = true
 
 [node name="dash_timer" type="Timer" parent="." unique_id=767390536]
 wait_time = 0.3
