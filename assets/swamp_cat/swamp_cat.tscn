@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://fkkepve2r7ol"]
 
 [ext_resource type="Texture2D" uid="uid://d0k118n5kdmlx" path="res://assets/swamp_cat/swamp_cat_animations/cały.png" id="1_4bc7y"]
+[ext_resource type="Texture2D" uid="uid://d22tc8g3p4xyk" path="res://assets/sprites/atak.png" id="1_842em"]
 
 [sub_resource type="GDScript" id="GDScript_842em"]
 resource_name = "enemy_patrolling"
@@ -30,10 +31,12 @@ func _on_reverse():
 		anim.flip_h = true
 		$HurtBox/CollisionShape2D.position.x = 20
 		$CollisionShape2D.position.x = 20
+		$HitBox/CollisionShape2D.position.x = 88
 	elif direction < 0:
 		anim.flip_h = false
 		$HurtBox/CollisionShape2D.position.x = -3
 		$CollisionShape2D.position.x = -3
+		$HitBox/CollisionShape2D.position.x = -88
 		
 	
 func _physics_process(delta: float) -> void:
@@ -44,12 +47,59 @@ func _physics_process(delta: float) -> void:
 	
 "
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_lsri3"]
+atlas = ExtResource("1_842em")
+region = Rect2(0, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_08xgq"]
+atlas = ExtResource("1_842em")
+region = Rect2(1024, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qblgx"]
+atlas = ExtResource("1_842em")
+region = Rect2(2048, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cko6d"]
+atlas = ExtResource("1_842em")
+region = Rect2(3072, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vc67j"]
+atlas = ExtResource("1_842em")
+region = Rect2(4096, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7q0rs"]
+atlas = ExtResource("1_842em")
+region = Rect2(5120, 0, 1024, 1024)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_qfo6x"]
 atlas = ExtResource("1_4bc7y")
 region = Rect2(0, 0, 1024, 1024)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lsri3"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lsri3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_08xgq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qblgx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cko6d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vc67j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7q0rs")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 24.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qfo6x")
@@ -62,6 +112,25 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_08xgq"]
 radius = 39.0
 height = 183.0
+
+[sub_resource type="GDScript" id="GDScript_qfo6x"]
+resource_name = "enemy_attack"
+script/source = "extends Area2D
+
+@onready var animacja =  $\"../AnimatedSprite2D\"
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.is_in_group(\"gracz\"):
+		print(\"dlaczego kurwa DLACZEGO  !!!!!!\")
+		animacja.play(\"attack\")
+		await get_tree().create_timer( 0.4).timeout
+		Global.lifes -= 1
+		
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4bc7y"]
+size = Vector2(60.023815, 146.98344)
 
 [sub_resource type="GDScript" id="GDScript_4bc7y"]
 resource_name = "hurtbox"
@@ -93,11 +162,22 @@ position = Vector2(11.5, 3.5)
 scale = Vector2(0.28145668, 0.26972106)
 sprite_frames = SubResource("SpriteFrames_lsri3")
 animation = &"walking"
+autoplay = "walking"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1997049412]
 position = Vector2(-3, 11)
 scale = Vector2(1.4630033, 1.3879114)
 shape = SubResource("CapsuleShape2D_08xgq")
+
+[node name="HitBox" type="Area2D" parent="." unique_id=1814543636]
+scale = Vector2(1.4630033, 1.3879114)
+script = SubResource("GDScript_qfo6x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox" unique_id=920419009]
+position = Vector2(-74.50428, 7.2050705)
+scale = Vector2(0.9999999, 1)
+shape = SubResource("RectangleShape2D_4bc7y")
+debug_color = Color(0.9952628, 0, 0.2161341, 0.41960785)
 
 [node name="HurtBox" type="Area2D" parent="." unique_id=344773428]
 scale = Vector2(1.4630033, 1.3879114)
@@ -109,4 +189,5 @@ position = Vector2(-3, 11)
 shape = SubResource("CapsuleShape2D_842em")
 debug_color = Color(0.29001543, 0.6301915, 7.70092e-07, 0.41960785)
 
+[connection signal="body_entered" from="HitBox" to="HitBox" method="_on_body_entered"]
 [connection signal="area_entered" from="HurtBox" to="HurtBox" method="_on_area_entered"]

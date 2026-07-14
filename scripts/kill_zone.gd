@@ -4,9 +4,10 @@ extends Area2D
 @onready var gracz = $"../Player 1"
 
 func _on_body_entered(body: Node2D) -> void:
-	print("You died dumbahh")
-	body.get_node("CollisionShape2D").queue_free()
-	timer.start()
+	if body.is_in_group("gracz"):
+		print("You died dumbahh")
+		body.get_node("CollisionShape2D").queue_free()
+		timer.start()
 
 
 func _on_timer_timeout() -> void:

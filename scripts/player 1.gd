@@ -56,7 +56,6 @@ func _physics_process(delta: float) -> void:
 		var direction := Input.get_axis("lewo_gracz_1", "prawo_gracz_1")
 		if direction:
 			Global.player_force = velocity.x
-			print(velocity.x)
 			#sprintowanie + dash
 			if Input.is_action_pressed("sprint") and dashing:
 				velocity.x = direction * (sprint_speed + DASH_SPEED)
