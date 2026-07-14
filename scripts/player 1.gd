@@ -67,18 +67,24 @@ func _physics_process(delta: float) -> void:
 			else:
 				velocity.x = direction * SPEED
 		else:
-			velocity.x = move_toward(velocity.x, 0, SPEED)
+			if dashing:
+				if animation_sprite.flip_h:	
+					velocity.x = -1 * DASH_SPEED
+				else:
+					velocity.x = DASH_SPEED
+			else:
+				velocity.x = move_toward(velocity.x, 0, SPEED)
 		#animacje
-		if dashing == true and direction  != 0:
+		if dashing == true:
 			animation_sprite.play("dashing")
+		elif !is_on_floor() and velocity.y <= 0:
+			animation_sprite.play("jump")
+		elif !is_on_floor() and velocity.y > 0:
+			animation_sprite.play("falling")
 		elif is_on_floor() and direction != 0 and Input.is_action_pressed("sprint"):
 			animation_sprite.play("sprint")
 		elif is_on_floor() and direction != 0:
 			animation_sprite.play("walk")
-		elif !is_on_floor() and velocity.y < 0:
-			animation_sprite.play("jump")
-		elif !is_on_floor() and velocity.y > 0:
-			animation_sprite.play("falling")
 		elif is_on_floor():
 			animation_sprite.play("Idle")
 		
