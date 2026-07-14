@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bcxj1bkq7f4ro"]
+
+[ext_resource type="Texture2D" uid="uid://dayk6c50le2dn" path="res://assets/sprites/asset_map/trawa-04.png" id="1_3cs80"]
+
+[node name="Trawa" type="StaticBody2D" unique_id=439224959]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1333646593]
+position = Vector2(7, -8)
+texture = ExtResource("1_3cs80")

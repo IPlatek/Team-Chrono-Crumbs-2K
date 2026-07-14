@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://yvvwuc10mr4r"]
+
+[ext_resource type="Texture2D" uid="uid://dybifaqw7mn2j" path="res://assets/sprites/asset_map/ziemia-01.png" id="1_iotfo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mc547"]
+size = Vector2(526, 251)
+
+[node name="Trawa" type="StaticBody2D" unique_id=439224959]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1333646593]
+position = Vector2(24, 54)
+texture = ExtResource("1_iotfo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2056059948]
+position = Vector2(24, 54.5)
+shape = SubResource("RectangleShape2D_mc547")

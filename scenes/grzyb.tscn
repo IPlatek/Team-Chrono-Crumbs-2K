@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bqi4sfncpw2b1"]
 
 [ext_resource type="Script" uid="uid://cj7ekux6dgd6e" path="res://scripts/grzyb.gd" id="1_7njqe"]
-[ext_resource type="Texture2D" uid="uid://0qxn76af24cq" path="res://assets/sprites/Grzyb.png" id="1_xesb8"]
+[ext_resource type="Texture2D" uid="uid://2ycciieheqit" path="res://assets/sprites/grzyp.png" id="2_7njqe"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7njqe"]
 radius = 56.0
@@ -12,8 +12,9 @@ collision_layer = 4
 script = ExtResource("1_7njqe")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1905476259]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_xesb8")
+position = Vector2(-3.0000153, 6.000046)
+scale = Vector2(0.10644531, 0.11230469)
+texture = ExtResource("2_7njqe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=790415121]
 position = Vector2(0, 10)

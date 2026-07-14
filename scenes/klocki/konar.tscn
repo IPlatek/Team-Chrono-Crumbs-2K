@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c03eyqrrtet41"]
+
+[ext_resource type="Texture2D" uid="uid://b6j1tfpsc7ayf" path="res://assets/sprites/asset_map/pień_00.png" id="1_lwvfg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_604yt"]
+size = Vector2(1025, 109)
+
+[node name="Trawa" type="StaticBody2D" unique_id=439224959]
+collision_layer = 9
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1333646593]
+position = Vector2(24, 54)
+texture = ExtResource("1_lwvfg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2094155302]
+position = Vector2(21.5, 57.5)
+shape = SubResource("RectangleShape2D_604yt")

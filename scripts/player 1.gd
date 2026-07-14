@@ -2,10 +2,11 @@ extends CharacterBody2D
 
 
 const SPEED = 500.0
-const JUMP_VELOCITY = -700.0
+const JUMP_VELOCITY = -800.0
 const sprint_speed = 1000.0
 var extra_jump_count = 1
-@onready var animation_sprite = $AnimatedSprite2D
+@onready var animation_sprite = $AnimationPlayer
+@onready var animek = $AnimatedSprite2D
 @onready var dash_timer: Timer = $dash_timer
 @onready var next_dash_timer: Timer = $next_dash_timer
 
@@ -82,9 +83,11 @@ func _physics_process(delta: float) -> void:
 			animation_sprite.play("Idle")
 		
 		if direction < 0:
-			animation_sprite.flip_h = true
+			animek.flip_h = true
+			$HitBox/CollisionShape2D.position.x = -90
 		elif direction > 0:
-			animation_sprite.flip_h = false
+			animek.flip_h = false
+			$HitBox/CollisionShape2D.position.x = 90
 	else:
 		velocity.x = 0
 	move_and_slide()

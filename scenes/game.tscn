@@ -1,20 +1,32 @@
 [gd_scene format=3 uid="uid://bvkd177pqx506"]
 
+[ext_resource type="Texture2D" uid="uid://cdnjpba2naxs" path="res://assets/sprites/tło.png" id="1_trtic"]
 [ext_resource type="PackedScene" uid="uid://duy6pv5dquk8a" path="res://assets/Gracz 1/Idle_cat.tscn" id="1_uwrxv"]
 [ext_resource type="PackedScene" uid="uid://18tp1yw5tvid" path="res://scenes/kill_zone.tscn" id="3_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://ddyolwk2jwdl" path="res://scenes/klocki/trawa-01.tscn" id="3_p57ef"]
 [ext_resource type="PackedScene" uid="uid://bqhybvgd5ey4b" path="res://scenes/woda.tscn" id="4_iywne"]
-[ext_resource type="PackedScene" uid="uid://mm3xotklt7gq" path="res://scenes/Podłoga.tscn" id="4_lbhrr"]
-[ext_resource type="PackedScene" uid="uid://fkkepve2r7ol" path="res://assets/swamp_cat/swamp_cat.tscn" id="5_iywne"]
+[ext_resource type="PackedScene" uid="uid://p55lf8wwa7kf" path="res://scenes/klocki/ziemia-00.tscn" id="4_lbhrr"]
+[ext_resource type="PackedScene" uid="uid://dlxthme1lexwh" path="res://scenes/klocki/blokada.tscn" id="5_ir15t"]
+[ext_resource type="PackedScene" uid="uid://do837vmw1704k" path="res://scenes/klocki/ziemia-02.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://bqi4sfncpw2b1" path="res://scenes/grzyb.tscn" id="5_p57ef"]
+[ext_resource type="PackedScene" uid="uid://bcxj1bkq7f4ro" path="res://scenes/klocki/trawa.tscn" id="6_0tnpc"]
+[ext_resource type="PackedScene" uid="uid://c6wn4hce608pp" path="res://scenes/klocki/trawa-02.tscn" id="7_vtaks"]
+[ext_resource type="PackedScene" uid="uid://bjt6gadfhgwfs" path="res://scenes/klocki/trawa-03.tscn" id="8_kvpfn"]
+[ext_resource type="PackedScene" uid="uid://cr0frcp7tm3bq" path="res://scenes/klocki/platforma.tscn" id="9_vtaks"]
+[ext_resource type="PackedScene" uid="uid://c03eyqrrtet41" path="res://scenes/klocki/konar.tscn" id="10_kvpfn"]
+[ext_resource type="PackedScene" uid="uid://fkkepve2r7ol" path="res://assets/swamp_cat/swamp_cat.tscn" id="12_dinhu"]
+[ext_resource type="PackedScene" uid="uid://yvvwuc10mr4r" path="res://scenes/klocki/ziemia-01.tscn" id="16_ca42v"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lbhrr"]
 
 [node name="Game" type="Node2D" unique_id=2123090632]
 
 [node name="Player 1" parent="." unique_id=1421348436 instance=ExtResource("1_uwrxv")]
-position = Vector2(962, 544)
+z_index = 0
+position = Vector2(1039, 657)
 
 [node name="Camera2D" type="Camera2D" parent="Player 1" unique_id=1196180372]
+position = Vector2(-9, -129)
 zoom = Vector2(0.8, 0.8)
 limit_bottom = 1500
 limit_smoothed = true
@@ -25,12 +37,18 @@ rotation_smoothing_enabled = true
 [node name="CanvasLayer" type="CanvasLayer" parent="Player 1" unique_id=398489455]
 
 [node name="ScoreLabel" type="Label" parent="Player 1/CanvasLayer" unique_id=776311449]
-offset_left = 30.0
-offset_top = 37.0
-offset_right = 352.0
-offset_bottom = 129.0
+anchors_preset = -1
+anchor_left = 0.124000005
+anchor_top = 0.136
+anchor_right = 0.124000005
+anchor_bottom = 0.136
+offset_left = -160.08002
+offset_top = -45.880005
+offset_right = 161.91998
+offset_bottom = 46.119995
 theme_override_font_sizes/font_size = 67
 text = "Grzybki: 0"
+metadata/_edit_use_anchors_ = true
 
 [node name="Kill_zone" parent="." unique_id=1141544285 instance=ExtResource("3_lnu2h")]
 position = Vector2(603, 1343)
@@ -39,77 +57,251 @@ position = Vector2(603, 1343)
 position = Vector2(501, 1356)
 shape = SubResource("WorldBoundaryShape2D_lbhrr")
 
-[node name="podlogi" type="Node" parent="." unique_id=1306807794]
+[node name="ziemia" type="Node" parent="." unique_id=1306807794]
 
-[node name="Podloga" parent="podlogi" unique_id=261594933 instance=ExtResource("4_lbhrr")]
-position = Vector2(1, 3)
+[node name="Trawa18" parent="ziemia" unique_id=163806120 instance=ExtResource("4_lbhrr")]
+position = Vector2(1694, 1410)
+collision_layer = 15
 
-[node name="Podloga2" parent="podlogi" unique_id=1151701552 instance=ExtResource("4_lbhrr")]
-position = Vector2(1089, 5)
+[node name="Trawa19" parent="ziemia" unique_id=1029727071 instance=ExtResource("4_lbhrr")]
+position = Vector2(1960, 1410)
+collision_layer = 15
 
-[node name="Podloga3" parent="podlogi" unique_id=529164883 instance=ExtResource("4_lbhrr")]
-position = Vector2(2093, -465)
+[node name="Trawa20" parent="ziemia" unique_id=81398980 instance=ExtResource("4_lbhrr")]
+position = Vector2(1164, 1410)
+collision_layer = 15
 
-[node name="Podloga4" parent="podlogi" unique_id=467858826 instance=ExtResource("4_lbhrr")]
-position = Vector2(2927, -465)
+[node name="Trawa21" parent="ziemia" unique_id=2036938396 instance=ExtResource("4_lbhrr")]
+position = Vector2(1429, 1410)
+collision_layer = 15
 
-[node name="Podloga6" parent="podlogi" unique_id=1707119985 instance=ExtResource("4_lbhrr")]
-position = Vector2(3765, -462)
+[node name="Trawa22" parent="ziemia" unique_id=1771546252 instance=ExtResource("4_lbhrr")]
+position = Vector2(634, 1410)
+collision_layer = 15
 
-[node name="Podloga7" parent="podlogi" unique_id=1878405296 instance=ExtResource("4_lbhrr")]
-position = Vector2(4602, -458)
+[node name="Trawa23" parent="ziemia" unique_id=985879915 instance=ExtResource("4_lbhrr")]
+position = Vector2(899, 1410)
+collision_layer = 15
 
-[node name="Podloga5" parent="podlogi" unique_id=323620709 instance=ExtResource("4_lbhrr")]
-position = Vector2(5443, -453)
+[node name="Trawa24" parent="ziemia" unique_id=245038380 instance=ExtResource("4_lbhrr")]
+position = Vector2(104, 1410)
+collision_layer = 15
 
-[node name="Podloga8" parent="podlogi" unique_id=1034466733 instance=ExtResource("4_lbhrr")]
-position = Vector2(6279, -453)
+[node name="Trawa25" parent="ziemia" unique_id=406599719 instance=ExtResource("4_lbhrr")]
+position = Vector2(369, 1410)
+collision_layer = 15
 
-[node name="Podloga9" parent="podlogi" unique_id=1255661901 instance=ExtResource("4_lbhrr")]
-position = Vector2(7115, -449)
+[node name="Trawa17" parent="ziemia" unique_id=1822814801 instance=ExtResource("4_lbhrr")]
+position = Vector2(2007, 1266)
+rotation = -3.1415927
+collision_layer = 15
+
+[node name="Trawa10" parent="ziemia" unique_id=1047950275 instance=ExtResource("4_lbhrr")]
+position = Vector2(1742, 1266)
+scale = Vector2(-1, -1)
+collision_layer = 15
+
+[node name="Trawa11" parent="ziemia" unique_id=1560225753 instance=ExtResource("4_lbhrr")]
+position = Vector2(1212, 1266)
+scale = Vector2(-1, -1)
+collision_layer = 15
+
+[node name="Trawa12" parent="ziemia" unique_id=1745788448 instance=ExtResource("4_lbhrr")]
+position = Vector2(1477, 1266)
+scale = Vector2(-1, -1)
+collision_layer = 15
+
+[node name="Trawa13" parent="ziemia" unique_id=1612563678 instance=ExtResource("4_lbhrr")]
+position = Vector2(682, 1266)
+scale = Vector2(-1, -1)
+collision_layer = 15
+
+[node name="Trawa14" parent="ziemia" unique_id=139323375 instance=ExtResource("4_lbhrr")]
+position = Vector2(947, 1266)
+scale = Vector2(-1, -1)
+collision_layer = 15
+
+[node name="Trawa15" parent="ziemia" unique_id=244691081 instance=ExtResource("4_lbhrr")]
+position = Vector2(152, 1266)
+scale = Vector2(-1, -1)
+collision_layer = 15
+
+[node name="Trawa16" parent="ziemia" unique_id=1793956819 instance=ExtResource("4_lbhrr")]
+position = Vector2(417, 1266)
+scale = Vector2(-1, -1)
+collision_layer = 15
+
+[node name="Trawa9" parent="ziemia" unique_id=1363081667 instance=ExtResource("5_iywne")]
+position = Vector2(2223, 906.5)
+
+[node name="Trawa5" parent="ziemia" unique_id=1725647571 instance=ExtResource("4_lbhrr")]
+position = Vector2(1694, 906)
+collision_layer = 15
+
+[node name="Trawa6" parent="ziemia" unique_id=83835278 instance=ExtResource("4_lbhrr")]
+position = Vector2(1960, 906)
+collision_layer = 15
+
+[node name="Trawa3" parent="ziemia" unique_id=2075112426 instance=ExtResource("4_lbhrr")]
+position = Vector2(634, 906)
+collision_layer = 15
+
+[node name="Trawa4" parent="ziemia" unique_id=302276595 instance=ExtResource("4_lbhrr")]
+position = Vector2(899, 906)
+collision_layer = 15
+
+[node name="Trawa" parent="ziemia" unique_id=1534784665 instance=ExtResource("4_lbhrr")]
+position = Vector2(104, 906)
+collision_layer = 15
+
+[node name="Trawa2" parent="ziemia" unique_id=1925422090 instance=ExtResource("4_lbhrr")]
+position = Vector2(369, 906)
+collision_layer = 15
+
+[node name="Podloga" parent="ziemia" unique_id=261594933 instance=ExtResource("5_ir15t")]
+position = Vector2(-176, -315)
+
+[node name="trawa" type="Node" parent="." unique_id=500733259]
+
+[node name="Trawa" parent="trawa" unique_id=439224959 instance=ExtResource("3_p57ef")]
+z_index = 1
+position = Vector2(666, 838)
+
+[node name="Trawa3" parent="trawa" unique_id=505974144 instance=ExtResource("6_0tnpc")]
+z_index = 1
+position = Vector2(1782, 858)
+
+[node name="Trawa2" parent="trawa" unique_id=1016058281 instance=ExtResource("7_vtaks")]
+z_index = 1
+position = Vector2(1189, 800)
+
+[node name="Trawa4" parent="trawa" unique_id=1056973905 instance=ExtResource("8_kvpfn")]
+z_index = 1
+position = Vector2(2257, 890)
+
+[node name="Trawa5" parent="trawa" unique_id=1606332831 instance=ExtResource("9_vtaks")]
+z_index = 1
+position = Vector2(3321, 598)
+scale = Vector2(1.3, 1.466)
+
+[node name="Trawa6" parent="trawa" unique_id=1317086152 instance=ExtResource("10_kvpfn")]
+position = Vector2(4284, 676)
+rotation = 0.24587618
+scale = Vector2(1.3613102, 1.3169646)
+
+[node name="Trawa10" parent="trawa" unique_id=1057170615 instance=ExtResource("9_vtaks")]
+position = Vector2(7738, -570)
+scale = Vector2(1.4542748, 0.9267592)
+
+[node name="Trawa9" parent="trawa" unique_id=1420668408 instance=ExtResource("9_vtaks")]
+position = Vector2(6172, 405)
+scale = Vector2(1.3959076, 0.83277035)
+
+[node name="Trawa14" parent="trawa" unique_id=532429165 instance=ExtResource("10_kvpfn")]
+position = Vector2(3781, -1002)
+
+[node name="Trawa8" parent="trawa" unique_id=1233229704 instance=ExtResource("9_vtaks")]
+position = Vector2(6817, -54)
+scale = Vector2(1.1165199, 1.0824034)
+
+[node name="Trawa7" parent="trawa" unique_id=1742548952 instance=ExtResource("9_vtaks")]
+position = Vector2(5066, 913.00006)
+scale = Vector2(1.289, 1.5)
+
+[node name="Trawa13" parent="trawa" unique_id=108090800 instance=ExtResource("9_vtaks")]
+position = Vector2(3144, -933)
+
+[node name="Trawa12" parent="trawa" unique_id=401760620 instance=ExtResource("9_vtaks")]
+position = Vector2(4481, -933)
+
+[node name="Trawa11" parent="trawa" unique_id=1515304657 instance=ExtResource("9_vtaks")]
+position = Vector2(5480, -434)
+
+[node name="Trawa15" parent="trawa" unique_id=1556221494 instance=ExtResource("9_vtaks")]
+position = Vector2(9312, -982)
+
+[node name="Trawa16" parent="trawa" unique_id=1408842427 instance=ExtResource("9_vtaks")]
+position = Vector2(8802, 249)
+
+[node name="Trawa17" parent="trawa" unique_id=843508325 instance=ExtResource("9_vtaks")]
+position = Vector2(8184, -1506)
+
+[node name="Grzyb" parent="trawa" unique_id=1586303537 instance=ExtResource("5_p57ef")]
+position = Vector2(8072, -1682)
+
+[node name="Grzyb2" parent="trawa" unique_id=425654273 instance=ExtResource("5_p57ef")]
+position = Vector2(8232, -1682)
+
+[node name="Grzyb3" parent="trawa" unique_id=1106925596 instance=ExtResource("5_p57ef")]
+position = Vector2(8395, -1684)
 
 [node name="wody" type="Node" parent="." unique_id=1613924765]
 
 [node name="Woda" parent="wody" unique_id=1475904222 instance=ExtResource("4_iywne")]
-position = Vector2(-258, 1069)
+position = Vector2(2808, 1052)
 
-[node name="Woda2" parent="wody" unique_id=340705096 instance=ExtResource("4_iywne")]
-position = Vector2(1660, 1058)
+[node name="Woda2" parent="wody" unique_id=966664944 instance=ExtResource("4_iywne")]
+position = Vector2(4655, 1056)
 
-[node name="Woda3" parent="wody" unique_id=814834613 instance=ExtResource("4_iywne")]
-position = Vector2(3589, 1064)
+[node name="Woda3" parent="wody" unique_id=162022685 instance=ExtResource("4_iywne")]
+position = Vector2(6330, 1061)
 
-[node name="Woda4" parent="wody" unique_id=1185754918 instance=ExtResource("4_iywne")]
-position = Vector2(5504, 1075)
+[node name="Woda4" parent="wody" unique_id=227908371 instance=ExtResource("4_iywne")]
+position = Vector2(7992, 1054)
 
-[node name="Woda5" parent="wody" unique_id=1736919263 instance=ExtResource("4_iywne")]
-position = Vector2(7422, 1075)
-
-[node name="Woda6" parent="wody" unique_id=1884285053 instance=ExtResource("4_iywne")]
-position = Vector2(9351, 1069)
+[node name="Woda5" parent="wody" unique_id=854440276 instance=ExtResource("4_iywne")]
+position = Vector2(9667, 1054)
 
 [node name="Grzyby" type="Node" parent="." unique_id=1166473226]
 
-[node name="Grzyb" parent="Grzyby" unique_id=1586303537 instance=ExtResource("5_p57ef")]
-position = Vector2(3317, 300)
+[node name="Grzyb7" parent="Grzyby" unique_id=597270334 instance=ExtResource("5_p57ef")]
+position = Vector2(2978, -1108)
+
+[node name="Grzyb8" parent="Grzyby" unique_id=1635310064 instance=ExtResource("5_p57ef")]
+position = Vector2(3284, -1108)
+
+[node name="Grzyb" parent="Grzyby" unique_id=1878230007 instance=ExtResource("5_p57ef")]
+position = Vector2(3197, 402)
 
 [node name="Grzyb2" parent="Grzyby" unique_id=984188680 instance=ExtResource("5_p57ef")]
-position = Vector2(3581, 303)
+position = Vector2(3461, 405)
 
-[node name="Grzyb3" parent="Grzyby" unique_id=1782756005 instance=ExtResource("5_p57ef")]
-position = Vector2(3813, 303)
+[node name="Grzyb3" parent="Grzyby" unique_id=939047880 instance=ExtResource("5_p57ef")]
+position = Vector2(4343, -1109)
 
-[node name="Grzyb4" parent="Grzyby" unique_id=2058736591 instance=ExtResource("5_p57ef")]
-position = Vector2(4041, 311)
+[node name="Grzyb4" parent="Grzyby" unique_id=1463046044 instance=ExtResource("5_p57ef")]
+position = Vector2(4649, -1109)
+
+[node name="Grzyb5" parent="Grzyby" unique_id=358161451 instance=ExtResource("5_p57ef")]
+position = Vector2(6675, -221)
+
+[node name="Grzyb6" parent="Grzyby" unique_id=1247407847 instance=ExtResource("5_p57ef")]
+position = Vector2(6943, -221)
 
 [node name="SwampCaty" type="Node" parent="." unique_id=453351581]
 
-[node name="swamp_cat" parent="SwampCaty" unique_id=156676128 instance=ExtResource("5_iywne")]
-position = Vector2(2759, 284)
+[node name="swamp_cat" parent="SwampCaty" unique_id=1505307062 instance=ExtResource("12_dinhu")]
+position = Vector2(3464, -1147)
+max_distance = 100
 
-[node name="swamp_cat2" parent="SwampCaty" unique_id=156454496 instance=ExtResource("5_iywne")]
-position = Vector2(127, 739)
+[node name="swamp_cat2" parent="SwampCaty" unique_id=156676128 instance=ExtResource("12_dinhu")]
+position = Vector2(7501, -796)
+max_distance = 150
 
-[node name="swamp_cat3" parent="SwampCaty" unique_id=441695752 instance=ExtResource("5_iywne")]
-position = Vector2(7458, 292)
-scale = Vector2(1.0130465, 0.8070778)
+[node name="background_pierdoły" type="Node" parent="." unique_id=350790373]
+
+[node name="tło" type="Node" parent="." unique_id=184829233]
+
+[node name="Parallax2D" type="Parallax2D" parent="tło" unique_id=1519173147]
+scroll_scale = Vector2(0.01, 1)
+repeat_times = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="tło/Parallax2D" unique_id=1523385645]
+z_index = -1
+position = Vector2(988, -1136)
+scale = Vector2(2.64209, 5.301758)
+texture = ExtResource("1_trtic")
+
+[node name="Trawa" parent="." unique_id=1716660466 instance=ExtResource("16_ca42v")]
+position = Vector2(1296, 906)
+scale = Vector2(1.12, 1)

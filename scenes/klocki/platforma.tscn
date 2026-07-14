@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cr0frcp7tm3bq"]
+
+[ext_resource type="Texture2D" uid="uid://kv18ni11dpkj" path="res://assets/sprites/asset_map/platforma.png" id="1_7k1vk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u2big"]
+size = Vector2(372, 173)
+
+[node name="Trawa" type="StaticBody2D" unique_id=439224959]
+scale = Vector2(1.2, 1.2)
+collision_layer = 9
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1333646593]
+position = Vector2(24, 54)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_7k1vk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=995665714]
+position = Vector2(20, 48.5)
+scale = Vector2(1.2, 1.2)
+shape = SubResource("RectangleShape2D_u2big")
