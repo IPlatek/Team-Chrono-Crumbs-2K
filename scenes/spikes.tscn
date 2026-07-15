@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://g00li45uytj5"]
+
+[ext_resource type="Texture2D" uid="uid://doc3krubajd1k" path="res://assets/sprites/kolce.png" id="1_5pg7g"]
+
+[sub_resource type="GDScript" id="GDScript_5pg7g"]
+resource_name = "spikes"
+script/source = "extends Area2D
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.is_in_group(\"gracz\"):
+		print(\"abc\")
+		Global.lifes -= 1
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xbcdo"]
+size = Vector2(505, 166)
+
+[node name="Node2D" type="Area2D" unique_id=1581535553]
+script = SubResource("GDScript_5pg7g")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1991284649]
+position = Vector2(-2.0000305, -3.0517578e-05)
+scale = Vector2(0.55078125, 0.47070313)
+texture = ExtResource("1_5pg7g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=223756265]
+position = Vector2(-2, 151)
+shape = SubResource("RectangleShape2D_xbcdo")
+debug_color = Color(0.9979996, 0, 0.1636788, 0.41960785)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

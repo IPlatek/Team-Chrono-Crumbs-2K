@@ -68,7 +68,7 @@ func _physics_process(delta: float) -> void:
 				velocity.x = direction * SPEED
 		else:
 			if dashing:
-				if animation_sprite.flip_h:	
+				if animek.flip_h:	
 					velocity.x = -1 * DASH_SPEED
 				else:
 					velocity.x = DASH_SPEED
