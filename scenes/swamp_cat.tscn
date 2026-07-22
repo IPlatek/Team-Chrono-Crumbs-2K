@@ -113,7 +113,7 @@ collision_layer = 2
 script = ExtResource("5_d82ge")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=1349678061]
-position = Vector2(-3, 11)
+position = Vector2(-2.0505764, 7.205071)
 shape = SubResource("CapsuleShape2D_842em")
 debug_color = Color(0.29001543, 0.6301915, 7.70092e-07, 0.41960785)
 

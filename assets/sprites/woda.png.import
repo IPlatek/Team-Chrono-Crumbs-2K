@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtvqyy4lld061"
-path="res://.godot/imported/wooda.png-4b79ab5ff3087e95746e26c653b61fe8.ctex"
+uid="uid://cx7wityc2q5ak"
+path="res://.godot/imported/woda.png-3ff7426ec5d5d6681b1e36572cf21723.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/wooda.png"
-dest_files=["res://.godot/imported/wooda.png-4b79ab5ff3087e95746e26c653b61fe8.ctex"]
+source_file="res://assets/sprites/woda.png"
+dest_files=["res://.godot/imported/woda.png-3ff7426ec5d5d6681b1e36572cf21723.ctex"]
 
 [params]
 

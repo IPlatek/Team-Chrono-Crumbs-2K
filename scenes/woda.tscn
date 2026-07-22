@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://bqhybvgd5ey4b"]
 
-[ext_resource type="Texture2D" uid="uid://05inl7022guc" path="res://assets/sprites/wooda.png" id="1_g4vai"]
+[ext_resource type="Texture2D" uid="uid://cx7wityc2q5ak" path="res://assets/sprites/woda.png" id="1_g4vai"]
 
 [node name="Woda" type="Sprite2D" unique_id=1475904222]
+position = Vector2(873.24994, 595)
+scale = Vector2(1.6889647, 2.3825002)
 texture = ExtResource("1_g4vai")

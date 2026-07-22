@@ -1,0 +1,118 @@
+[gd_scene format=3 uid="uid://bfagaha123uwa"]
+
+[ext_resource type="Texture2D" uid="uid://bcjqfn34rh50u" path="res://assets/sprites/asset_map/ziemia-03.png" id="1_igi27"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_igi27"]
+size = Vector2(2120, 756)
+
+[node name="Podłoże_ziemia" type="StaticBody2D" unique_id=439224959]
+position = Vector2(979, 700)
+collision_layer = 15
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1102366877]
+position = Vector2(-663, -252)
+texture = ExtResource("1_igi27")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1057340461]
+position = Vector2(396, -252)
+texture = ExtResource("1_igi27")
+
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=864315768]
+position = Vector2(131, -252)
+texture = ExtResource("1_igi27")
+
+[node name="Ziemia05" type="Sprite2D" parent="." unique_id=1690195413]
+position = Vector2(661, -252)
+texture = ExtResource("1_igi27")
+
+[node name="Ziemia06" type="Sprite2D" parent="." unique_id=1240136635]
+position = Vector2(926, -252)
+texture = ExtResource("1_igi27")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1333646593]
+position = Vector2(-928, -252)
+texture = ExtResource("1_igi27")
+
+[node name="Ziemia03" type="Sprite2D" parent="." unique_id=1205815807]
+position = Vector2(-398, -252)
+texture = ExtResource("1_igi27")
+
+[node name="Ziemia04" type="Sprite2D" parent="." unique_id=1918404995]
+position = Vector2(-133, -252)
+texture = ExtResource("1_igi27")
+
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=554264694]
+position = Vector2(-663, 0)
+scale = Vector2(1, -1)
+texture = ExtResource("1_igi27")
+
+[node name="Sprite2D6" type="Sprite2D" parent="." unique_id=230609940]
+position = Vector2(396, 0)
+scale = Vector2(1, -1)
+texture = ExtResource("1_igi27")
+
+[node name="Sprite2D7" type="Sprite2D" parent="." unique_id=758500507]
+position = Vector2(131, 0)
+scale = Vector2(1, -1)
+texture = ExtResource("1_igi27")
+
+[node name="Ziemia07" type="Sprite2D" parent="." unique_id=364154339]
+position = Vector2(661, 0)
+scale = Vector2(1, -1)
+texture = ExtResource("1_igi27")
+
+[node name="Ziemia08" type="Sprite2D" parent="." unique_id=446182580]
+position = Vector2(926, 0)
+scale = Vector2(1, -1)
+texture = ExtResource("1_igi27")
+
+[node name="Sprite2D8" type="Sprite2D" parent="." unique_id=1309365872]
+position = Vector2(-928, 0)
+scale = Vector2(1, -1)
+texture = ExtResource("1_igi27")
+
+[node name="Ziemia09" type="Sprite2D" parent="." unique_id=1720895910]
+position = Vector2(-398, 0)
+scale = Vector2(1, -1)
+texture = ExtResource("1_igi27")
+
+[node name="Ziemia10" type="Sprite2D" parent="." unique_id=1710950539]
+position = Vector2(-133, 0)
+scale = Vector2(1, -1)
+texture = ExtResource("1_igi27")
+
+[node name="Sprite2D9" type="Sprite2D" parent="." unique_id=899284586]
+position = Vector2(-663, 252)
+texture = ExtResource("1_igi27")
+
+[node name="Sprite2D10" type="Sprite2D" parent="." unique_id=278607244]
+position = Vector2(396, 252)
+texture = ExtResource("1_igi27")
+
+[node name="Sprite2D11" type="Sprite2D" parent="." unique_id=270043179]
+position = Vector2(131, 252)
+texture = ExtResource("1_igi27")
+
+[node name="Ziemia11" type="Sprite2D" parent="." unique_id=1407853276]
+position = Vector2(661, 252)
+texture = ExtResource("1_igi27")
+
+[node name="Ziemia12" type="Sprite2D" parent="." unique_id=946187270]
+position = Vector2(926, 252)
+texture = ExtResource("1_igi27")
+
+[node name="Sprite2D12" type="Sprite2D" parent="." unique_id=1068392593]
+position = Vector2(-928, 252)
+texture = ExtResource("1_igi27")
+
+[node name="Ziemia13" type="Sprite2D" parent="." unique_id=1069677731]
+position = Vector2(-398, 252)
+texture = ExtResource("1_igi27")
+
+[node name="Ziemia14" type="Sprite2D" parent="." unique_id=525983443]
+position = Vector2(-133, 252)
+texture = ExtResource("1_igi27")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1742983543]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_igi27")

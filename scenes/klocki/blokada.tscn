@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dlxthme1lexwh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uqeic"]
-size = Vector2(190, 2206)
+size = Vector2(190, 4652)
 
 [node name="Podloga" type="StaticBody2D" unique_id=261594933]
 z_index = 5
@@ -9,5 +9,5 @@ collision_layer = 8
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=908200463]
-position = Vector2(85, 169)
+position = Vector2(85, -1054)
 shape = SubResource("RectangleShape2D_uqeic")

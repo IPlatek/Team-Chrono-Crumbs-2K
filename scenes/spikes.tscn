@@ -14,7 +14,7 @@ func _on_body_entered(body: Node2D) -> void:
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xbcdo"]
-size = Vector2(505, 166)
+size = Vector2(505, 194)
 
 [node name="Node2D" type="Area2D" unique_id=1581535553]
 script = SubResource("GDScript_5pg7g")
@@ -25,7 +25,7 @@ scale = Vector2(0.55078125, 0.47070313)
 texture = ExtResource("1_5pg7g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=223756265]
-position = Vector2(-2, 151)
+position = Vector2(-2, 137)
 shape = SubResource("RectangleShape2D_xbcdo")
 debug_color = Color(0.9979996, 0, 0.1636788, 0.41960785)
 
