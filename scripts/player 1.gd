@@ -9,6 +9,7 @@ var extra_jump_count = 1
 @onready var animek = $AnimatedSprite2D
 @onready var dash_timer: Timer = $dash_timer
 @onready var next_dash_timer: Timer = $next_dash_timer
+@onready var cam = $Camera2D
 
 const DASH_SPEED = 1500.0
 var dashing = false
@@ -29,6 +30,12 @@ func _physics_process(delta: float) -> void:
 	#stopowanie sterowania
 	if camera_position.y > 1500:
 		Global.no_move = true
+		
+	#blokowanie kamery
+	if Global.current_level == 1:
+		cam.limit_enabled = true
+		cam.limit_right = 22635
+		
 	
 	# Grawitacja
 	if not is_on_floor():
@@ -98,7 +105,6 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = 0
 	move_and_slide()
-
 
 func _on_dash_timer_timeout() -> void:
 	dashing = false
