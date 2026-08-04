@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c5o0s0wge7wa5"]
+
+[ext_resource type="PackedScene" uid="uid://duy6pv5dquk8a" path="res://assets/Gracz 1/Idle_cat.tscn" id="1_j2425"]
+[ext_resource type="PackedScene" uid="uid://18tp1yw5tvid" path="res://scenes/kill_zone.tscn" id="2_g2h2n"]
+[ext_resource type="PackedScene" uid="uid://bfagaha123uwa" path="res://scenes/podłoże.tscn" id="3_ra442"]
+[ext_resource type="PackedScene" uid="uid://dlxthme1lexwh" path="res://scenes/klocki/blokada.tscn" id="4_fiq81"]
+
+[node name="game" type="Node2D" unique_id=2147134106]
+
+[node name="Player 1" parent="." unique_id=1421348436 instance=ExtResource("1_j2425")]
+position = Vector2(1120, 675)
+
+[node name="Kill_zone" parent="." unique_id=1141544285 instance=ExtResource("2_g2h2n")]
+position = Vector2(81, 1450)
+
+[node name="Podłoże_ziemia" parent="." unique_id=439224959 instance=ExtResource("3_ra442")]
+position = Vector2(783, 1180)
+
+[node name="Podłoże_ziemia2" parent="." unique_id=1369568952 instance=ExtResource("3_ra442")]
+position = Vector2(2902, 1180)
+
+[node name="Podloga" parent="." unique_id=261594933 instance=ExtResource("4_fiq81")]
+position = Vector2(703, -151)

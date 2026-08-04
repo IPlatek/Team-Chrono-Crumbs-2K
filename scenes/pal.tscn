@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://ba6ofpmvc66ds"]
+
+[ext_resource type="Texture2D" uid="uid://diuvfr8srdehr" path="res://assets/sprites/pal.png" id="1_5sbdb"]
+
+[sub_resource type="GDScript" id="GDScript_5sbdb"]
+resource_name = "pal"
+script/source = "extends Area2D
+
+@export var speed_of_spining = 200
+@export var direction = 1
+@onready var pal = $\".\"
+
+func _process(delta: float) -> void:
+	rotation += deg_to_rad(speed_of_spining) * direction * delta
+	
+	
+func _on_body_entered(body: Node2D) -> void:
+	if body.is_in_group(\"gracz\"):
+		print(\"pal\")
+		Global.lifes -= 1
+	
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ib6gc"]
+size = Vector2(20, 1024)
+
+[node name="pal" type="Area2D" unique_id=376445363]
+script = SubResource("GDScript_5sbdb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1991664961]
+position = Vector2(20, 0)
+texture = ExtResource("1_5sbdb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=250002508]
+shape = SubResource("RectangleShape2D_ib6gc")
+debug_color = Color(0.98509413, 0, 0.34174895, 0.41960785)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

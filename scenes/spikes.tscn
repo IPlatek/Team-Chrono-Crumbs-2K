@@ -1,23 +1,13 @@
 [gd_scene format=3 uid="uid://g00li45uytj5"]
 
 [ext_resource type="Texture2D" uid="uid://doc3krubajd1k" path="res://assets/sprites/kolce.png" id="1_5pg7g"]
-
-[sub_resource type="GDScript" id="GDScript_5pg7g"]
-resource_name = "spikes"
-script/source = "extends Area2D
-
-
-func _on_body_entered(body: Node2D) -> void:
-	if body.is_in_group(\"gracz\"):
-		print(\"abc\")
-		Global.lifes -= 1
-"
+[ext_resource type="Script" uid="uid://71wh4dk80onl" path="res://scripts/spikes.gd" id="1_xbcdo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xbcdo"]
 size = Vector2(505, 194)
 
 [node name="Node2D" type="Area2D" unique_id=1581535553]
-script = SubResource("GDScript_5pg7g")
+script = ExtResource("1_xbcdo")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1991284649]
 position = Vector2(-2.0000305, -3.0517578e-05)

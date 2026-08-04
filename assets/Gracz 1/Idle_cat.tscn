@@ -509,6 +509,13 @@ position = Vector2(960, 545)
 collision_mask = 14
 script = ExtResource("1_7333i")
 
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1087078570]
+position = Vector2(-8, -137)
+zoom = Vector2(0.8, 0.8)
+limit_bottom = 1500
+position_smoothing_enabled = true
+position_smoothing_speed = 2.0
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=973883693]
 position = Vector2(0.5, -50.500008)
 scale = Vector2(0.32714844, 0.30957034)
@@ -536,6 +543,7 @@ one_shot = true
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox" unique_id=110080750]
+visible = false
 position = Vector2(99, -8)
 shape = SubResource("CircleShape2D_dy6ds")
 disabled = true

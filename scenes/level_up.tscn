@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://d2ofgod1pvt78"]
+
+[ext_resource type="Script" uid="uid://bkdljqa52r05a" path="res://scripts/level_up.gd" id="1_sss2v"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_sss2v"]
+normal = Vector2(-1, 0)
+
+[node name="level_up" type="Area2D" unique_id=1647793945]
+script = ExtResource("1_sss2v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=44104320]
+position = Vector2(-4, -186.5)
+shape = SubResource("WorldBoundaryShape2D_sss2v")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
