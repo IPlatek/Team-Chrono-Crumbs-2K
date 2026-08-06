@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://g082iq7scbhi"]
+
+[ext_resource type="Script" uid="uid://taix5lgkqhes" path="res://scripts/main_menu.gd" id="1_k0vh8"]
+[ext_resource type="Texture2D" uid="uid://bbdihh5rj4np3" path="res://assets/Menu/Tło_menu.jpg" id="2_2itis"]
+[ext_resource type="Texture2D" uid="uid://dgb0kcwq7bupk" path="res://assets/Menu/Przycisk_graj.png" id="2_ymy3e"]
+[ext_resource type="Texture2D" uid="uid://brgykq507k1i1" path="res://assets/Menu/Przycisk_opcjie.png" id="4_n6xgq"]
+[ext_resource type="Texture2D" uid="uid://cof2j14dpv1o" path="res://assets/Menu/Przycisk_kredyty.png" id="5_akboc"]
+[ext_resource type="Texture2D" uid="uid://bvp4vayg71bt3" path="res://assets/Menu/Przycisk_wyjscie.png" id="6_xvd5r"]
+
+[node name="Main menu" type="Node2D" unique_id=316407994]
+script = ExtResource("1_k0vh8")
+metadata/_edit_horizontal_guides_ = [350.0, 490.0, 540.0, 680.0, 730.0, 870.0]
+metadata/_edit_vertical_guides_ = [940.0, 610.0, 1310.0, 980.0]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1184193177]
+position = Vector2(962.5, 504)
+scale = Vector2(1.917, 1)
+texture = ExtResource("2_2itis")
+
+[node name="Button_menager" type="Control" parent="." unique_id=8647330]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Start" type="TextureButton" parent="Button_menager" unique_id=1466131128]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 350.0
+offset_right = 1310.0
+offset_bottom = 490.0
+texture_normal = ExtResource("2_ymy3e")
+
+[node name="Options" type="TextureButton" parent="Button_menager" unique_id=1770078330]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 540.0
+offset_right = 1310.0
+offset_bottom = 680.0
+texture_normal = ExtResource("4_n6xgq")
+
+[node name="Credits" type="TextureButton" parent="Button_menager" unique_id=435040355]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 730.0
+offset_right = 940.0
+offset_bottom = 870.0
+texture_normal = ExtResource("5_akboc")
+
+[node name="Quit" type="TextureButton" parent="Button_menager" unique_id=630380766]
+layout_mode = 0
+offset_left = 980.0
+offset_top = 730.0
+offset_right = 1310.0
+offset_bottom = 870.0
+texture_normal = ExtResource("6_xvd5r")
+
+[connection signal="pressed" from="Button_menager/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Button_menager/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Button_menager/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Button_menager/Quit" to="." method="_on_quit_pressed"]

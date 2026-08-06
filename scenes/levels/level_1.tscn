@@ -511,7 +511,7 @@ direction = -1
 [node name="wody" type="Node" parent="." unique_id=856069770]
 
 [node name="Area2D" parent="wody" unique_id=1266363264 instance=ExtResource("26_o7j4k")]
-position = Vector2(2114, 809)
+position = Vector2(2120, 808)
 
 [node name="Swamp_water" parent="wody" unique_id=227797829 instance=ExtResource("26_o7j4k")]
 position = Vector2(3684, 809)

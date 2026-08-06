@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://dbv1drmj3nn3v"]
+
+[ext_resource type="Script" uid="uid://dtmrvhk51ive8" path="res://scripts/levels_List.gd" id="1_ixtga"]
+[ext_resource type="Texture2D" uid="uid://b3gyjarq8tuvg" path="res://assets/Menu/lvls.png" id="1_vrfjv"]
+
+[node name="Levels List" type="Node2D" unique_id=370848893]
+script = ExtResource("1_ixtga")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=814430448]
+position = Vector2(962.00006, 547.5)
+scale = Vector2(1.9530612, 1.9727768)
+texture = ExtResource("1_vrfjv")
+
+[node name="Button_menager" type="Control" parent="." unique_id=1270754883]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Level 1" type="Button" parent="Button_menager" unique_id=2129867325]
+layout_mode = 0
+offset_left = 603.0
+offset_top = 319.0
+offset_right = 1355.0
+offset_bottom = 469.0
+theme_override_font_sizes/font_size = 42
+text = "Lvl 1"
+
+[node name="Level 2" type="Button" parent="Button_menager" unique_id=783669402]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 533.0
+offset_right = 1354.0
+offset_bottom = 670.0
+theme_override_font_sizes/font_size = 42
+text = "Lvl 2"
+
+[node name="BACK" type="Button" parent="Button_menager" unique_id=1941853812]
+layout_mode = 0
+offset_left = 262.0
+offset_top = 69.0
+offset_right = 1685.0
+offset_bottom = 283.0
+theme_override_font_sizes/font_size = 64
+text = "Go Back"
+
+[connection signal="pressed" from="Button_menager/Level 1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="Button_menager/Level 2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="Button_menager/BACK" to="." method="_on_back_pressed"]
