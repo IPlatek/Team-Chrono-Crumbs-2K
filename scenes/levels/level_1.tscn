@@ -3,7 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://duy6pv5dquk8a" path="res://assets/Gracz 1/Idle_cat.tscn" id="1_o7j4k"]
 [ext_resource type="PackedScene" uid="uid://18tp1yw5tvid" path="res://scenes/kill_zone.tscn" id="3_x7jkp"]
 [ext_resource type="PackedScene" uid="uid://g00li45uytj5" path="res://scenes/spikes.tscn" id="4_0qwwm"]
-[ext_resource type="PackedScene" uid="uid://bqhybvgd5ey4b" path="res://scenes/woda.tscn" id="5_t4umt"]
 [ext_resource type="PackedScene" uid="uid://do837vmw1704k" path="res://scenes/klocki/ziemia-02.tscn" id="6_4yk0h"]
 [ext_resource type="PackedScene" uid="uid://bfagaha123uwa" path="res://scenes/podłoże.tscn" id="7_vmrhw"]
 [ext_resource type="PackedScene" uid="uid://dlxthme1lexwh" path="res://scenes/klocki/blokada.tscn" id="8_cfnpk"]
@@ -25,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://cdnjpba2naxs" path="res://assets/sprites/tło.png" id="24_ugk5q"]
 [ext_resource type="PackedScene" uid="uid://ba6ofpmvc66ds" path="res://scenes/pal.tscn" id="25_4u6u3"]
 [ext_resource type="PackedScene" uid="uid://d2ofgod1pvt78" path="res://scenes/level_up.tscn" id="26_i3rdk"]
+[ext_resource type="PackedScene" uid="uid://dj8m8ycrpywt8" path="res://scenes/wodav2.tscn" id="26_o7j4k"]
 
 [node name="Game" type="Node2D" unique_id=2123090632]
 
@@ -33,7 +33,7 @@ z_index = 0
 position = Vector2(214, 750)
 
 [node name="Kill_zone" parent="." unique_id=1141544285 instance=ExtResource("3_x7jkp")]
-position = Vector2(734, 1815)
+position = Vector2(738, 1693)
 
 [node name="level_up" parent="." unique_id=1647793945 instance=ExtResource("26_i3rdk")]
 position = Vector2(22619, -110)
@@ -77,29 +77,6 @@ position = Vector2(12588, -629)
 
 [node name="Node2D10" parent="kolce" unique_id=815891661 instance=ExtResource("4_0qwwm")]
 position = Vector2(14814, 643)
-
-[node name="wody" type="Node" parent="." unique_id=1613924765]
-
-[node name="Woda" parent="wody" unique_id=1475904222 instance=ExtResource("5_t4umt")]
-position = Vector2(2955.0002, 1110)
-
-[node name="Woda2" parent="wody" unique_id=966664944 instance=ExtResource("5_t4umt")]
-position = Vector2(4678, 1109)
-
-[node name="Woda3" parent="wody" unique_id=162022685 instance=ExtResource("5_t4umt")]
-position = Vector2(6403, 1108)
-
-[node name="Woda6" parent="wody" unique_id=1654116180 instance=ExtResource("5_t4umt")]
-position = Vector2(11576, 1104)
-
-[node name="Woda7" parent="wody" unique_id=1537277377 instance=ExtResource("5_t4umt")]
-position = Vector2(13304, 1102)
-
-[node name="Woda4" parent="wody" unique_id=227908371 instance=ExtResource("5_t4umt")]
-position = Vector2(8129.9995, 1106)
-
-[node name="Woda5" parent="wody" unique_id=854440276 instance=ExtResource("5_t4umt")]
-position = Vector2(9855, 1103)
 
 [node name="ziemia2" type="Node" parent="." unique_id=990069778]
 
@@ -145,87 +122,107 @@ position = Vector2(2751, -3665)
 [node name="trawa" type="Node" parent="." unique_id=814614909]
 
 [node name="Trawa3" parent="trawa" unique_id=1022041494 instance=ExtResource("9_wvtie")]
+z_index = 5
 position = Vector2(1505, 847)
 
 [node name="Trawa2" parent="trawa" unique_id=762624468 instance=ExtResource("10_o8s4s")]
+z_index = 5
 position = Vector2(2237, 884)
 
 [node name="Trawa4" parent="trawa" unique_id=1353106501 instance=ExtResource("9_wvtie")]
+z_index = 5
 position = Vector2(-1215, 846)
 
 [node name="Trawa" parent="trawa" unique_id=1434202093 instance=ExtResource("9_wvtie")]
+z_index = 5
 position = Vector2(109, 851)
 
 [node name="Trawa5" parent="trawa" unique_id=1580184098 instance=ExtResource("11_ebb2h")]
+z_index = 5
 position = Vector2(-617, 806)
 
 [node name="Trawa6" parent="trawa" unique_id=1032261246 instance=ExtResource("11_ebb2h")]
+z_index = 5
 position = Vector2(789, 803)
 
 [node name="Trawa7" parent="trawa" unique_id=705458053 instance=ExtResource("11_ebb2h")]
+z_index = 5
 position = Vector2(2079, 800)
 
 [node name="Trawa8" parent="trawa" unique_id=44356822 instance=ExtResource("11_ebb2h")]
+z_index = 5
 position = Vector2(152, 816)
 
 [node name="Trawa9" parent="trawa" unique_id=1682352717 instance=ExtResource("11_ebb2h")]
+z_index = 5
 position = Vector2(-1166, 799)
 
 [node name="trawa2" type="Node" parent="." unique_id=164118233]
 
 [node name="Trawa10" type="Sprite2D" parent="trawa2" unique_id=535079678]
+z_index = 5
 position = Vector2(20113, 859)
 texture = ExtResource("12_row31")
 
 [node name="Trawa03" type="Sprite2D" parent="trawa2" unique_id=1096949104]
-z_index = 1
+z_index = 5
 position = Vector2(14736, 927)
 texture = ExtResource("13_ytidy")
 
 [node name="Trawa04" type="Sprite2D" parent="trawa2" unique_id=1077163920]
+z_index = 5
 position = Vector2(15753, 863)
 texture = ExtResource("12_row31")
 
 [node name="Trawa07" type="Sprite2D" parent="trawa2" unique_id=424377401]
+z_index = 5
 position = Vector2(13972, 947)
 texture = ExtResource("14_hvllt")
 
 [node name="Trawa05" type="Sprite2D" parent="trawa2" unique_id=1797387985]
+z_index = 5
 position = Vector2(16797, 921)
 texture = ExtResource("13_ytidy")
 
 [node name="Trawa06" type="Sprite2D" parent="trawa2" unique_id=607111812]
+z_index = 5
 position = Vector2(17838, 876)
 texture = ExtResource("12_row31")
 
 [node name="Trawa08" type="Sprite2D" parent="trawa2" unique_id=1703204340]
+z_index = 5
 position = Vector2(18873, 921)
 texture = ExtResource("13_ytidy")
 
 [node name="Trawa09" type="Sprite2D" parent="trawa2" unique_id=193572079]
+z_index = 5
 position = Vector2(19807, 873)
 texture = ExtResource("12_row31")
 
 [node name="Trawa11" type="Sprite2D" parent="trawa2" unique_id=161662748]
-z_index = 1
+z_index = 5
 position = Vector2(20560, 417)
 texture = ExtResource("14_hvllt")
 
 [node name="Trawa12" type="Sprite2D" parent="trawa2" unique_id=1440379321]
+z_index = 5
 position = Vector2(19584.004, 635.99927)
 rotation = -0.29321527
 scale = Vector2(1.100305, 1.0917295)
 texture = ExtResource("15_dp4fg")
 
 [node name="Trawa13" type="Sprite2D" parent="trawa2" unique_id=1508072393]
+z_index = 5
 position = Vector2(21061, 313)
 texture = ExtResource("12_row31")
 
 [node name="Trawa14" type="Sprite2D" parent="trawa2" unique_id=568091468]
+z_index = 5
 position = Vector2(21956, 318)
 texture = ExtResource("12_row31")
 
 [node name="Trawa15" type="Sprite2D" parent="trawa2" unique_id=1487901509]
+z_index = 5
 position = Vector2(22836, 368)
 texture = ExtResource("13_ytidy")
 
@@ -428,41 +425,49 @@ texture = ExtResource("20_dwx2n")
 scroll_scale = Vector2(2, 1)
 
 [node name="NowyProjekt(3)2" type="Sprite2D" parent="background_pierdoły/front_początek" unique_id=571717693]
+z_index = 10
 position = Vector2(-1303.25, -2112.25)
 scale = Vector2(3.445946, 2.0135136)
 texture = ExtResource("21_wtkl1")
 
 [node name="JakieśCoś" type="Sprite2D" parent="background_pierdoły/front_początek" unique_id=817104475]
+z_index = 10
 position = Vector2(541.37506, 2.3750381)
 scale = Vector2(4.831318, 5.230357)
 texture = ExtResource("22_ovy75")
 
 [node name="JakieśCoś2" type="Sprite2D" parent="background_pierdoły/front_początek" unique_id=1700569723]
+z_index = 10
 position = Vector2(1770, -1577.0001)
 scale = Vector2(6.2419353, 4.4952383)
 texture = ExtResource("22_ovy75")
 
 [node name="JakieśCoś3" type="Sprite2D" parent="background_pierdoły/front_początek" unique_id=2143872316]
+z_index = 10
 position = Vector2(-597, -631)
 scale = Vector2(2.8548386, 2.3916664)
 texture = ExtResource("22_ovy75")
 
 [node name="JakieśCoś4" type="Sprite2D" parent="background_pierdoły/front_początek" unique_id=514466017]
+z_index = 10
 position = Vector2(-1303, -645)
 scale = Vector2(4.9166665, 4.814286)
 texture = ExtResource("22_ovy75")
 
 [node name="NowyProjekt(3)" type="Sprite2D" parent="background_pierdoły/front_początek" unique_id=1132729109]
+z_index = 10
 position = Vector2(213.62505, -1835.9999)
 scale = Vector2(4.3626127, 2.854955)
 texture = ExtResource("21_wtkl1")
 
 [node name="Liście6" type="Sprite2D" parent="background_pierdoły/front_początek" unique_id=1671410607]
+z_index = 10
 position = Vector2(2187, -1373)
 scale = Vector2(1.9579408, 1.9907604)
 texture = ExtResource("23_wk6bc")
 
 [node name="Liście5" type="Sprite2D" parent="background_pierdoły/front_początek" unique_id=215201042]
+z_index = 10
 position = Vector2(2216, -372)
 scale = Vector2(1.9, 1.9333764)
 texture = ExtResource("23_wk6bc")
@@ -502,3 +507,29 @@ speed_of_spining = 250
 position = Vector2(17082, 297)
 speed_of_spining = 250
 direction = -1
+
+[node name="wody" type="Node" parent="." unique_id=856069770]
+
+[node name="Area2D" parent="wody" unique_id=1266363264 instance=ExtResource("26_o7j4k")]
+position = Vector2(2114, 809)
+
+[node name="Swamp_water" parent="wody" unique_id=227797829 instance=ExtResource("26_o7j4k")]
+position = Vector2(3684, 809)
+
+[node name="Swamp_water2" parent="wody" unique_id=881428147 instance=ExtResource("26_o7j4k")]
+position = Vector2(5254, 806)
+
+[node name="Swamp_water3" parent="wody" unique_id=1416566349 instance=ExtResource("26_o7j4k")]
+position = Vector2(6825, 806)
+
+[node name="Swamp_water4" parent="wody" unique_id=636436869 instance=ExtResource("26_o7j4k")]
+position = Vector2(8397, 806)
+
+[node name="Swamp_water5" parent="wody" unique_id=666324026 instance=ExtResource("26_o7j4k")]
+position = Vector2(9966, 806)
+
+[node name="Swamp_water6" parent="wody" unique_id=509232263 instance=ExtResource("26_o7j4k")]
+position = Vector2(11538, 806)
+
+[node name="Swamp_water7" parent="wody" unique_id=791750750 instance=ExtResource("26_o7j4k")]
+position = Vector2(13107, 806)

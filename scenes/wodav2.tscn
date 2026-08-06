@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dj8m8ycrpywt8"]
+
+[ext_resource type="Script" uid="uid://byu5ul0qlcfm6" path="res://scripts/wodav_2.gd" id="1_6oi80"]
+[ext_resource type="Texture2D" uid="uid://cx7wityc2q5ak" path="res://assets/sprites/woda.png" id="1_x78bl"]
+
+[node name="Swamp_water" type="Area2D" unique_id=1266363264]
+position = Vector2(-1, 10)
+script = ExtResource("1_6oi80")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=371736133]
+self_modulate = Color(1, 1, 1, 0.24705882)
+z_index = 100
+z_as_relative = false
+position = Vector2(785, 390)
+scale = Vector2(1.5332031, 1.945)
+texture = ExtResource("1_x78bl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1360231320]
+z_index = -1
+z_as_relative = false
+position = Vector2(787.5, 390)
+scale = Vector2(1.5380859, 1.945)
+texture = ExtResource("1_x78bl")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1655110264]
+position = Vector2(3.8123527, -11.3582535)
+scale = Vector2(1.5311587, 1.9830836)
+polygon = PackedVector2Array(-2, 400, -1, 325, 95, 284, 213, 267, 319, 273, 450, 294, 655, 323, 1025, 322, 1025, 400)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -517,6 +517,7 @@ position_smoothing_enabled = true
 position_smoothing_speed = 2.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=973883693]
+z_index = 1
 position = Vector2(0.5, -50.500008)
 scale = Vector2(0.32714844, 0.30957034)
 sprite_frames = SubResource("SpriteFrames_ndqbq")
@@ -528,6 +529,7 @@ autoplay = &"Idle"
 speed_scale = 0.5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=936137006]
+visibility_layer = 2
 position = Vector2(4.9375, -8)
 shape = SubResource("RectangleShape2D_ndqbq")
 

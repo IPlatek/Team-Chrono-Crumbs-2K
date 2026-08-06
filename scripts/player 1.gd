@@ -1,17 +1,19 @@
 extends CharacterBody2D
 
 
-const SPEED = 500.0
+var SPEED = 500.0
 const JUMP_VELOCITY = -800.0
 const sprint_speed = 1000.0
 var extra_jump_count = 1
+var speed_multiplier = 1.0 #do wody
+var gravity_multiplier = 1.0 #do wody ale wsm też można użyć na jkies speed busty
 @onready var animation_sprite = $AnimationPlayer
 @onready var animek = $AnimatedSprite2D
 @onready var dash_timer: Timer = $dash_timer
 @onready var next_dash_timer: Timer = $next_dash_timer
 @onready var cam = $Camera2D
 
-const DASH_SPEED = 1500.0
+var DASH_SPEED = 1500.0
 var dashing = false
 var can_dash = true
 
@@ -27,6 +29,7 @@ func _physics_process(delta: float) -> void:
 	
 	var camera_position = $Camera2D.global_position
 	
+	
 	#stopowanie sterowania
 	if camera_position.y > 1500:
 		Global.no_move = true
@@ -39,7 +42,7 @@ func _physics_process(delta: float) -> void:
 	
 	# Grawitacja
 	if not is_on_floor():
-		velocity += get_gravity() * delta
+		velocity += get_gravity() * delta * gravity_multiplier
 
 	# skakanie
 	if is_on_floor():
@@ -68,12 +71,12 @@ func _physics_process(delta: float) -> void:
 				velocity.x = direction * (sprint_speed + DASH_SPEED)
 			#sprintowanie
 			elif Input.is_action_pressed("sprint"):
-				velocity.x = direction * sprint_speed
+				velocity.x = direction * sprint_speed * speed_multiplier
 			#dashowanie
 			elif dashing:
 				velocity.x = direction * DASH_SPEED
 			else:
-				velocity.x = direction * SPEED
+				velocity.x = direction * SPEED * speed_multiplier
 		else:
 			if dashing:
 				if animek.flip_h:	
@@ -81,7 +84,7 @@ func _physics_process(delta: float) -> void:
 				else:
 					velocity.x = DASH_SPEED
 			else:
-				velocity.x = move_toward(velocity.x, 0, SPEED)
+				velocity.x = move_toward(velocity.x, 0, SPEED * speed_multiplier)
 		#animacje
 		if dashing == true:
 			animation_sprite.play("dashing")
