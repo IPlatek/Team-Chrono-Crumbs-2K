@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://duy6pv5dquk8a" path="res://assets/Gracz 1/Idle_cat.tscn" id="1_o7j4k"]
 [ext_resource type="PackedScene" uid="uid://18tp1yw5tvid" path="res://scenes/kill_zone.tscn" id="3_x7jkp"]
 [ext_resource type="PackedScene" uid="uid://g00li45uytj5" path="res://scenes/spikes.tscn" id="4_0qwwm"]
+[ext_resource type="PackedScene" uid="uid://co80mntjp3do1" path="res://scenes/Menu/pause_menu.tscn" id="4_o7j4k"]
 [ext_resource type="PackedScene" uid="uid://do837vmw1704k" path="res://scenes/klocki/ziemia-02.tscn" id="6_4yk0h"]
 [ext_resource type="PackedScene" uid="uid://bfagaha123uwa" path="res://scenes/podłoże.tscn" id="7_vmrhw"]
 [ext_resource type="PackedScene" uid="uid://dlxthme1lexwh" path="res://scenes/klocki/blokada.tscn" id="8_cfnpk"]
@@ -37,6 +38,13 @@ position = Vector2(738, 1693)
 
 [node name="level_up" parent="." unique_id=1647793945 instance=ExtResource("26_i3rdk")]
 position = Vector2(22619, -110)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1072765027]
+
+[node name="PauseMenu" parent="CanvasLayer" unique_id=945622167 instance=ExtResource("4_o7j4k")]
+offset_left = 63.0
+offset_top = 4.0
+offset_bottom = -1.0
 
 [node name="kolce" type="Node" parent="." unique_id=1134684190]
 
