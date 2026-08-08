@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://18tp1yw5tvid" path="res://scenes/kill_zone.tscn" id="2_g2h2n"]
 [ext_resource type="PackedScene" uid="uid://bfagaha123uwa" path="res://scenes/podłoże.tscn" id="3_ra442"]
 [ext_resource type="PackedScene" uid="uid://dlxthme1lexwh" path="res://scenes/klocki/blokada.tscn" id="4_fiq81"]
+[ext_resource type="PackedScene" uid="uid://co80mntjp3do1" path="res://scenes/Menu/pause_menu.tscn" id="5_l37oo"]
 
 [node name="game" type="Node2D" unique_id=2147134106]
 
@@ -21,3 +22,7 @@ position = Vector2(2902, 1180)
 
 [node name="Podloga" parent="." unique_id=261594933 instance=ExtResource("4_fiq81")]
 position = Vector2(703, -151)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2018574627]
+
+[node name="PauseMenu" parent="CanvasLayer" unique_id=945622167 instance=ExtResource("5_l37oo")]

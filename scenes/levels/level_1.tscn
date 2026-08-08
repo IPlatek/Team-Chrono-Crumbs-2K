@@ -39,12 +39,10 @@ position = Vector2(738, 1693)
 [node name="level_up" parent="." unique_id=1647793945 instance=ExtResource("26_i3rdk")]
 position = Vector2(22619, -110)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1072765027]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=273900403]
 
 [node name="PauseMenu" parent="CanvasLayer" unique_id=945622167 instance=ExtResource("4_o7j4k")]
-offset_left = 63.0
-offset_top = 4.0
-offset_bottom = -1.0
+offset_left = -52.0
 
 [node name="kolce" type="Node" parent="." unique_id=1134684190]
 
