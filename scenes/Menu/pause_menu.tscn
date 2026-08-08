@@ -97,7 +97,8 @@ text = "Restart"
 [node name="Levels" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1801402171]
 layout_mode = 2
 size_flags_horizontal = 4
-text = "Quit
+text = "Levels
+
 "
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1600336349]

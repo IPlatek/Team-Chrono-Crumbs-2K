@@ -17,7 +17,6 @@ func resume():
 func pause():
 	print("pause")
 	show()
-	print("Visible:", visible)
 	#$AnimationPlayer.play("blur")
 	get_tree().paused = true
 	
@@ -42,6 +41,8 @@ func _on_reset_pressed() -> void:
 
 func _on_levels_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/Menu/levels.tscn")
+	print("w pełni dizłam")
+	
 
 
 
