@@ -1,11 +1,17 @@
 [gd_scene format=3 uid="uid://g082iq7scbhi"]
 
 [ext_resource type="Script" uid="uid://taix5lgkqhes" path="res://scripts/main_menu.gd" id="1_k0vh8"]
-[ext_resource type="Texture2D" uid="uid://bbdihh5rj4np3" path="res://assets/Menu/Tło_menu.jpg" id="2_2itis"]
-[ext_resource type="Texture2D" uid="uid://dgb0kcwq7bupk" path="res://assets/Menu/Przycisk_graj.png" id="2_ymy3e"]
-[ext_resource type="Texture2D" uid="uid://brgykq507k1i1" path="res://assets/Menu/Przycisk_opcjie.png" id="4_n6xgq"]
-[ext_resource type="Texture2D" uid="uid://cof2j14dpv1o" path="res://assets/Menu/Przycisk_kredyty.png" id="5_akboc"]
-[ext_resource type="Texture2D" uid="uid://bvp4vayg71bt3" path="res://assets/Menu/Przycisk_wyjscie.png" id="6_xvd5r"]
+[ext_resource type="Texture2D" uid="uid://ecoyam2rqtnd" path="res://assets/Menu/menu background.png" id="2_2itis"]
+[ext_resource type="Texture2D" uid="uid://cg2kmbvsldh2f" path="res://assets/Menu/guzik_2.png" id="3_n6xgq"]
+[ext_resource type="FontFile" uid="uid://y0ftwckxcyqc" path="res://assets/fonts/Rayman2-regular.ttf" id="4_akboc"]
+[ext_resource type="Texture2D" uid="uid://66eafxwrqup2" path="res://assets/Menu/pressed.png" id="4_xvd5r"]
+[ext_resource type="Texture2D" uid="uid://c4ys6gaatnx58" path="res://assets/Menu/guzik_hover.png" id="5_gs3bo"]
+[ext_resource type="Texture2D" uid="uid://bxfp14dkfqcjn" path="res://assets/Menu/mini.png" id="7_xvd5r"]
+[ext_resource type="Texture2D" uid="uid://cvg0psf10lbiy" path="res://assets/Menu/mini_pressed.png" id="8_gs3bo"]
+[ext_resource type="Texture2D" uid="uid://cld4flwho1a3" path="res://assets/Menu/mini_hover.png" id="9_1omn4"]
+
+[sub_resource type="FontVariation" id="FontVariation_xvd5r"]
+base_font = ExtResource("4_akboc")
 
 [node name="Main menu" type="Node2D" unique_id=316407994]
 script = ExtResource("1_k0vh8")
@@ -13,8 +19,8 @@ metadata/_edit_horizontal_guides_ = [350.0, 490.0, 540.0, 680.0, 730.0, 870.0]
 metadata/_edit_vertical_guides_ = [940.0, 610.0, 1310.0, 980.0]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1184193177]
-position = Vector2(962.5, 504)
-scale = Vector2(1.917, 1)
+position = Vector2(912, 549)
+scale = Vector2(1.0539571, 1)
 texture = ExtResource("2_2itis")
 
 [node name="Button_menager" type="Control" parent="." unique_id=8647330]
@@ -29,7 +35,20 @@ offset_left = 610.0
 offset_top = 350.0
 offset_right = 1310.0
 offset_bottom = 490.0
-texture_normal = ExtResource("2_ymy3e")
+texture_normal = ExtResource("3_n6xgq")
+texture_pressed = ExtResource("4_xvd5r")
+texture_hover = ExtResource("5_gs3bo")
+
+[node name="Label" type="Label" parent="Button_menager/Start" unique_id=837701769]
+layout_mode = 0
+offset_right = 700.0
+offset_bottom = 140.0
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
+theme_override_fonts/font = SubResource("FontVariation_xvd5r")
+theme_override_font_sizes/font_size = 90
+text = "Play"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Options" type="TextureButton" parent="Button_menager" unique_id=1770078330]
 layout_mode = 0
@@ -37,15 +56,41 @@ offset_left = 610.0
 offset_top = 540.0
 offset_right = 1310.0
 offset_bottom = 680.0
-texture_normal = ExtResource("4_n6xgq")
+texture_normal = ExtResource("3_n6xgq")
+texture_pressed = ExtResource("4_xvd5r")
+texture_hover = ExtResource("5_gs3bo")
+
+[node name="Label" type="Label" parent="Button_menager/Options" unique_id=1981542891]
+layout_mode = 0
+offset_right = 700.0
+offset_bottom = 140.0
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
+theme_override_fonts/font = SubResource("FontVariation_xvd5r")
+theme_override_font_sizes/font_size = 90
+text = "Options"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Credits" type="TextureButton" parent="Button_menager" unique_id=435040355]
 layout_mode = 0
 offset_left = 610.0
 offset_top = 730.0
-offset_right = 940.0
+offset_right = 1310.0
 offset_bottom = 870.0
-texture_normal = ExtResource("5_akboc")
+texture_normal = ExtResource("7_xvd5r")
+texture_pressed = ExtResource("8_gs3bo")
+texture_hover = ExtResource("9_1omn4")
+
+[node name="Label" type="Label" parent="Button_menager/Credits" unique_id=1810941933]
+layout_mode = 0
+offset_right = 331.0
+offset_bottom = 140.0
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
+theme_override_fonts/font = SubResource("FontVariation_xvd5r")
+theme_override_font_sizes/font_size = 70
+text = "Credits"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Quit" type="TextureButton" parent="Button_menager" unique_id=630380766]
 layout_mode = 0
@@ -53,7 +98,20 @@ offset_left = 980.0
 offset_top = 730.0
 offset_right = 1310.0
 offset_bottom = 870.0
-texture_normal = ExtResource("6_xvd5r")
+texture_normal = ExtResource("7_xvd5r")
+texture_pressed = ExtResource("8_gs3bo")
+texture_hover = ExtResource("9_1omn4")
+
+[node name="Label" type="Label" parent="Button_menager/Quit" unique_id=1773970200]
+layout_mode = 0
+offset_right = 331.0
+offset_bottom = 140.0
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
+theme_override_fonts/font = SubResource("FontVariation_xvd5r")
+theme_override_font_sizes/font_size = 70
+text = "Quit"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="Button_menager/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Button_menager/Options" to="." method="_on_options_pressed"]

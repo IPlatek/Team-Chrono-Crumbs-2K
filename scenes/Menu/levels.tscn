@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://dbv1drmj3nn3v"]
 
 [ext_resource type="Script" uid="uid://dtmrvhk51ive8" path="res://scripts/levels_List.gd" id="1_ixtga"]
-[ext_resource type="Texture2D" uid="uid://b3gyjarq8tuvg" path="res://assets/Menu/lvls.png" id="1_vrfjv"]
+[ext_resource type="Texture2D" uid="uid://ecoyam2rqtnd" path="res://assets/Menu/menu background.png" id="2_ixtga"]
 
 [node name="Levels List" type="Node2D" unique_id=370848893]
 script = ExtResource("1_ixtga")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=814430448]
-position = Vector2(962.00006, 547.5)
-scale = Vector2(1.9530612, 1.9727768)
-texture = ExtResource("1_vrfjv")
+position = Vector2(959.99994, 542)
+scale = Vector2(0.75, 0.75277776)
+texture = ExtResource("2_ixtga")
 
 [node name="Button_menager" type="Control" parent="." unique_id=1270754883]
 layout_mode = 3

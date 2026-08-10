@@ -258,6 +258,7 @@ rotation = 0.24587618
 scale = Vector2(1.3613102, 1.3169646)
 
 [node name="Trawa10" parent="platformy" unique_id=1057170615 instance=ExtResource("17_2to4m")]
+z_index = 1
 position = Vector2(7738, -570)
 scale = Vector2(1.4542748, 0.9267592)
 
@@ -267,18 +268,22 @@ rotation = 1.5713699
 scale = Vector2(0.71959347, 0.5090705)
 
 [node name="Trawa20" parent="platformy" unique_id=1607599370 instance=ExtResource("17_2to4m")]
+z_index = 1
 position = Vector2(7089.0005, -3239)
 scale = Vector2(0.84828854, 0.7134918)
 
 [node name="Trawa19" parent="platformy" unique_id=880024433 instance=ExtResource("17_2to4m")]
+z_index = 1
 position = Vector2(8062.0005, -2617)
 scale = Vector2(0.56120664, 0.58235306)
 
 [node name="Trawa18" parent="platformy" unique_id=866342467 instance=ExtResource("17_2to4m")]
+z_index = 1
 position = Vector2(7163, -2110)
 scale = Vector2(1.4287114, 0.7631206)
 
 [node name="Trawa9" parent="platformy" unique_id=1420668408 instance=ExtResource("17_2to4m")]
+z_index = 1
 position = Vector2(6172, 405)
 scale = Vector2(1.1349596, 1.078904)
 
@@ -286,26 +291,33 @@ scale = Vector2(1.1349596, 1.078904)
 position = Vector2(3781, -1002.35)
 
 [node name="Trawa8" parent="platformy" unique_id=1233229704 instance=ExtResource("17_2to4m")]
+z_index = 1
 position = Vector2(6817, -54)
 scale = Vector2(1.1165199, 1.0824034)
 
 [node name="Trawa7" parent="platformy" unique_id=1742548952 instance=ExtResource("17_2to4m")]
+z_index = 1
 position = Vector2(5066, 913.00006)
 scale = Vector2(1.289, 1.5)
 
 [node name="Trawa13" parent="platformy" unique_id=108090800 instance=ExtResource("17_2to4m")]
+z_index = 1
 position = Vector2(3144, -933)
 
 [node name="Trawa12" parent="platformy" unique_id=401760620 instance=ExtResource("17_2to4m")]
+z_index = 1
 position = Vector2(4481, -933)
 
 [node name="Trawa11" parent="platformy" unique_id=1515304657 instance=ExtResource("17_2to4m")]
+z_index = 1
 position = Vector2(5480, -434)
 
 [node name="Trawa15" parent="platformy" unique_id=1556221494 instance=ExtResource("17_2to4m")]
+z_index = 1
 position = Vector2(9312, -982)
 
 [node name="Trawa16" parent="platformy" unique_id=1408842427 instance=ExtResource("17_2to4m")]
+z_index = 1
 position = Vector2(8802, 249)
 
 [node name="Trawa17" parent="platformy" unique_id=843508325 instance=ExtResource("17_2to4m")]
@@ -341,18 +353,23 @@ position = Vector2(5790, -2956)
 scale = Vector2(1.4605932, 1.5994836)
 
 [node name="Trawa29" parent="platformy" unique_id=1166475569 instance=ExtResource("17_2to4m")]
+z_index = 1
 position = Vector2(10923, -509)
 
 [node name="Trawa28" parent="platformy" unique_id=976217264 instance=ExtResource("17_2to4m")]
+z_index = 1
 position = Vector2(11649, 418)
 
 [node name="Trawa34" parent="platformy" unique_id=1538790496 instance=ExtResource("17_2to4m")]
+z_index = 1
 position = Vector2(10266, 553)
 
 [node name="Trawa35" parent="platformy" unique_id=2087907196 instance=ExtResource("17_2to4m")]
+z_index = 1
 position = Vector2(12565, -342)
 
 [node name="Trawa36" parent="platformy" unique_id=1067107954 instance=ExtResource("17_2to4m")]
+z_index = 1
 position = Vector2(13181, 640)
 
 [node name="Grzyby" type="Node" parent="." unique_id=1166473226]
@@ -420,10 +437,12 @@ position = Vector2(20621, 111)
 scroll_scale = Vector2(1.5, 1)
 
 [node name="Trawa00" type="Sprite2D" parent="background_pierdoły/front_dół" unique_id=176540039]
+z_index = 6
 position = Vector2(310, 1220)
 texture = ExtResource("20_dwx2n")
 
 [node name="Trawa04" type="Sprite2D" parent="background_pierdoły/front_dół" unique_id=759145671]
+z_index = 1
 position = Vector2(-1870, 1209)
 texture = ExtResource("20_dwx2n")
 
@@ -482,6 +501,7 @@ texture = ExtResource("23_wk6bc")
 scroll_scale = Vector2(2, 1)
 
 [node name="JakieśCoś" type="Sprite2D" parent="background_pierdoły/front_koniec" unique_id=1788705272]
+z_index = 2
 position = Vector2(27888, -844.9999)
 scale = Vector2(9.52957, 6.8166666)
 texture = ExtResource("22_ovy75")
