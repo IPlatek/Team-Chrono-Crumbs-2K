@@ -18,8 +18,24 @@ func _on_level_1_pressed() -> void:
 
 
 func _on_level_2_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/levels/level_2.tscn")
-	print("klikniete")
+	var file = "userdata.json"
+	var json_as_text = FileAccess.get_file_as_string(file)
+	#otwieranmy jsnona
+	var json_as_dict = JSON.parse_string(json_as_text)
+	#konwertujemy go znowy na diconary idk czy może bez tego ale tak zuiała to nie ruszam
+	var level = json_as_dict["Poziom"]
+	#znajdujemy jaki mamy lvl
+	
+	print(json_as_dict)
+	print(level)
+	#to dla testu
+	
+	if(level != 2):
+		print("Żeby osiągnąc 2 level najpier przejdzi pierwszy")
+	else:
+		get_tree().change_scene_to_file("res://scenes/levels/level_2.tscn")
+		print("klikniete i osiognsiągnieto pierwszy level")
+	#jak ma nie am 2 levelu tyo ine może wejść
 
 
 func _on_back_pressed() -> void:
