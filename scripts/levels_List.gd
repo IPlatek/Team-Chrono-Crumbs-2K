@@ -4,6 +4,16 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	get_tree().paused = false
+	var file = "userdata.json"
+	var json_as_text = FileAccess.get_file_as_string(file)
+	var json_as_dict = JSON.parse_string(json_as_text)
+	var level = json_as_dict["Poziom"]
+	if(level < 2):
+		$Button_menager/Blocked_2.visible = true
+	elif(level == 2):
+		$Button_menager/Blocked_2.visible = false
+	else:
+		$Button_menager/Blocked_2.visible = false
 	pass
 
 
@@ -30,7 +40,7 @@ func _on_level_2_pressed() -> void:
 	print(level)
 	#to dla testu
 	
-	if(level != 2):
+	if(level < 2):
 		print("Żeby osiągnąc 2 level najpier przejdzi pierwszy")
 	else:
 		get_tree().change_scene_to_file("res://scenes/levels/level_2.tscn")

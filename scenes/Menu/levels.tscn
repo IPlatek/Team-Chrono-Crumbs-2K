@@ -2,9 +2,15 @@
 
 [ext_resource type="Script" uid="uid://dtmrvhk51ive8" path="res://scripts/levels_List.gd" id="1_ixtga"]
 [ext_resource type="Texture2D" uid="uid://ecoyam2rqtnd" path="res://assets/Menu/menu background.png" id="2_ixtga"]
+[ext_resource type="Texture2D" uid="uid://v3fem5gi4p2p" path="res://assets/Menu/Level_1.png" id="3_0x38t"]
+[ext_resource type="Texture2D" uid="uid://cu3fdkctrji7" path="res://assets/Menu/Level_2.png" id="4_0rckg"]
+[ext_resource type="Texture2D" uid="uid://bevrs0m038jt8" path="res://assets/Menu/go_back.png" id="5_s3vrn"]
+[ext_resource type="Texture2D" uid="uid://bygmhm4qojgn1" path="res://assets/Menu/blocked.png" id="6_y7ldg"]
 
 [node name="Levels List" type="Node2D" unique_id=370848893]
 script = ExtResource("1_ixtga")
+metadata/_edit_vertical_guides_ = [510.0, 1410.0, 610.0, 1310.0]
+metadata/_edit_horizontal_guides_ = [100.0, 300.0, 400.0, 600.0, 550.0, 750.0]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=814430448]
 position = Vector2(959.99994, 542)
@@ -14,35 +20,38 @@ texture = ExtResource("2_ixtga")
 [node name="Button_menager" type="Control" parent="." unique_id=1270754883]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 1920.0
+offset_left = 1.0
+offset_right = 1921.0
 offset_bottom = 1080.0
 
-[node name="Level 1" type="Button" parent="Button_menager" unique_id=2129867325]
+[node name="Level 1" type="TextureButton" parent="Button_menager" unique_id=1045813681]
 layout_mode = 0
-offset_left = 603.0
-offset_top = 319.0
-offset_right = 1355.0
-offset_bottom = 469.0
-theme_override_font_sizes/font_size = 42
-text = "Lvl 1"
+offset_left = 609.0
+offset_top = 400.0
+offset_right = 1309.0
+offset_bottom = 550.0
+texture_normal = ExtResource("3_0x38t")
 
-[node name="Level 2" type="Button" parent="Button_menager" unique_id=783669402]
+[node name="Level 2" type="TextureButton" parent="Button_menager" unique_id=763199602]
 layout_mode = 0
-offset_left = 592.0
-offset_top = 533.0
-offset_right = 1354.0
-offset_bottom = 670.0
-theme_override_font_sizes/font_size = 42
-text = "Lvl 2"
+offset_left = 609.0
+offset_top = 600.0
+offset_right = 1309.0
+offset_bottom = 750.0
+texture_normal = ExtResource("4_0rckg")
 
-[node name="BACK" type="Button" parent="Button_menager" unique_id=1941853812]
+[node name="BACK" type="TextureButton" parent="Button_menager" unique_id=1808775524]
 layout_mode = 0
-offset_left = 262.0
-offset_top = 69.0
-offset_right = 1685.0
-offset_bottom = 283.0
-theme_override_font_sizes/font_size = 64
-text = "Go Back"
+offset_left = 510.0
+offset_top = 100.0
+offset_right = 1410.0
+offset_bottom = 300.0
+texture_normal = ExtResource("5_s3vrn")
+
+[node name="Blocked_2" type="Sprite2D" parent="Button_menager" unique_id=344885387]
+position = Vector2(1302.25, 611.125)
+scale = Vector2(0.7410717, 0.67690057)
+texture = ExtResource("6_y7ldg")
 
 [connection signal="pressed" from="Button_menager/Level 1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="Button_menager/Level 2" to="." method="_on_level_2_pressed"]
