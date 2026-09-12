@@ -498,7 +498,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ndqbq"]
-size = Vector2(199.875, 100)
+size = Vector2(199.875, 102)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dy6ds"]
 radius = 52.009613
@@ -512,6 +512,7 @@ script = ExtResource("1_7333i")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1087078570]
 position = Vector2(-8, -137)
 zoom = Vector2(0.8, 0.8)
+process_callback = 0
 limit_bottom = 1500
 position_smoothing_enabled = true
 position_smoothing_speed = 2.0
@@ -530,7 +531,7 @@ speed_scale = 0.5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=936137006]
 visibility_layer = 2
-position = Vector2(4.9375, -8)
+position = Vector2(4.9375, -9)
 shape = SubResource("RectangleShape2D_ndqbq")
 
 [node name="dash_timer" type="Timer" parent="." unique_id=767390536]

@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://bhp04cesevmhr"]
+
+[ext_resource type="Script" uid="uid://u7vj6prinkn2" path="res://scripts/boss_attack.gd" id="1_y7i8w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ai1g"]
+size = Vector2(1000, 50)
+
+[node name="Boss_attack" type="Area2D" unique_id=2074761095]
+script = ExtResource("1_y7i8w")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1728096032]
+color = Color(0.6911139, 2.4787337e-06, 4.813075e-07, 1)
+polygon = PackedVector2Array(0, 0, 0, 50, 63000, 50, 63000, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=651661543]
+position = Vector2(31500.002, 25)
+scale = Vector2(63, 1)
+shape = SubResource("RectangleShape2D_3ai1g")
+debug_color = Color(0.7482946, 0, 0.110273175, 0.41960785)
+
+[node name="defuse" type="Timer" parent="." unique_id=2004277595]
+one_shot = true
+
+[node name="attack" type="Timer" parent="." unique_id=553782100]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="defuse" to="." method="_on_defuse_timeout"]
+[connection signal="timeout" from="attack" to="." method="_on_attack_timeout"]

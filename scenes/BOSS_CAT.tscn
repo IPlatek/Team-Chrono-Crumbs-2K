@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bna1hebdduaju"]
+
+[ext_resource type="Texture2D" uid="uid://cx5qvxj5s47ls" path="res://assets/sprites/asset_map/kot_zły.png" id="1_8pg5k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ljuyo"]
+size = Vector2(106, 343)
+
+[sub_resource type="GDScript" id="GDScript_8pg5k"]
+resource_name = "boss_hurt_box"
+script/source = "extends Area2D
+
+@export var health := 1
+
+
+func _on_area_entered(area: Area2D) -> void:
+	if area.is_in_group(\"player_attack\"):
+		print(\"hit\")
+		get_tree().change_scene_to_file(\"res://scenes/levels/level_1.tscn\")
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8pg5k"]
+size = Vector2(609, 781)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1510778250]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1018292489]
+position = Vector2(-27, 161.5)
+shape = SubResource("RectangleShape2D_ljuyo")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=4160260]
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("1_8pg5k")
+
+[node name="hit_box" type="Area2D" parent="." unique_id=701436522]
+script = SubResource("GDScript_8pg5k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hit_box" unique_id=2104065535]
+position = Vector2(-52.5, 78.5)
+shape = SubResource("RectangleShape2D_8pg5k")
+debug_color = Color(0.19123933, 0.6422169, 0, 0.41960785)
+
+[connection signal="area_entered" from="hit_box" to="hit_box" method="_on_area_entered"]
