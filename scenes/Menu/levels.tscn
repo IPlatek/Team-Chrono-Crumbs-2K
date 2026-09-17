@@ -40,6 +40,24 @@ offset_right = 1309.0
 offset_bottom = 750.0
 texture_normal = ExtResource("4_0rckg")
 
+[node name="Level 3" type="Button" parent="Button_menager" unique_id=2033801501]
+layout_mode = 0
+offset_left = 613.0
+offset_top = 782.0
+offset_right = 1314.0
+offset_bottom = 951.0
+theme_override_font_sizes/font_size = 75
+text = "Level 3"
+
+[node name="Boss" type="Button" parent="Button_menager" unique_id=891966639]
+layout_mode = 0
+offset_left = 1372.0
+offset_top = 786.0
+offset_right = 1868.0
+offset_bottom = 955.0
+theme_override_font_sizes/font_size = 75
+text = "Boss Fight"
+
 [node name="BACK" type="TextureButton" parent="Button_menager" unique_id=1808775524]
 layout_mode = 0
 offset_left = 510.0
@@ -55,4 +73,6 @@ texture = ExtResource("6_y7ldg")
 
 [connection signal="pressed" from="Button_menager/Level 1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="Button_menager/Level 2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="Button_menager/Level 3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="Button_menager/Boss" to="." method="_on_boss_pressed"]
 [connection signal="pressed" from="Button_menager/BACK" to="." method="_on_back_pressed"]

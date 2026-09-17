@@ -1,0 +1,512 @@
+[gd_scene format=3 uid="uid://ud0j2qd56nl7"]
+
+[ext_resource type="PackedScene" uid="uid://duy6pv5dquk8a" path="res://assets/Gracz 1/Idle_cat.tscn" id="1_h7g2j"]
+[ext_resource type="PackedScene" uid="uid://co80mntjp3do1" path="res://scenes/Menu/pause_menu.tscn" id="2_kh8wv"]
+[ext_resource type="PackedScene" uid="uid://dlxthme1lexwh" path="res://scenes/klocki/blokada.tscn" id="3_v0csc"]
+[ext_resource type="PackedScene" uid="uid://bfagaha123uwa" path="res://scenes/podłoże.tscn" id="4_sy285"]
+[ext_resource type="PackedScene" uid="uid://bhp04cesevmhr" path="res://scenes/boss_attack.tscn" id="5_1h1ve"]
+[ext_resource type="PackedScene" uid="uid://bna1hebdduaju" path="res://scenes/BOSS_CAT.tscn" id="6_a1e3b"]
+[ext_resource type="PackedScene" uid="uid://cr0frcp7tm3bq" path="res://scenes/klocki/platforma.tscn" id="7_1hqi6"]
+[ext_resource type="PackedScene" uid="uid://g00li45uytj5" path="res://scenes/spikes.tscn" id="8_xbf0g"]
+[ext_resource type="PackedScene" uid="uid://ba6ofpmvc66ds" path="res://scenes/pal.tscn" id="9_v5n82"]
+[ext_resource type="PackedScene" uid="uid://ddyolwk2jwdl" path="res://scenes/klocki/trawa-01.tscn" id="10_dhgu6"]
+[ext_resource type="PackedScene" uid="uid://bcxj1bkq7f4ro" path="res://scenes/klocki/trawa.tscn" id="11_r2vbx"]
+[ext_resource type="PackedScene" uid="uid://d2ofgod1pvt78" path="res://scenes/level_up.tscn" id="12_3i8rq"]
+
+[node name="boss" type="Node2D" unique_id=230621529]
+metadata/_edit_vertical_guides_ = [65690.0]
+
+[node name="Player 1" parent="." unique_id=1421348436 instance=ExtResource("1_h7g2j")]
+position = Vector2(1271, 939)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=888993124]
+
+[node name="PauseMenu" parent="CanvasLayer" unique_id=945622167 instance=ExtResource("2_kh8wv")]
+offset_left = 263.0
+offset_top = 271.0
+offset_right = 263.0
+offset_bottom = 271.0
+metadata/_edit_use_anchors_ = true
+
+[node name="blokada" parent="CanvasLayer" unique_id=261594933 instance=ExtResource("3_v0csc")]
+position = Vector2(929, 701)
+
+[node name="blokada2" parent="CanvasLayer" unique_id=1581650525 instance=ExtResource("3_v0csc")]
+position = Vector2(67236, 691)
+
+[node name="podłoże" type="Node" parent="." unique_id=1748036755]
+
+[node name="Podłoże_ziemia3" parent="podłoże" unique_id=439224959 instance=ExtResource("4_sy285")]
+position = Vector2(5299, 1458)
+
+[node name="Podłoże_ziemia4" parent="podłoże" unique_id=1876207340 instance=ExtResource("4_sy285")]
+position = Vector2(7418, 1458)
+
+[node name="Podłoże_ziemia" parent="podłoże" unique_id=1472416613 instance=ExtResource("4_sy285")]
+position = Vector2(1061, 1458)
+
+[node name="Podłoże_ziemia9" parent="podłoże" unique_id=1664271744 instance=ExtResource("4_sy285")]
+position = Vector2(22251, 1458)
+
+[node name="Podłoże_ziemia10" parent="podłoże" unique_id=48902018 instance=ExtResource("4_sy285")]
+position = Vector2(24370, 1458)
+
+[node name="Podłoże_ziemia11" parent="podłoże" unique_id=451064237 instance=ExtResource("4_sy285")]
+position = Vector2(18013, 1458)
+
+[node name="Podłoże_ziemia12" parent="podłoże" unique_id=841524730 instance=ExtResource("4_sy285")]
+position = Vector2(20132, 1458)
+
+[node name="Podłoże_ziemia13" parent="podłoże" unique_id=741883055 instance=ExtResource("4_sy285")]
+position = Vector2(30727, 1458)
+
+[node name="Podłoże_ziemia14" parent="podłoże" unique_id=170286525 instance=ExtResource("4_sy285")]
+position = Vector2(32846, 1458)
+
+[node name="Podłoże_ziemia15" parent="podłoże" unique_id=783675801 instance=ExtResource("4_sy285")]
+position = Vector2(26489, 1458)
+
+[node name="Podłoże_ziemia16" parent="podłoże" unique_id=8179332 instance=ExtResource("4_sy285")]
+position = Vector2(28608, 1458)
+
+[node name="Podłoże_ziemia2" parent="podłoże" unique_id=674758609 instance=ExtResource("4_sy285")]
+position = Vector2(3180, 1458)
+
+[node name="Podłoże_ziemia5" parent="podłoże" unique_id=837942012 instance=ExtResource("4_sy285")]
+position = Vector2(13775, 1458)
+
+[node name="Podłoże_ziemia6" parent="podłoże" unique_id=1336907116 instance=ExtResource("4_sy285")]
+position = Vector2(15894, 1458)
+
+[node name="Podłoże_ziemia7" parent="podłoże" unique_id=696722292 instance=ExtResource("4_sy285")]
+position = Vector2(9537, 1458)
+
+[node name="Podłoże_ziemia17" parent="podłoże" unique_id=864088965 instance=ExtResource("4_sy285")]
+position = Vector2(39203, 1458)
+
+[node name="Podłoże_ziemia18" parent="podłoże" unique_id=443639536 instance=ExtResource("4_sy285")]
+position = Vector2(41322, 1458)
+
+[node name="Podłoże_ziemia19" parent="podłoże" unique_id=1396863075 instance=ExtResource("4_sy285")]
+position = Vector2(34965, 1458)
+
+[node name="Podłoże_ziemia20" parent="podłoże" unique_id=1380371345 instance=ExtResource("4_sy285")]
+position = Vector2(56155, 1458)
+
+[node name="Podłoże_ziemia21" parent="podłoże" unique_id=1084045733 instance=ExtResource("4_sy285")]
+position = Vector2(58274, 1458)
+
+[node name="Podłoże_ziemia22" parent="podłoże" unique_id=1588429330 instance=ExtResource("4_sy285")]
+position = Vector2(51917, 1458)
+
+[node name="Podłoże_ziemia23" parent="podłoże" unique_id=1868825692 instance=ExtResource("4_sy285")]
+position = Vector2(54036, 1458)
+
+[node name="Podłoże_ziemia24" parent="podłoże" unique_id=627661583 instance=ExtResource("4_sy285")]
+position = Vector2(64631, 1458)
+
+[node name="Podłoże_ziemia25" parent="podłoże" unique_id=42318128 instance=ExtResource("4_sy285")]
+position = Vector2(66750, 1458)
+
+[node name="Podłoże_ziemia26" parent="podłoże" unique_id=498894859 instance=ExtResource("4_sy285")]
+position = Vector2(60393, 1458)
+
+[node name="Podłoże_ziemia27" parent="podłoże" unique_id=1732921855 instance=ExtResource("4_sy285")]
+position = Vector2(62512, 1458)
+
+[node name="Podłoże_ziemia28" parent="podłoże" unique_id=632787667 instance=ExtResource("4_sy285")]
+position = Vector2(37084, 1458)
+
+[node name="Podłoże_ziemia29" parent="podłoże" unique_id=110924320 instance=ExtResource("4_sy285")]
+position = Vector2(47679, 1458)
+
+[node name="Podłoże_ziemia30" parent="podłoże" unique_id=92833322 instance=ExtResource("4_sy285")]
+position = Vector2(49798, 1458)
+
+[node name="Podłoże_ziemia31" parent="podłoże" unique_id=1310853968 instance=ExtResource("4_sy285")]
+position = Vector2(43441, 1458)
+
+[node name="Podłoże_ziemia32" parent="podłoże" unique_id=958045305 instance=ExtResource("4_sy285")]
+position = Vector2(45560, 1458)
+
+[node name="Podłoże_ziemia8" parent="podłoże" unique_id=2075830824 instance=ExtResource("4_sy285")]
+position = Vector2(11656, 1458)
+
+[node name="podłoże2" type="Node" parent="." unique_id=137470639]
+
+[node name="Podłoże_ziemia3" parent="podłoże2" unique_id=369074769 instance=ExtResource("4_sy285")]
+position = Vector2(5299, -150)
+
+[node name="Podłoże_ziemia4" parent="podłoże2" unique_id=1352652904 instance=ExtResource("4_sy285")]
+position = Vector2(7418, -150)
+
+[node name="Podłoże_ziemia" parent="podłoże2" unique_id=787534390 instance=ExtResource("4_sy285")]
+position = Vector2(1061, -150)
+
+[node name="Podłoże_ziemia9" parent="podłoże2" unique_id=529226293 instance=ExtResource("4_sy285")]
+position = Vector2(22251, -150)
+
+[node name="Podłoże_ziemia10" parent="podłoże2" unique_id=421128661 instance=ExtResource("4_sy285")]
+position = Vector2(24370, -150)
+
+[node name="Podłoże_ziemia11" parent="podłoże2" unique_id=2044097361 instance=ExtResource("4_sy285")]
+position = Vector2(18013, -150)
+
+[node name="Podłoże_ziemia12" parent="podłoże2" unique_id=1257567423 instance=ExtResource("4_sy285")]
+position = Vector2(20132, -150)
+
+[node name="Podłoże_ziemia13" parent="podłoże2" unique_id=1238370058 instance=ExtResource("4_sy285")]
+position = Vector2(30727, -150)
+
+[node name="Podłoże_ziemia14" parent="podłoże2" unique_id=1389696611 instance=ExtResource("4_sy285")]
+position = Vector2(32846, -150)
+
+[node name="Podłoże_ziemia15" parent="podłoże2" unique_id=770071361 instance=ExtResource("4_sy285")]
+position = Vector2(26489, -150)
+
+[node name="Podłoże_ziemia16" parent="podłoże2" unique_id=883891327 instance=ExtResource("4_sy285")]
+position = Vector2(28608, -150)
+
+[node name="Podłoże_ziemia2" parent="podłoże2" unique_id=944151470 instance=ExtResource("4_sy285")]
+position = Vector2(3180, -150)
+
+[node name="Podłoże_ziemia5" parent="podłoże2" unique_id=846082967 instance=ExtResource("4_sy285")]
+position = Vector2(13775, -150)
+
+[node name="Podłoże_ziemia6" parent="podłoże2" unique_id=2062177528 instance=ExtResource("4_sy285")]
+position = Vector2(15894, -150)
+
+[node name="Podłoże_ziemia7" parent="podłoże2" unique_id=1693061512 instance=ExtResource("4_sy285")]
+position = Vector2(9537, -150)
+
+[node name="Podłoże_ziemia17" parent="podłoże2" unique_id=407181711 instance=ExtResource("4_sy285")]
+position = Vector2(39203, -150)
+
+[node name="Podłoże_ziemia18" parent="podłoże2" unique_id=1921056160 instance=ExtResource("4_sy285")]
+position = Vector2(41322, -150)
+
+[node name="Podłoże_ziemia19" parent="podłoże2" unique_id=719655922 instance=ExtResource("4_sy285")]
+position = Vector2(34965, -150)
+
+[node name="Podłoże_ziemia20" parent="podłoże2" unique_id=460352665 instance=ExtResource("4_sy285")]
+position = Vector2(56155, -150)
+
+[node name="Podłoże_ziemia21" parent="podłoże2" unique_id=1447091125 instance=ExtResource("4_sy285")]
+position = Vector2(58274, -150)
+
+[node name="Podłoże_ziemia22" parent="podłoże2" unique_id=1846754284 instance=ExtResource("4_sy285")]
+position = Vector2(51917, -150)
+
+[node name="Podłoże_ziemia23" parent="podłoże2" unique_id=746913487 instance=ExtResource("4_sy285")]
+position = Vector2(54036, -150)
+
+[node name="Podłoże_ziemia24" parent="podłoże2" unique_id=11225088 instance=ExtResource("4_sy285")]
+position = Vector2(64631, -150)
+
+[node name="Podłoże_ziemia25" parent="podłoże2" unique_id=1457223383 instance=ExtResource("4_sy285")]
+position = Vector2(66750, -150)
+
+[node name="Podłoże_ziemia26" parent="podłoże2" unique_id=1067157841 instance=ExtResource("4_sy285")]
+position = Vector2(60393, -150)
+
+[node name="Podłoże_ziemia27" parent="podłoże2" unique_id=1647668486 instance=ExtResource("4_sy285")]
+position = Vector2(62512, -150)
+
+[node name="Podłoże_ziemia28" parent="podłoże2" unique_id=721897964 instance=ExtResource("4_sy285")]
+position = Vector2(37084, -150)
+
+[node name="Podłoże_ziemia29" parent="podłoże2" unique_id=926627058 instance=ExtResource("4_sy285")]
+position = Vector2(47679, -150)
+
+[node name="Podłoże_ziemia30" parent="podłoże2" unique_id=2082086528 instance=ExtResource("4_sy285")]
+position = Vector2(49798, -150)
+
+[node name="Podłoże_ziemia31" parent="podłoże2" unique_id=1869681977 instance=ExtResource("4_sy285")]
+position = Vector2(43441, -150)
+
+[node name="Podłoże_ziemia32" parent="podłoże2" unique_id=502470825 instance=ExtResource("4_sy285")]
+position = Vector2(45560, -150)
+
+[node name="Podłoże_ziemia8" parent="podłoże2" unique_id=1146794910 instance=ExtResource("4_sy285")]
+position = Vector2(11656, -150)
+
+[node name="boss_attack" type="Node" parent="." unique_id=1656462171]
+
+[node name="Boss_attack" parent="boss_attack" unique_id=2074761095 instance=ExtResource("5_1h1ve")]
+position = Vector2(2690, 947)
+
+[node name="Boss_attack2" parent="boss_attack" unique_id=1072008245 instance=ExtResource("5_1h1ve")]
+position = Vector2(2690, 440)
+
+[node name="Boss_attack3" parent="boss_attack" unique_id=1634479300 instance=ExtResource("5_1h1ve")]
+position = Vector2(2689, 658)
+
+[node name="CharacterBody2D" parent="boss_attack" unique_id=1510778250 instance=ExtResource("6_a1e3b")]
+position = Vector2(66579, 625)
+
+[node name="platformy" type="Node" parent="." unique_id=1703003050]
+
+[node name="platforma" parent="platformy" unique_id=1202420222 instance=ExtResource("7_1hqi6")]
+position = Vector2(5373, 816.00006)
+
+[node name="platforma2" parent="platformy" unique_id=828878457 instance=ExtResource("7_1hqi6")]
+position = Vector2(9580, 705)
+
+[node name="platforma3" parent="platformy" unique_id=2069732875 instance=ExtResource("7_1hqi6")]
+position = Vector2(13917, 831)
+
+[node name="platforma4" parent="platformy" unique_id=1184105417 instance=ExtResource("7_1hqi6")]
+position = Vector2(20346, 834)
+
+[node name="platforma5" parent="platformy" unique_id=517727714 instance=ExtResource("7_1hqi6")]
+position = Vector2(26220, 648)
+
+[node name="platforma6" parent="platformy" unique_id=1632821245 instance=ExtResource("7_1hqi6")]
+position = Vector2(33828, 726)
+
+[node name="platforma7" parent="platformy" unique_id=527371094 instance=ExtResource("7_1hqi6")]
+position = Vector2(40504, 827)
+
+[node name="platforma8" parent="platformy" unique_id=1366279072 instance=ExtResource("7_1hqi6")]
+position = Vector2(55005, 842)
+
+[node name="platforma9" parent="platformy" unique_id=474876068 instance=ExtResource("7_1hqi6")]
+position = Vector2(63300, 685)
+
+[node name="przeszkody" type="Node" parent="." unique_id=1080170638]
+
+[node name="kolce" type="Node" parent="przeszkody" unique_id=2137635053]
+
+[node name="Node2D" parent="przeszkody/kolce" unique_id=1581535553 instance=ExtResource("8_xbf0g")]
+position = Vector2(5974, 859)
+
+[node name="Node2D2" parent="przeszkody/kolce" unique_id=368423325 instance=ExtResource("8_xbf0g")]
+position = Vector2(9640, 878)
+
+[node name="Node2D3" parent="przeszkody/kolce" unique_id=1460795272 instance=ExtResource("8_xbf0g")]
+position = Vector2(17331, 858)
+
+[node name="Node2D4" parent="przeszkody/kolce" unique_id=861711777 instance=ExtResource("8_xbf0g")]
+position = Vector2(24559, 848)
+
+[node name="Node2D5" parent="przeszkody/kolce" unique_id=367514859 instance=ExtResource("8_xbf0g")]
+position = Vector2(33859, 417)
+
+[node name="Node2D6" parent="przeszkody/kolce" unique_id=1079276864 instance=ExtResource("8_xbf0g")]
+position = Vector2(39317, 853)
+
+[node name="Node2D7" parent="przeszkody/kolce" unique_id=783034472 instance=ExtResource("8_xbf0g")]
+position = Vector2(45565, 858)
+
+[node name="Node2D8" parent="przeszkody/kolce" unique_id=491636950 instance=ExtResource("8_xbf0g")]
+position = Vector2(59123, 858)
+
+[node name="pale" type="Node" parent="przeszkody" unique_id=267994229]
+
+[node name="pal" parent="przeszkody/pale" unique_id=376445363 instance=ExtResource("9_v5n82")]
+position = Vector2(11586, 659)
+scale = Vector2(1, 0.8)
+speed_of_spining = 100
+
+[node name="pal2" parent="przeszkody/pale" unique_id=678706632 instance=ExtResource("9_v5n82")]
+position = Vector2(50432, 659)
+scale = Vector2(1, 0.8)
+speed_of_spining = 300
+direction = -1
+
+[node name="trawa" type="Node" parent="." unique_id=1491998842]
+
+[node name="Trawa" parent="trawa" unique_id=1258978101 instance=ExtResource("10_dhgu6")]
+position = Vector2(664, 1081)
+
+[node name="Trawa2" parent="trawa" unique_id=498089600 instance=ExtResource("11_r2vbx")]
+position = Vector2(1730, 1108)
+
+[node name="Trawa3" parent="trawa" unique_id=820145378 instance=ExtResource("10_dhgu6")]
+position = Vector2(2800, 1086)
+
+[node name="Trawa4" parent="trawa" unique_id=413021929 instance=ExtResource("11_r2vbx")]
+position = Vector2(3866, 1113)
+
+[node name="Trawa5" parent="trawa" unique_id=2127072594 instance=ExtResource("10_dhgu6")]
+position = Vector2(4991, 1102)
+
+[node name="Trawa6" parent="trawa" unique_id=911335888 instance=ExtResource("11_r2vbx")]
+position = Vector2(6084, 1104)
+
+[node name="Trawa7" parent="trawa" unique_id=1823981573 instance=ExtResource("10_dhgu6")]
+position = Vector2(7154, 1082)
+
+[node name="Trawa8" parent="trawa" unique_id=1339568042 instance=ExtResource("11_r2vbx")]
+position = Vector2(8220, 1109)
+
+[node name="Trawa9" parent="trawa" unique_id=458971456 instance=ExtResource("10_dhgu6")]
+position = Vector2(9323, 1088)
+
+[node name="Trawa10" parent="trawa" unique_id=1562779497 instance=ExtResource("11_r2vbx")]
+position = Vector2(10389, 1115)
+
+[node name="Trawa11" parent="trawa" unique_id=1987607709 instance=ExtResource("10_dhgu6")]
+position = Vector2(11459, 1093)
+
+[node name="Trawa12" parent="trawa" unique_id=786285261 instance=ExtResource("11_r2vbx")]
+position = Vector2(12525, 1120)
+
+[node name="Trawa13" parent="trawa" unique_id=1297146111 instance=ExtResource("10_dhgu6")]
+position = Vector2(13650, 1109)
+
+[node name="Trawa14" parent="trawa" unique_id=1062985069 instance=ExtResource("11_r2vbx")]
+position = Vector2(14743, 1111)
+
+[node name="Trawa15" parent="trawa" unique_id=305972808 instance=ExtResource("10_dhgu6")]
+position = Vector2(15813, 1089)
+
+[node name="Trawa16" parent="trawa" unique_id=157309449 instance=ExtResource("11_r2vbx")]
+position = Vector2(16879, 1116)
+
+[node name="Trawa17" parent="trawa" unique_id=1356256342 instance=ExtResource("10_dhgu6")]
+position = Vector2(17842, 1082)
+
+[node name="Trawa18" parent="trawa" unique_id=944871867 instance=ExtResource("11_r2vbx")]
+position = Vector2(18908, 1109)
+
+[node name="Trawa19" parent="trawa" unique_id=1007963915 instance=ExtResource("10_dhgu6")]
+position = Vector2(19978, 1087)
+
+[node name="Trawa20" parent="trawa" unique_id=252148283 instance=ExtResource("11_r2vbx")]
+position = Vector2(21044, 1114)
+
+[node name="Trawa21" parent="trawa" unique_id=706270411 instance=ExtResource("10_dhgu6")]
+position = Vector2(22169, 1103)
+
+[node name="Trawa22" parent="trawa" unique_id=1716769082 instance=ExtResource("11_r2vbx")]
+position = Vector2(23262, 1105)
+
+[node name="Trawa23" parent="trawa" unique_id=615293221 instance=ExtResource("10_dhgu6")]
+position = Vector2(24332, 1083)
+
+[node name="Trawa24" parent="trawa" unique_id=1569101975 instance=ExtResource("11_r2vbx")]
+position = Vector2(25398, 1110)
+
+[node name="Trawa25" parent="trawa" unique_id=858898618 instance=ExtResource("10_dhgu6")]
+position = Vector2(26501, 1089)
+
+[node name="Trawa26" parent="trawa" unique_id=150261081 instance=ExtResource("11_r2vbx")]
+position = Vector2(27567, 1116)
+
+[node name="Trawa27" parent="trawa" unique_id=554882640 instance=ExtResource("10_dhgu6")]
+position = Vector2(28637, 1094)
+
+[node name="Trawa28" parent="trawa" unique_id=181555658 instance=ExtResource("11_r2vbx")]
+position = Vector2(29703, 1121)
+
+[node name="Trawa29" parent="trawa" unique_id=2056055370 instance=ExtResource("10_dhgu6")]
+position = Vector2(30828, 1110)
+
+[node name="Trawa30" parent="trawa" unique_id=323376605 instance=ExtResource("11_r2vbx")]
+position = Vector2(31921, 1112)
+
+[node name="Trawa31" parent="trawa" unique_id=1721744141 instance=ExtResource("10_dhgu6")]
+position = Vector2(32991, 1090)
+
+[node name="Trawa32" parent="trawa" unique_id=445740065 instance=ExtResource("11_r2vbx")]
+position = Vector2(34057, 1117)
+
+[node name="Trawa33" parent="trawa" unique_id=1731790347 instance=ExtResource("10_dhgu6")]
+position = Vector2(34976, 1088)
+
+[node name="Trawa34" parent="trawa" unique_id=120593892 instance=ExtResource("11_r2vbx")]
+position = Vector2(36042, 1115)
+
+[node name="Trawa35" parent="trawa" unique_id=2029821065 instance=ExtResource("10_dhgu6")]
+position = Vector2(37112, 1093)
+
+[node name="Trawa36" parent="trawa" unique_id=900038660 instance=ExtResource("11_r2vbx")]
+position = Vector2(38178, 1120)
+
+[node name="Trawa37" parent="trawa" unique_id=1646569721 instance=ExtResource("10_dhgu6")]
+position = Vector2(39303, 1109)
+
+[node name="Trawa38" parent="trawa" unique_id=1700190502 instance=ExtResource("11_r2vbx")]
+position = Vector2(40396, 1111)
+
+[node name="Trawa39" parent="trawa" unique_id=1809799067 instance=ExtResource("10_dhgu6")]
+position = Vector2(41466, 1089)
+
+[node name="Trawa40" parent="trawa" unique_id=1087553606 instance=ExtResource("11_r2vbx")]
+position = Vector2(42532, 1116)
+
+[node name="Trawa41" parent="trawa" unique_id=89660031 instance=ExtResource("10_dhgu6")]
+position = Vector2(43635, 1095)
+
+[node name="Trawa42" parent="trawa" unique_id=376743134 instance=ExtResource("11_r2vbx")]
+position = Vector2(44701, 1122)
+
+[node name="Trawa43" parent="trawa" unique_id=1397718722 instance=ExtResource("10_dhgu6")]
+position = Vector2(45771, 1100)
+
+[node name="Trawa44" parent="trawa" unique_id=53935824 instance=ExtResource("11_r2vbx")]
+position = Vector2(46837, 1127)
+
+[node name="Trawa45" parent="trawa" unique_id=827413972 instance=ExtResource("10_dhgu6")]
+position = Vector2(47962, 1116)
+
+[node name="Trawa46" parent="trawa" unique_id=544254139 instance=ExtResource("11_r2vbx")]
+position = Vector2(49055, 1118)
+
+[node name="Trawa47" parent="trawa" unique_id=276660278 instance=ExtResource("10_dhgu6")]
+position = Vector2(50125, 1096)
+
+[node name="Trawa48" parent="trawa" unique_id=1359414943 instance=ExtResource("11_r2vbx")]
+position = Vector2(51191, 1123)
+
+[node name="Trawa49" parent="trawa" unique_id=1250659916 instance=ExtResource("10_dhgu6")]
+position = Vector2(52154, 1089)
+
+[node name="Trawa50" parent="trawa" unique_id=778947112 instance=ExtResource("11_r2vbx")]
+position = Vector2(53220, 1116)
+
+[node name="Trawa51" parent="trawa" unique_id=1210841722 instance=ExtResource("10_dhgu6")]
+position = Vector2(54290, 1094)
+
+[node name="Trawa52" parent="trawa" unique_id=1575698165 instance=ExtResource("11_r2vbx")]
+position = Vector2(55356, 1121)
+
+[node name="Trawa53" parent="trawa" unique_id=833482353 instance=ExtResource("10_dhgu6")]
+position = Vector2(56481, 1110)
+
+[node name="Trawa54" parent="trawa" unique_id=1133466203 instance=ExtResource("11_r2vbx")]
+position = Vector2(57574, 1112)
+
+[node name="Trawa55" parent="trawa" unique_id=1990836639 instance=ExtResource("10_dhgu6")]
+position = Vector2(58644, 1090)
+
+[node name="Trawa56" parent="trawa" unique_id=413306628 instance=ExtResource("11_r2vbx")]
+position = Vector2(59710, 1117)
+
+[node name="Trawa57" parent="trawa" unique_id=2046871198 instance=ExtResource("10_dhgu6")]
+position = Vector2(60813, 1096)
+
+[node name="Trawa58" parent="trawa" unique_id=606356926 instance=ExtResource("11_r2vbx")]
+position = Vector2(61879, 1123)
+
+[node name="Trawa59" parent="trawa" unique_id=225974130 instance=ExtResource("10_dhgu6")]
+position = Vector2(62949, 1101)
+
+[node name="Trawa60" parent="trawa" unique_id=700173210 instance=ExtResource("11_r2vbx")]
+position = Vector2(64015, 1128)
+
+[node name="Trawa61" parent="trawa" unique_id=326962810 instance=ExtResource("10_dhgu6")]
+position = Vector2(65140, 1117)
+
+[node name="Trawa62" parent="trawa" unique_id=1069179567 instance=ExtResource("11_r2vbx")]
+position = Vector2(66233, 1119)
+
+[node name="Trawa63" parent="trawa" unique_id=68901500 instance=ExtResource("10_dhgu6")]
+position = Vector2(67303, 1097)
+
+[node name="Trawa64" parent="trawa" unique_id=667035302 instance=ExtResource("11_r2vbx")]
+position = Vector2(68369, 1124)
+
+[node name="level_up" parent="." unique_id=1647793945 instance=ExtResource("12_3i8rq")]
+position = Vector2(67053, 746)
