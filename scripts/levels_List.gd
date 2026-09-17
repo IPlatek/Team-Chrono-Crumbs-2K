@@ -29,6 +29,7 @@ func _process(delta: float) -> void:
 
 func _on_level_1_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/levels/level_1.tscn")
+	Global.current_level = 0.0
 	var file = "userdata.json"
 	var json_as_text = FileAccess.get_file_as_string(file)
 	var json_as_dict = JSON.parse_string(json_as_text)
@@ -51,6 +52,7 @@ func _on_level_2_pressed() -> void:
 	if(level < 2):
 		print("Żeby osiągnąc 2 level najpier przejdzi pierwszy")
 	else:
+		Global.current_level = 1.0
 		get_tree().change_scene_to_file("res://scenes/levels/level_2.tscn")
 		json_as_dict["Current_level"] = 2
 		file = FileAccess.open("userdata.json", FileAccess.WRITE)		
@@ -67,6 +69,7 @@ func _on_level_3_pressed() -> void:
 	if(level < 3):
 		print("Żeby osiągnąc 3 level najpier przejdzi drugi")
 	else:
+		Global.current_level = 2.0
 		get_tree().change_scene_to_file("res://scenes/levels/level_3.tscn")
 		json_as_dict["Current_level"] = 3
 		file = FileAccess.open("userdata.json", FileAccess.WRITE)		
@@ -82,6 +85,7 @@ func _on_boss_pressed() -> void:
 	if(level < 4):
 		print("Żeby osiągnąc 4 level najpier przejdzi trzeci")
 	else:
+		Global.current_level = 3.0
 		get_tree().change_scene_to_file("res://scenes/levels/level_4.tscn")
 		json_as_dict["Current_level"] = 4
 		file = FileAccess.open("userdata.json", FileAccess.WRITE)		

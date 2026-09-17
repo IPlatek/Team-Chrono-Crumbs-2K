@@ -2,7 +2,6 @@ extends Area2D
 
 
 
-
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("gracz"):
 		#print("lvl_nigga") to chyba nie był wiatr
@@ -12,11 +11,12 @@ func _on_body_entered(body: Node2D) -> void:
 		#elif Global.current_level == 2:
 		
 			
-
+		
 		var file = "userdata.json"
 		var json_as_text = FileAccess.get_file_as_string(file)
 		var json_as_dict = JSON.parse_string(json_as_text)
 		var current_level = json_as_dict["Current_level"]
+		Global.current_level = current_level
 		#print(current_level)
 		var next_level: int = current_level + 1
 		#print(next_level)

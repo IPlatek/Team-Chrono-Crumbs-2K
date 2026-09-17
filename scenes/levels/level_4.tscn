@@ -22,10 +22,10 @@ position = Vector2(1271, 939)
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=888993124]
 
 [node name="PauseMenu" parent="CanvasLayer" unique_id=945622167 instance=ExtResource("2_kh8wv")]
-offset_left = 263.0
-offset_top = 271.0
-offset_right = 263.0
-offset_bottom = 271.0
+offset_left = 12.0
+offset_top = 74.0
+offset_right = 12.0
+offset_bottom = 74.0
 metadata/_edit_use_anchors_ = true
 
 [node name="blokada" parent="CanvasLayer" unique_id=261594933 instance=ExtResource("3_v0csc")]
@@ -237,9 +237,6 @@ position = Vector2(2690, 947)
 
 [node name="Boss_attack2" parent="boss_attack" unique_id=1072008245 instance=ExtResource("5_1h1ve")]
 position = Vector2(2690, 440)
-
-[node name="Boss_attack3" parent="boss_attack" unique_id=1634479300 instance=ExtResource("5_1h1ve")]
-position = Vector2(2689, 658)
 
 [node name="CharacterBody2D" parent="boss_attack" unique_id=1510778250 instance=ExtResource("6_a1e3b")]
 position = Vector2(66579, 625)

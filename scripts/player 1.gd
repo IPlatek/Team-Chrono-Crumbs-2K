@@ -27,6 +27,7 @@ func _process(_delta: float) -> void:
 
 func _physics_process(delta: float) -> void:
 	
+	
 	var camera_position = $Camera2D.global_position
 	
 	
@@ -35,9 +36,12 @@ func _physics_process(delta: float) -> void:
 		Global.no_move = true
 		
 	#blokowanie kamery
-	#if Global.current_level == 1:
-		#cam.limit_enabled = true
-		#cam.limit_right = 22635
+	if Global.current_level == 0:
+		cam.limit_enabled = true
+		cam.limit_right = 12219
+	elif Global.current_level == 1:
+		cam.limit_enabled = true
+		cam.limit_right = 22613
 		
 	
 	# Grawitacja

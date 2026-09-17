@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://cdnjpba2naxs" path="res://assets/sprites/tło.png" id="24_ugk5q"]
 [ext_resource type="PackedScene" uid="uid://ba6ofpmvc66ds" path="res://scenes/pal.tscn" id="25_4u6u3"]
 [ext_resource type="PackedScene" uid="uid://d2ofgod1pvt78" path="res://scenes/level_up.tscn" id="26_i3rdk"]
+[ext_resource type="PackedScene" uid="uid://bst1kvtcajkhd" path="res://scenes/flaga.tscn" id="26_mx6s3"]
 [ext_resource type="PackedScene" uid="uid://dj8m8ycrpywt8" path="res://scenes/wodav2.tscn" id="26_o7j4k"]
 
 [node name="Game" type="Node2D" unique_id=2123090632]
@@ -527,12 +528,15 @@ direction = -1
 
 [node name="pal2" parent="pale" unique_id=1741613171 instance=ExtResource("25_4u6u3")]
 position = Vector2(15997, 316)
-speed_of_spining = 250
+speed_of_spining = 50
 
 [node name="pal3" parent="pale" unique_id=750009860 instance=ExtResource("25_4u6u3")]
 position = Vector2(17082, 297)
 speed_of_spining = 250
 direction = -1
+
+[node name="Node2D" parent="pale" unique_id=1737962051 instance=ExtResource("26_mx6s3")]
+position = Vector2(21943, 170)
 
 [node name="wody" type="Node" parent="." unique_id=856069770]
 

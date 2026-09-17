@@ -4,7 +4,7 @@ var lifes = 1
 var no_move = false
 var player_force = 0
 var grzybki = 0
-var current_level = 1
+var current_level = 0.0
 
 func add_grzybek():
 	grzybki += 1

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bst1kvtcajkhd"]
+
+[ext_resource type="Texture2D" uid="uid://ca2jrqma7fq4a" path="res://assets/sprites/asset_map/flaga.png" id="1_cj2lh"]
+
+[node name="Node2D" type="Sprite2D" unique_id=1737962051]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_cj2lh")

@@ -19,6 +19,7 @@ shape = SubResource("RectangleShape2D_3ai1g")
 debug_color = Color(0.7482946, 0, 0.110273175, 0.41960785)
 
 [node name="defuse" type="Timer" parent="." unique_id=2004277595]
+wait_time = 0.5
 one_shot = true
 
 [node name="attack" type="Timer" parent="." unique_id=553782100]
