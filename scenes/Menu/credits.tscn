@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bxns3hcj83w3q"]
+
+[ext_resource type="Script" uid="uid://7heefulycsa4" path="res://scripts/credita.gd" id="1_fxijl"]
+[ext_resource type="VideoStream" uid="uid://bdo0sauoamghb" path="res://credits.ogv" id="2_6xpyw"]
+
+[node name="credits" type="Node2D" unique_id=44486845]
+script = ExtResource("1_fxijl")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=2074302289]
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 4
+stream = ExtResource("2_6xpyw")
+autoplay = true
+
+[node name="Timer" type="Timer" parent="." unique_id=745740244]
+wait_time = 13.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
