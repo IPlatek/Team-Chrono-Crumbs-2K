@@ -112,7 +112,7 @@ on your keyboard also you
 "
 
 [node name="level_up" parent="." unique_id=1647793945 instance=ExtResource("3_sagaa")]
-position = Vector2(12225, 80.75)
+position = Vector2(12003, 305)
 
 [node name="Player 1" parent="." unique_id=1421348436 instance=ExtResource("1_mswog")]
 z_index = 0
@@ -362,4 +362,4 @@ position = Vector2(9491, 806.5)
 [node name="flaga" type="Node" parent="." unique_id=1157024640]
 
 [node name="Node2D" parent="." unique_id=1737962051 instance=ExtResource("26_o7j4k")]
-position = Vector2(11832, 134)
+position = Vector2(11903, 139)
