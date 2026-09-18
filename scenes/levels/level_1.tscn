@@ -124,7 +124,9 @@ position = Vector2(738, 1693)
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=273900403]
 
 [node name="PauseMenu" parent="CanvasLayer" unique_id=945622167 instance=ExtResource("4_0rc6f")]
-offset_left = -52.0
+offset_left = 2.0
+offset_top = -1.0
+offset_right = 5.0
 
 [node name="kolce" type="Node" parent="." unique_id=1134684190]
 
