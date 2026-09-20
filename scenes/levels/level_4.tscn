@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ud0j2qd56nl7"]
 
 [ext_resource type="PackedScene" uid="uid://duy6pv5dquk8a" path="res://assets/Gracz 1/Idle_cat.tscn" id="1_h7g2j"]
+[ext_resource type="PackedScene" uid="uid://b6fq2whbdgk6v" path="res://scenes/transition.tscn" id="2_hsvsk"]
 [ext_resource type="PackedScene" uid="uid://co80mntjp3do1" path="res://scenes/Menu/pause_menu.tscn" id="2_kh8wv"]
 [ext_resource type="PackedScene" uid="uid://dlxthme1lexwh" path="res://scenes/klocki/blokada.tscn" id="3_v0csc"]
 [ext_resource type="PackedScene" uid="uid://bfagaha123uwa" path="res://scenes/podłoże.tscn" id="4_sy285"]
@@ -18,6 +19,8 @@ metadata/_edit_vertical_guides_ = [65690.0]
 
 [node name="Player 1" parent="." unique_id=1421348436 instance=ExtResource("1_h7g2j")]
 position = Vector2(1271, 939)
+
+[node name="transition" parent="Player 1" unique_id=1371874494 instance=ExtResource("2_hsvsk")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=888993124]
 
@@ -46,6 +49,9 @@ position = Vector2(5299, 1458)
 
 [node name="Podłoże_ziemia4" parent="podłoże" unique_id=1876207340 instance=ExtResource("4_sy285")]
 position = Vector2(7418, 1458)
+
+[node name="Podłoże_ziemia33" parent="podłoże" unique_id=1502376983 instance=ExtResource("4_sy285")]
+position = Vector2(-1058, 1458)
 
 [node name="Podłoże_ziemia" parent="podłoże" unique_id=1472416613 instance=ExtResource("4_sy285")]
 position = Vector2(1061, 1458)
@@ -147,6 +153,9 @@ position = Vector2(7418, -150)
 
 [node name="Podłoże_ziemia" parent="podłoże2" unique_id=787534390 instance=ExtResource("4_sy285")]
 position = Vector2(1061, -150)
+
+[node name="Podłoże_ziemia" parent="podłoże2/Podłoże_ziemia" unique_id=1147713793 instance=ExtResource("4_sy285")]
+position = Vector2(-2120, 0)
 
 [node name="Podłoże_ziemia9" parent="podłoże2" unique_id=529226293 instance=ExtResource("4_sy285")]
 position = Vector2(22251, -150)
@@ -319,10 +328,10 @@ direction = -1
 [node name="trawa" type="Node" parent="." unique_id=1491998842]
 
 [node name="Trawa" parent="trawa" unique_id=1258978101 instance=ExtResource("10_dhgu6")]
-position = Vector2(664, 1081)
+position = Vector2(478, 1081)
 
 [node name="Trawa2" parent="trawa" unique_id=498089600 instance=ExtResource("11_r2vbx")]
-position = Vector2(1730, 1108)
+position = Vector2(1597, 1098)
 
 [node name="Trawa3" parent="trawa" unique_id=820145378 instance=ExtResource("10_dhgu6")]
 position = Vector2(2800, 1086)

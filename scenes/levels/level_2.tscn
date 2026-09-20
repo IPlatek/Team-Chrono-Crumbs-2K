@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bvkd177pqx506"]
 
 [ext_resource type="PackedScene" uid="uid://duy6pv5dquk8a" path="res://assets/Gracz 1/Idle_cat.tscn" id="1_o7j4k"]
+[ext_resource type="PackedScene" uid="uid://b6fq2whbdgk6v" path="res://scenes/transition.tscn" id="2_7d3nu"]
 [ext_resource type="PackedScene" uid="uid://18tp1yw5tvid" path="res://scenes/kill_zone.tscn" id="3_x7jkp"]
 [ext_resource type="PackedScene" uid="uid://g00li45uytj5" path="res://scenes/spikes.tscn" id="4_0qwwm"]
 [ext_resource type="PackedScene" uid="uid://co80mntjp3do1" path="res://scenes/Menu/pause_menu.tscn" id="4_o7j4k"]
@@ -33,6 +34,8 @@
 [node name="Player 1" parent="." unique_id=1421348436 instance=ExtResource("1_o7j4k")]
 z_index = 0
 position = Vector2(214, 750)
+
+[node name="transition" parent="Player 1" unique_id=1371874494 instance=ExtResource("2_7d3nu")]
 
 [node name="Kill_zone" parent="." unique_id=1141544285 instance=ExtResource("3_x7jkp")]
 position = Vector2(738, 1693)
@@ -512,13 +515,14 @@ texture = ExtResource("22_ovy75")
 
 [node name="Parallax2D" type="Parallax2D" parent="tło" unique_id=1519173147]
 z_index = -4
+scale = Vector2(1.1341865, 0.98283917)
 scroll_scale = Vector2(0.005, 0.1)
 repeat_times = 4
 
 [node name="Sprite2D" type="Sprite2D" parent="tło/Parallax2D" unique_id=1523385645]
 z_index = -1
-position = Vector2(993.00006, -2033.9999)
-scale = Vector2(2.64209, 6.959473)
+position = Vector2(889.6245, -2020.6765)
+scale = Vector2(2.7953238, 6.9664536)
 texture = ExtResource("24_ugk5q")
 
 [node name="pale" type="Node" parent="." unique_id=1109835447]

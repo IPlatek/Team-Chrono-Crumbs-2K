@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c5o0s0wge7wa5"]
 
 [ext_resource type="PackedScene" uid="uid://duy6pv5dquk8a" path="res://assets/Gracz 1/Idle_cat.tscn" id="1_ftfob"]
+[ext_resource type="PackedScene" uid="uid://b6fq2whbdgk6v" path="res://scenes/transition.tscn" id="2_apo5x"]
 [ext_resource type="PackedScene" uid="uid://co80mntjp3do1" path="res://scenes/Menu/pause_menu.tscn" id="2_fkk1g"]
 [ext_resource type="PackedScene" uid="uid://dlxthme1lexwh" path="res://scenes/klocki/blokada.tscn" id="3_pimnq"]
 [ext_resource type="PackedScene" uid="uid://18tp1yw5tvid" path="res://scenes/kill_zone.tscn" id="3_t4txi"]
@@ -16,11 +17,14 @@
 [ext_resource type="PackedScene" uid="uid://d2ofgod1pvt78" path="res://scenes/level_up.tscn" id="14_5f5xw"]
 
 [node name="game" type="Node2D" unique_id=2147134106]
+scale = Vector2(1, 1.0044225)
 metadata/_edit_vertical_guides_ = [10623.0, 11853.0]
 
 [node name="Player 1" parent="." unique_id=1421348436 instance=ExtResource("1_ftfob")]
 z_index = 0
 position = Vector2(1120, 675)
+
+[node name="transition" parent="Player 1" unique_id=1371874494 instance=ExtResource("2_apo5x")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2018574627]
 
@@ -176,7 +180,7 @@ repeat_times = 4
 [node name="Sprite2D" type="Sprite2D" parent="tło/Parallax2D" unique_id=151820602]
 z_index = -1
 position = Vector2(993.00006, -2033.9999)
-scale = Vector2(2.64209, 6.959473)
+scale = Vector2(2.924262, 6.813927)
 texture = ExtResource("11_1nwmf")
 
 [node name="platformy" type="Node" parent="." unique_id=580306783]
