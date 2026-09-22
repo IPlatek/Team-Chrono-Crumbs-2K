@@ -17,6 +17,8 @@
 [ext_resource type="PackedScene" uid="uid://dj8m8ycrpywt8" path="res://scenes/wodav2.tscn" id="10_vmg1d"]
 [ext_resource type="Texture2D" uid="uid://cdnjpba2naxs" path="res://assets/sprites/tło.png" id="11_1nwmf"]
 [ext_resource type="PackedScene" uid="uid://d2ofgod1pvt78" path="res://scenes/level_up.tscn" id="14_5f5xw"]
+[ext_resource type="PackedScene" uid="uid://g00li45uytj5" path="res://scenes/spikes.tscn" id="17_fhpes"]
+[ext_resource type="PackedScene" uid="uid://fkkepve2r7ol" path="res://scenes/swamp_cat.tscn" id="18_vmg1d"]
 
 [node name="game" type="Node2D" unique_id=2147134106]
 scale = Vector2(1, 1.0044225)
@@ -380,6 +382,69 @@ position = Vector2(12097, -4986)
 
 [node name="pal" parent="przeszkody" unique_id=376445363 instance=ExtResource("8_pimnq")]
 position = Vector2(9111, 389)
+
+[node name="pal2" parent="przeszkody" unique_id=511584973 instance=ExtResource("8_pimnq")]
+position = Vector2(22902, -4646)
+scale = Vector2(1, 1.0044225)
+
+[node name="Node2D2" parent="przeszkody" unique_id=942327401 instance=ExtResource("17_fhpes")]
+position = Vector2(23518, -2452)
+
+[node name="Node2D3" parent="przeszkody" unique_id=856314183 instance=ExtResource("17_fhpes")]
+position = Vector2(16917, -5491)
+
+[node name="Node2D4" parent="przeszkody" unique_id=1724554305 instance=ExtResource("17_fhpes")]
+position = Vector2(17441, -5500)
+
+[node name="Node2D5" parent="przeszkody" unique_id=217922804 instance=ExtResource("17_fhpes")]
+z_index = -1
+position = Vector2(17180, -5768)
+scale = Vector2(1, -1)
+
+[node name="pal3" parent="przeszkody" unique_id=540325786 instance=ExtResource("8_pimnq")]
+position = Vector2(19279, -5623)
+scale = Vector2(1, 0.7)
+
+[node name="swamp_cat" parent="przeszkody" unique_id=156676128 instance=ExtResource("18_vmg1d")]
+position = Vector2(13462, -5429)
+
+[node name="swamp_cat2" parent="przeszkody" unique_id=870209391 instance=ExtResource("18_vmg1d")]
+position = Vector2(20793, -5418)
+
+[node name="swamp_cat3" parent="przeszkody" unique_id=163100532 instance=ExtResource("18_vmg1d")]
+position = Vector2(25211, -2361)
+
+[node name="swamp_cat4" parent="przeszkody" unique_id=1171394226 instance=ExtResource("18_vmg1d")]
+position = Vector2(10113, -2707)
+max_distance = 250
+
+[node name="swamp_cat5" parent="przeszkody" unique_id=53510263 instance=ExtResource("18_vmg1d")]
+position = Vector2(11863, -4279)
+
+[node name="swamp_cat6" parent="przeszkody" unique_id=2046498215 instance=ExtResource("18_vmg1d")]
+position = Vector2(11915, -5249)
+max_distance = 250
+
+[node name="Node2D7" parent="przeszkody" unique_id=1896729217 instance=ExtResource("17_fhpes")]
+z_index = -1
+position = Vector2(10357, -2061)
+scale = Vector2(1, -1)
+
+[node name="Node2D6" parent="przeszkody" unique_id=493217334 instance=ExtResource("17_fhpes")]
+z_index = -1
+position = Vector2(12125, -496)
+scale = Vector2(1, -1)
+
+[node name="Node2D8" parent="przeszkody" unique_id=1385317119 instance=ExtResource("17_fhpes")]
+z_index = -1
+position = Vector2(12161.001, -3211)
+scale = Vector2(0.7, 1)
+
+[node name="Node2D9" parent="przeszkody" unique_id=298993006 instance=ExtResource("17_fhpes")]
+z_index = -1
+position = Vector2(10857, -4444)
+rotation = 1.5707964
+scale = Vector2(0.5, 1)
 
 [node name="level_up" parent="." unique_id=1647793945 instance=ExtResource("14_5f5xw")]
 position = Vector2(29809, -2264.983)
