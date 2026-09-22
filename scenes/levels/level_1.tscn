@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://18tp1yw5tvid" path="res://scenes/kill_zone.tscn" id="2_eh6x6"]
 [ext_resource type="PackedScene" uid="uid://d2ofgod1pvt78" path="res://scenes/level_up.tscn" id="3_sagaa"]
 [ext_resource type="PackedScene" uid="uid://co80mntjp3do1" path="res://scenes/Menu/pause_menu.tscn" id="4_0rc6f"]
+[ext_resource type="PackedScene" uid="uid://r8w5fi7u074u" path="res://scenes/muzyka.tscn" id="5_x7jkp"]
 [ext_resource type="PackedScene" uid="uid://b6fq2whbdgk6v" path="res://scenes/transition.tscn" id="6_31oqk"]
 [ext_resource type="PackedScene" uid="uid://do837vmw1704k" path="res://scenes/klocki/ziemia-02.tscn" id="6_qf67e"]
 [ext_resource type="PackedScene" uid="uid://bfagaha123uwa" path="res://scenes/podłoże.tscn" id="7_sl5c4"]
@@ -113,13 +114,15 @@ on your keyboard also you
 "
 
 [node name="level_up" parent="." unique_id=1647793945 instance=ExtResource("3_sagaa")]
-position = Vector2(12003, 305)
+position = Vector2(12298, 307)
 
 [node name="Player 1" parent="." unique_id=1421348436 instance=ExtResource("1_mswog")]
 z_index = 0
 position = Vector2(586, 782)
 
 [node name="transition" parent="Player 1" unique_id=1371874494 instance=ExtResource("6_31oqk")]
+
+[node name="muzyka" parent="Player 1" unique_id=890688004 instance=ExtResource("5_x7jkp")]
 
 [node name="Kill_zone" parent="." unique_id=1141544285 instance=ExtResource("2_eh6x6")]
 position = Vector2(738, 1693)
@@ -367,4 +370,4 @@ position = Vector2(9491, 806.5)
 [node name="flaga" type="Node" parent="." unique_id=1157024640]
 
 [node name="Node2D" parent="flaga" unique_id=1737962051 instance=ExtResource("26_o7j4k")]
-position = Vector2(11903, 139)
+position = Vector2(11727, 143)

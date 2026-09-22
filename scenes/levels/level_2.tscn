@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://duy6pv5dquk8a" path="res://assets/Gracz 1/Idle_cat.tscn" id="1_o7j4k"]
 [ext_resource type="PackedScene" uid="uid://b6fq2whbdgk6v" path="res://scenes/transition.tscn" id="2_7d3nu"]
+[ext_resource type="PackedScene" uid="uid://r8w5fi7u074u" path="res://scenes/muzyka.tscn" id="3_r6ket"]
 [ext_resource type="PackedScene" uid="uid://18tp1yw5tvid" path="res://scenes/kill_zone.tscn" id="3_x7jkp"]
 [ext_resource type="PackedScene" uid="uid://g00li45uytj5" path="res://scenes/spikes.tscn" id="4_0qwwm"]
 [ext_resource type="PackedScene" uid="uid://co80mntjp3do1" path="res://scenes/Menu/pause_menu.tscn" id="4_o7j4k"]
@@ -36,6 +37,8 @@ z_index = 0
 position = Vector2(214, 750)
 
 [node name="transition" parent="Player 1" unique_id=1371874494 instance=ExtResource("2_7d3nu")]
+
+[node name="muzyka" parent="Player 1" unique_id=890688004 instance=ExtResource("3_r6ket")]
 
 [node name="Kill_zone" parent="." unique_id=1141544285 instance=ExtResource("3_x7jkp")]
 position = Vector2(738, 1693)
@@ -541,7 +544,7 @@ speed_of_spining = 250
 direction = -1
 
 [node name="Node2D" parent="pale" unique_id=1737962051 instance=ExtResource("26_mx6s3")]
-position = Vector2(21943, 170)
+position = Vector2(21992, 165)
 
 [node name="wody" type="Node" parent="." unique_id=856069770]
 

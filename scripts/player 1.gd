@@ -20,6 +20,9 @@ var can_dash = true
 func _process(_delta: float) -> void:
 	#dumbahh died
 	if Global.lifes <= 0:
+		Global.no_move = true
+		velocity.y = 0
+		#dawait get_tree().create_timer(0.5).timeout
 		get_tree().reload_current_scene()
 		Global.lifes = 1
 		Global.grzybki = 0
@@ -38,11 +41,16 @@ func _physics_process(delta: float) -> void:
 	#blokowanie kamery
 	if Global.current_level == 0:
 		cam.limit_enabled = true
-		cam.limit_right = 12219
+		cam.limit_right = 11919
+		if position.x >= 12019:
+			Global.fade_in = true
+			position.x = 12219
 	elif Global.current_level == 1:
 		cam.limit_enabled = true
-		cam.limit_right = 22613
-		
+		cam.limit_right = 22313
+		if position.x >= 22413:
+			Global.fade_in = true
+			position.x = 22613
 	
 	# Grawitacja
 	if not is_on_floor():
@@ -90,18 +98,21 @@ func _physics_process(delta: float) -> void:
 			else:
 				velocity.x = move_toward(velocity.x, 0, SPEED * speed_multiplier)
 		#animacje
-		if dashing == true:
-			animation_sprite.play("dashing")
-		elif !is_on_floor() and velocity.y <= 0:
-			animation_sprite.play("jump")
-		elif !is_on_floor() and velocity.y > 0:
+		if Global.lifes >=1:
+			if dashing == true:
+				animation_sprite.play("dashing")
+			elif !is_on_floor() and velocity.y <= 0:
+				animation_sprite.play("jump")
+			elif !is_on_floor() and velocity.y > 0:
+				animation_sprite.play("falling")
+			elif is_on_floor() and direction != 0 and Input.is_action_pressed("sprint"):
+				animation_sprite.play("sprint")
+			elif is_on_floor() and direction != 0:
+				animation_sprite.play("walk")
+			elif is_on_floor():
+				animation_sprite.play("Idle")
+		else:
 			animation_sprite.play("falling")
-		elif is_on_floor() and direction != 0 and Input.is_action_pressed("sprint"):
-			animation_sprite.play("sprint")
-		elif is_on_floor() and direction != 0:
-			animation_sprite.play("walk")
-		elif is_on_floor():
-			animation_sprite.play("Idle")
 		
 		if direction < 0:
 			animek.flip_h = true

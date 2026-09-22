@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://duy6pv5dquk8a" path="res://assets/Gracz 1/Idle_cat.tscn" id="1_h7g2j"]
 [ext_resource type="PackedScene" uid="uid://b6fq2whbdgk6v" path="res://scenes/transition.tscn" id="2_hsvsk"]
 [ext_resource type="PackedScene" uid="uid://co80mntjp3do1" path="res://scenes/Menu/pause_menu.tscn" id="2_kh8wv"]
+[ext_resource type="PackedScene" uid="uid://r8w5fi7u074u" path="res://scenes/muzyka.tscn" id="3_fcb7b"]
 [ext_resource type="PackedScene" uid="uid://dlxthme1lexwh" path="res://scenes/klocki/blokada.tscn" id="3_v0csc"]
 [ext_resource type="PackedScene" uid="uid://bfagaha123uwa" path="res://scenes/podłoże.tscn" id="4_sy285"]
 [ext_resource type="PackedScene" uid="uid://bhp04cesevmhr" path="res://scenes/boss_attack.tscn" id="5_1h1ve"]
@@ -21,6 +22,8 @@ metadata/_edit_vertical_guides_ = [65690.0]
 position = Vector2(1271, 939)
 
 [node name="transition" parent="Player 1" unique_id=1371874494 instance=ExtResource("2_hsvsk")]
+
+[node name="muzyka" parent="Player 1" unique_id=890688004 instance=ExtResource("3_fcb7b")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=888993124]
 

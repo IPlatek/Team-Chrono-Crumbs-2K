@@ -11,6 +11,11 @@ script/source = "extends CanvasLayer
 func _ready() -> void:
 	helper.visible = false
 	animation.play(\"fade_out\")
+
+func _process(delta: float) -> void:
+	if Global.fade_in == true:
+		animation.play(\"fade_in\")
+		Global.fade_in = false
 "
 
 [sub_resource type="Animation" id="Animation_kg4ax"]
