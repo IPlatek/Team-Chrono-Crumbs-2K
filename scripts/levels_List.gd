@@ -18,7 +18,18 @@ func _ready() -> void:
 		$Button_menager/Blocked_2.visible = false
 	else:
 		$Button_menager/Blocked_2.visible = false
-		
+	if(level < 3):
+		$Button_menager/Blocked_3.visible = true
+	elif(level == 3):
+		$Button_menager/Blocked_3.visible = false
+	else:
+		$Button_menager/Blocked_3.visible = false
+	if(level < 4):
+		$Button_menager/Blocked_4.visible = true
+	elif(level == 4):
+		$Button_menager/Blocked_4.visible = false
+	else:
+		$Button_menager/Blocked_4.visible = false	
 	pass
 	
 

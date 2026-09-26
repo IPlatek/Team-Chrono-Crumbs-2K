@@ -2,16 +2,22 @@
 
 [ext_resource type="Script" uid="uid://dtmrvhk51ive8" path="res://scripts/levels_List.gd" id="1_ixtga"]
 [ext_resource type="Texture2D" uid="uid://ecoyam2rqtnd" path="res://assets/Menu/menu background.png" id="2_ixtga"]
-[ext_resource type="Texture2D" uid="uid://v3fem5gi4p2p" path="res://assets/Menu/Level_1.png" id="3_0x38t"]
-[ext_resource type="Texture2D" uid="uid://cu3fdkctrji7" path="res://assets/Menu/Level_2.png" id="4_0rckg"]
-[ext_resource type="Texture2D" uid="uid://lxpcydxhia10" path="res://assets/Menu/Level_3.png" id="5_0rckg"]
-[ext_resource type="Texture2D" uid="uid://bevrs0m038jt8" path="res://assets/Menu/go_back.png" id="5_s3vrn"]
+[ext_resource type="Texture2D" uid="uid://lxpcydxhia10" path="res://assets/Menu/Normal_levels.png" id="5_0rckg"]
+[ext_resource type="FontFile" uid="uid://y0ftwckxcyqc" path="res://assets/fonts/Rayman2-regular.ttf" id="6_0rckg"]
+[ext_resource type="Texture2D" uid="uid://ccax4teh1olvu" path="res://assets/Menu/pressed_levels.png" id="6_x67ml"]
 [ext_resource type="Texture2D" uid="uid://bygmhm4qojgn1" path="res://assets/Menu/blocked.png" id="6_y7ldg"]
+[ext_resource type="Texture2D" uid="uid://dkvi3qp7rpxtl" path="res://assets/Menu/hover_levels.png" id="7_dilue"]
+[ext_resource type="Texture2D" uid="uid://dngpf5dlvnonc" path="res://assets/Menu/normal_levels_back.png" id="7_x67ml"]
+[ext_resource type="Texture2D" uid="uid://dglrshdj5co3g" path="res://assets/Menu/pressed_levels_back.png" id="8_dilue"]
+[ext_resource type="Texture2D" uid="uid://dn15ht212jw0x" path="res://assets/Menu/hover_levels_back.png" id="9_o2vld"]
+
+[sub_resource type="FontVariation" id="FontVariation_s3vrn"]
+base_font = ExtResource("6_0rckg")
 
 [node name="Levels List" type="Node2D" unique_id=370848893]
 script = ExtResource("1_ixtga")
-metadata/_edit_vertical_guides_ = [100.0, 1820.0, 820.0, 1000.0, 620.0, 1200.0]
-metadata/_edit_horizontal_guides_ = [100.0, 400.0, 440.0, 820.0, 720.0, 950.0]
+metadata/_edit_vertical_guides_ = [100.0, 1820.0, 920.0, 1000.0, 660.0, 1260.0, 960.0]
+metadata/_edit_horizontal_guides_ = [100.0, 400.0, 440.0, 820.0, 740.0, 970.0]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=814430448]
 position = Vector2(959.99994, 542)
@@ -31,7 +37,23 @@ offset_left = 99.0
 offset_top = 100.0
 offset_right = 819.0
 offset_bottom = 400.0
-texture_normal = ExtResource("3_0x38t")
+texture_normal = ExtResource("5_0rckg")
+texture_pressed = ExtResource("6_x67ml")
+texture_hover = ExtResource("7_dilue")
+
+[node name="Label2" type="Label" parent="Button_menager/Level 1" unique_id=189816789]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
+theme_override_fonts/font = SubResource("FontVariation_s3vrn")
+theme_override_font_sizes/font_size = 120
+text = "Level 1"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Level 2" type="TextureButton" parent="Button_menager" unique_id=763199602]
 layout_mode = 0
@@ -39,7 +61,23 @@ offset_left = 999.0
 offset_top = 100.0
 offset_right = 1819.0
 offset_bottom = 400.0
-texture_normal = ExtResource("4_0rckg")
+texture_normal = ExtResource("5_0rckg")
+texture_pressed = ExtResource("6_x67ml")
+texture_hover = ExtResource("7_dilue")
+
+[node name="Label" type="Label" parent="Button_menager/Level 2" unique_id=1265265793]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
+theme_override_fonts/font = SubResource("FontVariation_s3vrn")
+theme_override_font_sizes/font_size = 120
+text = "Level 2"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Level 3" type="TextureButton" parent="Button_menager" unique_id=1137933112]
 layout_mode = 0
@@ -48,6 +86,8 @@ offset_top = 440.0
 offset_right = 919.0
 offset_bottom = 740.0
 texture_normal = ExtResource("5_0rckg")
+texture_pressed = ExtResource("6_x67ml")
+texture_hover = ExtResource("7_dilue")
 
 [node name="Label" type="Label" parent="Button_menager/Level 3" unique_id=552947664]
 layout_mode = 1
@@ -56,26 +96,73 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
+theme_override_fonts/font = SubResource("FontVariation_s3vrn")
+theme_override_font_sizes/font_size = 120
 text = "Level 3"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Boss" type="Button" parent="Button_menager" unique_id=389850191]
+[node name="Boss" type="TextureButton" parent="Button_menager" unique_id=936594211]
 layout_mode = 0
 offset_left = 999.0
 offset_top = 440.0
 offset_right = 1819.0
-offset_bottom = 720.0
-text = "Boss"
+offset_bottom = 740.0
+texture_normal = ExtResource("5_0rckg")
+texture_pressed = ExtResource("6_x67ml")
+texture_hover = ExtResource("7_dilue")
+
+[node name="Label2" type="Label" parent="Button_menager/Boss" unique_id=1165469122]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
+theme_override_fonts/font = SubResource("FontVariation_s3vrn")
+theme_override_font_sizes/font_size = 120
+text = "Boss Fight"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="BACK" type="TextureButton" parent="Button_menager" unique_id=1808775524]
 layout_mode = 0
-offset_left = 619.0
+offset_left = 659.0
 offset_top = 820.0
-offset_right = 1519.0
-offset_bottom = 1020.0
-texture_normal = ExtResource("5_s3vrn")
+offset_right = 1259.0
+offset_bottom = 970.0
+texture_normal = ExtResource("7_x67ml")
+texture_pressed = ExtResource("8_dilue")
+texture_hover = ExtResource("9_o2vld")
+
+[node name="Label2" type="Label" parent="Button_menager/BACK" unique_id=1759943900]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
+theme_override_fonts/font = SubResource("FontVariation_s3vrn")
+theme_override_font_sizes/font_size = 90
+text = "Go Back"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Blocked_2" type="Sprite2D" parent="Button_menager" unique_id=344885387]
-position = Vector2(1804, 107)
+position = Vector2(1786.9999, 141)
+scale = Vector2(0.7410717, 0.67690057)
+texture = ExtResource("6_y7ldg")
+
+[node name="Blocked_3" type="Sprite2D" parent="Button_menager" unique_id=2017942015]
+position = Vector2(885, 470.00003)
+scale = Vector2(0.7410717, 0.67690057)
+texture = ExtResource("6_y7ldg")
+
+[node name="Blocked_4" type="Sprite2D" parent="Button_menager" unique_id=1737058375]
+position = Vector2(1786, 476)
 scale = Vector2(0.7410717, 0.67690057)
 texture = ExtResource("6_y7ldg")
 
