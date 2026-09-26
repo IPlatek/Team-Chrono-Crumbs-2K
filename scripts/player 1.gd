@@ -47,10 +47,10 @@ func _physics_process(delta: float) -> void:
 			position.x = 17300
 	elif Global.current_level == 1:
 		cam.limit_enabled = true
-		cam.limit_right = 22313
-		if position.x >= 22413:
+		cam.limit_right = 34000
+		if position.x >= 34100:
 			Global.fade_in = true
-			position.x = 22613
+			position.x = 34300
 	
 	# Grawitacja
 	if not is_on_floor():
