@@ -41,10 +41,10 @@ func _physics_process(delta: float) -> void:
 	#blokowanie kamery
 	if Global.current_level == 0:
 		cam.limit_enabled = true
-		cam.limit_right = 11919
-		if position.x >= 12019:
+		cam.limit_right = 17000
+		if position.x >= 17100:
 			Global.fade_in = true
-			position.x = 12219
+			position.x = 17300
 	elif Global.current_level == 1:
 		cam.limit_enabled = true
 		cam.limit_right = 22313
@@ -81,17 +81,19 @@ func _physics_process(delta: float) -> void:
 			#sprintowanie + dash
 			if Input.is_action_pressed("sprint") and dashing:
 				velocity.x = direction * (sprint_speed + DASH_SPEED)
+				velocity.y = 0
 			#sprintowanie
 			elif Input.is_action_pressed("sprint"):
 				velocity.x = direction * sprint_speed * speed_multiplier
 			#dashowanie
 			elif dashing:
 				velocity.x = direction * DASH_SPEED
+				velocity.y = 0
 			else:
 				velocity.x = direction * SPEED * speed_multiplier
 		else:
 			if dashing:
-				if animek.flip_h:	
+				if animek.flip_h:
 					velocity.x = -1 * DASH_SPEED
 				else:
 					velocity.x = DASH_SPEED
