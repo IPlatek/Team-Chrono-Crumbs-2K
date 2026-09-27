@@ -1,6 +1,27 @@
-[gd_scene format=3 uid="uid://cvofy6sa8ihsa"]
+[gd_scene format=3 uid="uid://ds1ogw2qwssfa"]
 
 [ext_resource type="Script" uid="uid://da6rhhf2xoyy4" path="res://scripts/resolution.gd" id="1_q3lje"]
+[ext_resource type="Texture2D" uid="uid://bu7hqw0do3oj7" path="res://assets/tlo_res.png" id="2_65ib4"]
+[ext_resource type="FontFile" uid="uid://y0ftwckxcyqc" path="res://assets/fonts/Rayman2-regular.ttf" id="3_mr5aa"]
+[ext_resource type="Texture2D" uid="uid://daw2p33d7p18d" path="res://assets/res_normal.png" id="4_rgr82"]
+[ext_resource type="Texture2D" uid="uid://dqlxbkjkf5jju" path="res://assets/res_pressed.png" id="5_4cuoj"]
+[ext_resource type="Texture2D" uid="uid://dcd8burokccng" path="res://assets/res_hover.png" id="6_thxsc"]
+
+[sub_resource type="FontVariation" id="FontVariation_a5fj0"]
+base_font = ExtResource("3_mr5aa")
+
+[sub_resource type="FontVariation" id="FontVariation_rgr82"]
+base_font = ExtResource("3_mr5aa")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3ex8o"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mr5aa"]
+bg_color = Color(0.3019608, 0.011764706, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_65ib4"]
+bg_color = Color(0.3019608, 0.011764706, 0, 1)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_qs67b"]
 
 [sub_resource type="GDScript" id="GDScript_8ameo"]
 script/source = "extends OptionButton
@@ -16,6 +37,9 @@ func _process(delta: float) -> void:
 	pass
 "
 
+[sub_resource type="FontVariation" id="FontVariation_o3dlh"]
+base_font = ExtResource("3_mr5aa")
+
 [node name="Resolution" type="Control" unique_id=1862197096]
 layout_mode = 3
 anchors_preset = 15
@@ -24,6 +48,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_q3lje")
+metadata/_edit_horizontal_guides_ = [150.0, 350.0, 400.0, 600.0, 650.0, 800.0, 850.0, 1000.0]
+metadata/_edit_vertical_guides_ = [960.0, 450.0, 1470.0, 350.0, 1560.0]
 
 [node name="Panel" type="Panel" parent="." unique_id=1044458961]
 layout_mode = 1
@@ -33,35 +59,81 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel" unique_id=1242369855]
+[node name="Sprite2D" type="Sprite2D" parent="Panel" unique_id=897215836]
+position = Vector2(1020, 533.49994)
+scale = Vector2(2.9340658, 1.2754686)
+texture = ExtResource("2_65ib4")
+
+[node name="Label" type="Label" parent="Panel" unique_id=1148490665]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 150.0
+offset_right = 1470.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
+theme_override_fonts/font = SubResource("FontVariation_a5fj0")
+theme_override_font_sizes/font_size = 150
+text = "RESOLUTION"
+horizontal_alignment = 1
+
+[node name="OptionButton" type="OptionButton" parent="Panel" unique_id=1109422944]
+custom_minimum_size = Vector2(200, 75)
+layout_mode = 0
+offset_left = 450.0
+offset_top = 400.0
+offset_right = 1470.0
+offset_bottom = 600.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
+theme_override_fonts/font = SubResource("FontVariation_rgr82")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxTexture_3ex8o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mr5aa")
+theme_override_styles/hover = SubResource("StyleBoxFlat_65ib4")
+theme_override_icons/arrow = SubResource("ViewportTexture_qs67b")
+alignment = 1
+icon_alignment = 1
+script = SubResource("GDScript_8ameo")
+
+[node name="Label2" type="Label" parent="Panel" unique_id=2097311449]
+layout_mode = 0
+offset_left = 350.0
+offset_top = 650.0
+offset_right = 1560.0
+offset_bottom = 800.0
+theme_override_fonts/font = SubResource("FontVariation_o3dlh")
+theme_override_font_sizes/font_size = 17
+text = "If you wish to play in window mode, you can!!!
+The Option Button above will haelp you set your favorite resolution :)
+*REsolution change will not work if you have your game in full screen mode duh.
+**We'll remeber your choice so next time you boot up the game the window will automaticli resise to your prefreces."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="TextureButton" parent="Panel" unique_id=1632045540]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 850.0
+offset_right = 1470.0
+offset_bottom = 1000.0
+texture_normal = ExtResource("6_thxsc")
+texture_pressed = ExtResource("5_4cuoj")
+texture_hover = ExtResource("4_rgr82")
+
+[node name="Label" type="Label" parent="Panel/Button" unique_id=2084747007]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel/HBoxContainer" unique_id=1433032769]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="Label" type="Label" parent="Panel/HBoxContainer/VBoxContainer" unique_id=1148490665]
-layout_mode = 2
-theme_override_font_sizes/font_size = 150
-text = "RESOLUTION"
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
+theme_override_fonts/font = SubResource("FontVariation_a5fj0")
+theme_override_font_sizes/font_size = 100
+text = "Go Back"
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="OptionButton" type="OptionButton" parent="Panel/HBoxContainer/VBoxContainer" unique_id=1109422944]
-custom_minimum_size = Vector2(200, 75)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-script = SubResource("GDScript_8ameo")
-
-[node name="Button" type="Button" parent="Panel/HBoxContainer/VBoxContainer" unique_id=792280833]
-layout_mode = 2
-theme_override_font_sizes/font_size = 50
-text = "vxvxvxvxvxv"
-
-[connection signal="item_selected" from="Panel/HBoxContainer/VBoxContainer/OptionButton" to="." method="_on_option_button_item_selected"]
-[connection signal="pressed" from="Panel/HBoxContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="item_selected" from="Panel/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]
