@@ -1,15 +1,9 @@
 extends Control
 
-@onready var resolution_option_button = $Panel/HBoxContainer/VBoxContainer/OptionButton
+@onready var resolution_option_button = $Panel/OptionButton
 
 func _ready():
 	get_window().unresizable = false
-	
-	print("1: ", get_window().unresizable)
-	
-	await get_tree().create_timer(1.0).timeout
-	
-	print("2: ", get_window().unresizable)
 	
 	add_resolutions()
 	
