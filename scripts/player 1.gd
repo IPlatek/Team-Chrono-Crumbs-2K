@@ -12,6 +12,7 @@ var gravity_multiplier = 1.0 #do wody ale wsm też można użyć na jkies speed 
 @onready var dash_timer: Timer = $dash_timer
 @onready var next_dash_timer: Timer = $next_dash_timer
 @onready var cam = $Camera2D
+@onready var double_jump_dela: Timer = $double_jump_delay
 
 var DASH_SPEED = 1500.0
 var dashing = false
@@ -41,10 +42,10 @@ func _physics_process(delta: float) -> void:
 	#blokowanie kamery
 	if Global.current_level == 0:
 		cam.limit_enabled = true
-		cam.limit_right = 17000
-		if position.x >= 17100:
+		cam.limit_right = 15750
+		if position.x >= 15850:
 			Global.fade_in = true
-			position.x = 17300
+			position.x = 15950
 	elif Global.current_level == 1:
 		cam.limit_enabled = true
 		cam.limit_right = 34000
@@ -63,8 +64,9 @@ func _physics_process(delta: float) -> void:
 
 	if Input.is_action_just_pressed("skok_gracz_1") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		double_jump_dela.start()
 		#double jump
-	if Input.is_action_just_pressed("skok_gracz_1") and !is_on_floor() and extra_jump_count > 0:
+	elif Input.is_action_just_pressed("skok_gracz_1") and !is_on_floor() and extra_jump_count > 0 and double_jump_dela.is_stopped():
 		velocity.y = JUMP_VELOCITY
 		extra_jump_count -= 1
 		 

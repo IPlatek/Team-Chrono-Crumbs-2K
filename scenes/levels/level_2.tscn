@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://co80mntjp3do1" path="res://scenes/Menu/pause_menu.tscn" id="4_o7j4k"]
 [ext_resource type="PackedScene" uid="uid://do837vmw1704k" path="res://scenes/klocki/ziemia-02.tscn" id="6_4yk0h"]
 [ext_resource type="PackedScene" uid="uid://bfagaha123uwa" path="res://scenes/podłoże.tscn" id="7_vmrhw"]
+[ext_resource type="PackedScene" uid="uid://dnyxow4m7hdxg" path="res://scenes/grzybo_licznik.tscn" id="7_xworo"]
 [ext_resource type="PackedScene" uid="uid://dlxthme1lexwh" path="res://scenes/klocki/blokada.tscn" id="8_cfnpk"]
 [ext_resource type="PackedScene" uid="uid://ddyolwk2jwdl" path="res://scenes/klocki/trawa-01.tscn" id="9_wvtie"]
 [ext_resource type="PackedScene" uid="uid://bjt6gadfhgwfs" path="res://scenes/klocki/trawa-03.tscn" id="10_o8s4s"]
@@ -52,6 +53,8 @@ position = Vector2(34234, 243)
 [node name="PauseMenu" parent="CanvasLayer" unique_id=945622167 instance=ExtResource("4_o7j4k")]
 offset_left = -3.0
 offset_right = 1.0
+
+[node name="CanvasLayer2" parent="." unique_id=816639575 instance=ExtResource("7_xworo")]
 
 [node name="kolce" type="Node" parent="." unique_id=1134684190]
 
@@ -129,16 +132,16 @@ position = Vector2(19833.5, 904)
 scale = Vector2(-1, 1)
 
 [node name="Podłoże_ziemia" parent="ziemia2" unique_id=439224959 instance=ExtResource("7_vmrhw")]
-position = Vector2(21000.5, 1210)
+position = Vector2(21003, 1210)
 
 [node name="Podłoże_ziemia2" parent="ziemia2" unique_id=470611717 instance=ExtResource("7_vmrhw")]
-position = Vector2(29487.5, 1203.5)
+position = Vector2(29475, 1210)
 
 [node name="Podłoże_ziemia3" parent="ziemia2" unique_id=1802072614 instance=ExtResource("7_vmrhw")]
-position = Vector2(31606.5, 1203.5)
+position = Vector2(31594, 1210)
 
 [node name="Podłoże_ziemia4" parent="ziemia2" unique_id=1178151181 instance=ExtResource("7_vmrhw")]
-position = Vector2(33724.5, 1203.5)
+position = Vector2(33713, 1210)
 
 [node name="Podłoże_ziemia5" parent="ziemia2" unique_id=497315354 instance=ExtResource("7_vmrhw")]
 position = Vector2(33724.5, 676.5)
@@ -149,10 +152,10 @@ position = Vector2(33724.5, 676.5)
 position = Vector2(23122, 1210)
 
 [node name="Podłoże_ziemia3" parent="ziemia" unique_id=1348112463 instance=ExtResource("7_vmrhw")]
-position = Vector2(25240, 1210)
+position = Vector2(25238, 1210)
 
 [node name="Podłoże_ziemia4" parent="ziemia" unique_id=977811879 instance=ExtResource("7_vmrhw")]
-position = Vector2(27363, 1210)
+position = Vector2(27355, 1210)
 
 [node name="Podłoże_ziemia" parent="ziemia" unique_id=1650249252 instance=ExtResource("7_vmrhw")]
 z_index = -1
@@ -755,4 +758,4 @@ position = Vector2(13095, 807)
 [node name="Flaga" type="Node" parent="." unique_id=1027080661]
 
 [node name="Node2D" parent="Flaga" unique_id=1737962051 instance=ExtResource("26_mx6s3")]
-position = Vector2(34140.5, 145.5)
+position = Vector2(33801, 158)

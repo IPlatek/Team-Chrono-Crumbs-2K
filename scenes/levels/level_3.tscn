@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dlxthme1lexwh" path="res://scenes/klocki/blokada.tscn" id="3_pimnq"]
 [ext_resource type="PackedScene" uid="uid://18tp1yw5tvid" path="res://scenes/kill_zone.tscn" id="3_t4txi"]
 [ext_resource type="PackedScene" uid="uid://bfagaha123uwa" path="res://scenes/podłoże.tscn" id="3_ugcn1"]
+[ext_resource type="PackedScene" uid="uid://dnyxow4m7hdxg" path="res://scenes/grzybo_licznik.tscn" id="4_1nwmf"]
 [ext_resource type="Texture2D" uid="uid://dayk6c50le2dn" path="res://assets/sprites/asset_map/trawa-04.png" id="4_apo5x"]
 [ext_resource type="Texture2D" uid="uid://cptvhxcii7rh6" path="res://assets/sprites/asset_map/trawa-03.png" id="5_josfm"]
 [ext_resource type="Texture2D" uid="uid://bse5rcmhohc30" path="res://assets/sprites/asset_map/trawa-06.png" id="6_lgrx1"]
@@ -31,6 +32,8 @@ position = Vector2(1120, 675)
 [node name="transition" parent="Player 1" unique_id=1371874494 instance=ExtResource("2_apo5x")]
 
 [node name="muzyka" parent="Player 1" unique_id=890688004 instance=ExtResource("3_josfm")]
+
+[node name="CanvasLayer2" parent="." unique_id=816639575 instance=ExtResource("4_1nwmf")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2018574627]
 
@@ -442,7 +445,7 @@ scale = Vector2(0.7, 1)
 
 [node name="Node2D9" parent="przeszkody" unique_id=298993006 instance=ExtResource("17_fhpes")]
 z_index = -1
-position = Vector2(10857, -4444)
+position = Vector2(10850, -4420)
 rotation = 1.5707964
 scale = Vector2(0.5, 1)
 

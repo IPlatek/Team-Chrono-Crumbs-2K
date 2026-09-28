@@ -4,16 +4,30 @@
 [ext_resource type="VideoStream" uid="uid://bdo0sauoamghb" path="res://credits.ogv" id="2_6xpyw"]
 
 [node name="credits" type="Node2D" unique_id=44486845]
+position = Vector2(463, 280)
 script = ExtResource("1_fxijl")
-
-[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=2074302289]
-offset_right = 1920.0
-offset_bottom = 1080.0
-size_flags_horizontal = 4
-stream = ExtResource("2_6xpyw")
-autoplay = true
 
 [node name="Timer" type="Timer" parent="." unique_id=745740244]
 wait_time = 13.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1874115515]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1213849838]
+clip_contents = true
+layout_direction = 4
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -960.0
+offset_top = -540.0
+offset_right = 960.0
+offset_bottom = 540.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stream = ExtResource("2_6xpyw")
+autoplay = true
+expand = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

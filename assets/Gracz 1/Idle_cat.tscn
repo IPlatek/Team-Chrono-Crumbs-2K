@@ -542,6 +542,10 @@ one_shot = true
 wait_time = 0.5
 one_shot = true
 
+[node name="double_jump_delay" type="Timer" parent="." unique_id=414499271]
+wait_time = 0.25
+one_shot = true
+
 [node name="HitBox" type="Area2D" parent="." unique_id=338689507 groups=["player_attack"]]
 collision_mask = 2
 

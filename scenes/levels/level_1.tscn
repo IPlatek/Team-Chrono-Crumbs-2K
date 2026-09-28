@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://r8w5fi7u074u" path="res://scenes/muzyka.tscn" id="5_gcpff"]
 [ext_resource type="PackedScene" uid="uid://18tp1yw5tvid" path="res://scenes/kill_zone.tscn" id="6_oxkfp"]
 [ext_resource type="PackedScene" uid="uid://co80mntjp3do1" path="res://scenes/Menu/pause_menu.tscn" id="7_uf5dc"]
+[ext_resource type="PackedScene" uid="uid://dnyxow4m7hdxg" path="res://scenes/grzybo_licznik.tscn" id="8_31oqk"]
 [ext_resource type="PackedScene" uid="uid://g00li45uytj5" path="res://scenes/spikes.tscn" id="8_nk50a"]
 [ext_resource type="PackedScene" uid="uid://bfagaha123uwa" path="res://scenes/podłoże.tscn" id="9_010i8"]
 [ext_resource type="PackedScene" uid="uid://dlxthme1lexwh" path="res://scenes/klocki/blokada.tscn" id="11_tlkt1"]
@@ -180,7 +181,7 @@ position = Vector2(15935, 304)
 
 [node name="Player 1" parent="." unique_id=1421348436 instance=ExtResource("3_o4lc3")]
 z_index = 0
-position = Vector2(586, 782)
+position = Vector2(581, 766)
 
 [node name="transition" parent="Player 1" unique_id=1371874494 instance=ExtResource("4_y0cm3")]
 
@@ -195,6 +196,8 @@ position = Vector2(738, 1693)
 offset_left = 2.0
 offset_top = -1.0
 offset_right = 5.0
+
+[node name="CanvasLayer2" parent="." unique_id=816639575 instance=ExtResource("8_31oqk")]
 
 [node name="kolce" type="Node" parent="." unique_id=1134684190]
 
@@ -579,4 +582,4 @@ position = Vector2(13699, 806)
 [node name="flaga" type="Node" parent="." unique_id=1157024640]
 
 [node name="Node2D" parent="flaga" unique_id=1737962051 instance=ExtResource("28_2j8ha")]
-position = Vector2(15848, 148)
+position = Vector2(15463, 178)

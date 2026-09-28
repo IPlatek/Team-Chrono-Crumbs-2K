@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dnyxow4m7hdxg"]
+
+[ext_resource type="FontFile" uid="uid://y0ftwckxcyqc" path="res://assets/fonts/Rayman2-regular.ttf" id="1_3rvht"]
+
+[sub_resource type="GDScript" id="GDScript_3rvht"]
+resource_name = "Grzybo_licznik"
+script/source = "extends CanvasLayer
+
+@onready var licznik = $Grzybki
+
+func _process(delta: float) -> void:
+	licznik.text = \"MUSHROOMS: \" + str(Global.grzybki)
+"
+
+[node name="CanvasLayer2" type="CanvasLayer" unique_id=816639575]
+script = SubResource("GDScript_3rvht")
+
+[node name="Grzybki" type="Label" parent="." unique_id=525046795]
+offset_right = 738.08
+offset_bottom = 224.00003
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_3rvht")
+theme_override_font_sizes/font_size = 80
+text = "MUSHROOMS : 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true

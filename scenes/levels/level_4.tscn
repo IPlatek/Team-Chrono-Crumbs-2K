@@ -5,9 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://co80mntjp3do1" path="res://scenes/Menu/pause_menu.tscn" id="2_kh8wv"]
 [ext_resource type="PackedScene" uid="uid://r8w5fi7u074u" path="res://scenes/muzyka.tscn" id="3_fcb7b"]
 [ext_resource type="PackedScene" uid="uid://dlxthme1lexwh" path="res://scenes/klocki/blokada.tscn" id="3_v0csc"]
-[ext_resource type="AudioStream" uid="uid://d0uu1fs1el6u4" path="res://Shaders/BOSS_FIGHT.mp3" id="4_ov8fk"]
 [ext_resource type="PackedScene" uid="uid://bfagaha123uwa" path="res://scenes/podłoże.tscn" id="4_sy285"]
+[ext_resource type="AudioStream" uid="uid://bkgxrfxb03f5u" path="res://Shaders/boss.mp3" id="4_vq5n0"]
 [ext_resource type="PackedScene" uid="uid://bhp04cesevmhr" path="res://scenes/boss_attack.tscn" id="5_1h1ve"]
+[ext_resource type="PackedScene" uid="uid://dnyxow4m7hdxg" path="res://scenes/grzybo_licznik.tscn" id="5_xt2o7"]
 [ext_resource type="PackedScene" uid="uid://bna1hebdduaju" path="res://scenes/BOSS_CAT.tscn" id="6_a1e3b"]
 [ext_resource type="PackedScene" uid="uid://cr0frcp7tm3bq" path="res://scenes/klocki/platforma.tscn" id="7_1hqi6"]
 [ext_resource type="PackedScene" uid="uid://g00li45uytj5" path="res://scenes/spikes.tscn" id="8_xbf0g"]
@@ -28,8 +29,10 @@ position = Vector2(1271, 939)
 [node name="transition" parent="Player 1" unique_id=1371874494 instance=ExtResource("2_hsvsk")]
 
 [node name="muzyka" parent="Player 1" unique_id=890688004 instance=ExtResource("3_fcb7b")]
-stream = ExtResource("4_ov8fk")
-volume_db = 2.0
+stream = ExtResource("4_vq5n0")
+volume_db = 0.0
+
+[node name="CanvasLayer2" parent="." unique_id=816639575 instance=ExtResource("5_xt2o7")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=888993124]
 
