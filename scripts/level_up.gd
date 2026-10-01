@@ -34,4 +34,5 @@ func _on_body_entered(body: Node2D) -> void:
 		file.store_string(JSON.stringify(json_as_dict))
 		#tu ta pierwsz czesci zapisuje plik a ta druga zamienia na tekst chyba  a nie na jsona
 		file.close()
-	
+		
+		
