@@ -21,3 +21,7 @@ func get_time() -> float:
 		return final_time
 	
 	return Time.get_ticks_msec() / 1000.0 - start_time
+
+func star_timer_after_awaiting(old_time):
+	start_time = old_time
+	stopped = false

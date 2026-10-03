@@ -15,6 +15,7 @@ var seconds = int(time_value) % 60
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	Master_Timer.stop_timer()
 	var file = "userdata.json"
 	var json_as_text = FileAccess.get_file_as_string(file)
 	var json_as_dict = JSON.parse_string(json_as_text)
@@ -57,6 +58,7 @@ func _on_retry_pressed() -> void:
 	var actual_string = format_string % [current_level]
 	print(actual_string)
 	get_tree().change_scene_to_file(actual_string)
+	Master_Timer.start_timer()
 
 
 func _on_next_level_pressed() -> void:
@@ -79,3 +81,4 @@ func _on_next_level_pressed() -> void:
 	file = FileAccess.open("userdata.json", FileAccess.WRITE)
 	file.store_string(JSON.stringify(json_as_dict))
 	file.close()
+	Master_Timer.start_timer()

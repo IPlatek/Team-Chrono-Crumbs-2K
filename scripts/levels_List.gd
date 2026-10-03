@@ -48,6 +48,7 @@ func _on_level_1_pressed() -> void:
 	file = FileAccess.open("userdata.json", FileAccess.WRITE)		
 	file.store_string(JSON.stringify(json_as_dict))
 	file.close()
+	Master_Timer.start_timer()
 
 
 func _on_level_2_pressed() -> void:
@@ -69,7 +70,8 @@ func _on_level_2_pressed() -> void:
 		file = FileAccess.open("userdata.json", FileAccess.WRITE)		
 		file.store_string(JSON.stringify(json_as_dict))
 		file.close()
-	
+		
+	Master_Timer.start_timer()
 
 func _on_level_3_pressed() -> void:
 	var file = "userdata.json"
@@ -86,7 +88,8 @@ func _on_level_3_pressed() -> void:
 		file = FileAccess.open("userdata.json", FileAccess.WRITE)		
 		file.store_string(JSON.stringify(json_as_dict))
 		file.close()
-
+		
+	Master_Timer.start_timer()
 func _on_boss_pressed() -> void:
 	var file = "userdata.json"
 	var json_as_text = FileAccess.get_file_as_string(file)
@@ -102,7 +105,8 @@ func _on_boss_pressed() -> void:
 		file = FileAccess.open("userdata.json", FileAccess.WRITE)		
 		file.store_string(JSON.stringify(json_as_dict))
 		file.close()
-
+	Master_Timer.start_timer()
+	
 func _on_back_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/Menu/main_menu.tscn")
 	print("klikniete")

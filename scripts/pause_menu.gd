@@ -31,16 +31,23 @@ func testesc():
 
 
 func _on_resume_pressed() -> void:
+	Master_Timer.stop_timer()
+	var czas_przed_zatrzymaniem = Master_Timer.get_time()
+	print(czas_przed_zatrzymaniem)
+	Master_Timer.star_timer_after_awaiting(czas_przed_zatrzymaniem)
 	resume()
 
 
 func _on_reset_pressed() -> void:
 	resume()
 	get_tree().reload_current_scene()
+	Master_Timer.stop_timer()
+	Master_Timer.start_timer()
 
 
 func _on_levels_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/Menu/levels.tscn")
+	Master_Timer.stop_timer()
 	print("w pełni dizłam")
 	
 

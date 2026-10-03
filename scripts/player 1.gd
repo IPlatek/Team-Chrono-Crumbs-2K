@@ -28,6 +28,8 @@ func _process(_delta: float) -> void:
 		Global.lifes = 1
 		Global.grzybki = 0
 		Global.no_move = false
+		Master_Timer.stop_timer()
+		Master_Timer.start_timer()
 
 func _physics_process(delta: float) -> void:
 	

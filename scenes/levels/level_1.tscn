@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://cqg8pgfs60gn4"]
 
 [ext_resource type="FontFile" uid="uid://y0ftwckxcyqc" path="res://assets/fonts/Rayman2-regular.ttf" id="1_5buf6"]
-[ext_resource type="Script" uid="uid://b8y78p8p6y3ur" path="res://scripts/level_1.gd" id="1_x7jkp"]
 [ext_resource type="PackedScene" uid="uid://d2ofgod1pvt78" path="res://scenes/level_up.tscn" id="2_n0udj"]
 [ext_resource type="PackedScene" uid="uid://duy6pv5dquk8a" path="res://assets/Gracz 1/Idle_cat.tscn" id="3_o4lc3"]
 [ext_resource type="PackedScene" uid="uid://b6fq2whbdgk6v" path="res://scenes/transition.tscn" id="4_y0cm3"]
@@ -30,7 +29,6 @@
 [ext_resource type="PackedScene" uid="uid://bst1kvtcajkhd" path="res://scenes/flaga.tscn" id="28_2j8ha"]
 
 [node name="Game" type="Node2D" unique_id=2123090632]
-script = ExtResource("1_x7jkp")
 metadata/_edit_horizontal_guides_ = [542.0, 832.0, 1588.0]
 
 [node name="napisy" type="Node" parent="." unique_id=765927171]
