@@ -65,10 +65,12 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("skok_gracz_1") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		double_jump_dela.start()
+		Global.jumps = Global.jumps + 1
 		#double jump
 	elif Input.is_action_just_pressed("skok_gracz_1") and !is_on_floor() and extra_jump_count > 0 and double_jump_dela.is_stopped():
 		velocity.y = JUMP_VELOCITY
 		extra_jump_count -= 1
+		Global.jumps = Global.jumps + 1
 		 
 	#dashowanie
 	if Input.is_action_just_pressed("dash") and can_dash:

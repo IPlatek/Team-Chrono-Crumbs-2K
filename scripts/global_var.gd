@@ -6,6 +6,7 @@ var player_force = 0
 var grzybki = 0
 var current_level = 0.0
 var fade_in = false
+var jumps = 0
 
 func add_grzybek():
 	grzybki += 1

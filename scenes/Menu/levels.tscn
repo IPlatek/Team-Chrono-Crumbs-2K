@@ -21,7 +21,7 @@ metadata/_edit_horizontal_guides_ = [100.0, 400.0, 440.0, 820.0, 740.0, 970.0]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=814430448]
 position = Vector2(959.99994, 542)
-scale = Vector2(0.75, 0.75277776)
+scale = Vector2(0.8759227, 0.87916666)
 texture = ExtResource("2_ixtga")
 
 [node name="Button_menager" type="Control" parent="." unique_id=1270754883]

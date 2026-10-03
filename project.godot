@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*uid://dde1bnmqea8qc"
+Master_Timer="*uid://k3qc2r0hk83y"
 
 [display]
 
