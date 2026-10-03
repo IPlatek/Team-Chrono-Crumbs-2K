@@ -1,0 +1,2931 @@
+[gd_scene format=3 uid="uid://dme87dg5l27qh"]
+
+[ext_resource type="Texture2D" uid="uid://baqwyglq4lshp" path="res://assets/sprites/asset_map/liście.png" id="1_wtc4o"]
+
+[node name="Node2D" type="Node2D" unique_id=1289001806]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=49249638]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(123, 15)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=743473081]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(425, 14.000001)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=185082797]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(722.9, 18.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=1442376441]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(1024.9, 17.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=322442580]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(1326.9, 14.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D6" type="Sprite2D" parent="." unique_id=1139286196]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(1628.9, 13.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D7" type="Sprite2D" parent="." unique_id=1269730108]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(1926.8, 17.00003)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D8" type="Sprite2D" parent="." unique_id=485025628]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(2228.8, 16.00003)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D9" type="Sprite2D" parent="." unique_id=2041459876]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(2528.9, 10)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D10" type="Sprite2D" parent="." unique_id=1614698912]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(2830.9, 9)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D11" type="Sprite2D" parent="." unique_id=1154226262]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(3128.8, 13.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D12" type="Sprite2D" parent="." unique_id=1753185988]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(3430.8, 12.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D13" type="Sprite2D" parent="." unique_id=1918728716]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(3732.8, 9.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D14" type="Sprite2D" parent="." unique_id=487282248]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(4034.8, 8.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D15" type="Sprite2D" parent="." unique_id=1548828811]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(4332.7, 12.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D16" type="Sprite2D" parent="." unique_id=1295514173]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(4634.7, 11.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D17" type="Sprite2D" parent="." unique_id=1940314950]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(123, 15)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D18" type="Sprite2D" parent="." unique_id=1255081344]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(425, 14.000001)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D19" type="Sprite2D" parent="." unique_id=1935898241]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(722.9, 18.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D20" type="Sprite2D" parent="." unique_id=361343508]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(1024.9, 17.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D21" type="Sprite2D" parent="." unique_id=794811784]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(1326.9, 14.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D22" type="Sprite2D" parent="." unique_id=1834625462]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(1628.9, 13.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D23" type="Sprite2D" parent="." unique_id=215077974]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(1926.8, 17.00003)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D24" type="Sprite2D" parent="." unique_id=1999841382]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(2228.8, 16.00003)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D25" type="Sprite2D" parent="." unique_id=1576290461]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(2528.9, 10)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D26" type="Sprite2D" parent="." unique_id=333357043]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(2830.9, 9)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D27" type="Sprite2D" parent="." unique_id=849374178]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(3128.8, 13.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D28" type="Sprite2D" parent="." unique_id=740689384]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(3430.8, 12.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D29" type="Sprite2D" parent="." unique_id=1822254608]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(3732.8, 9.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D30" type="Sprite2D" parent="." unique_id=434165485]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(4034.8, 8.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D31" type="Sprite2D" parent="." unique_id=256748903]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(4332.7, 12.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D32" type="Sprite2D" parent="." unique_id=1825914352]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(4634.7, 11.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D33" type="Sprite2D" parent="." unique_id=1060446075]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(4935.9, 9)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D34" type="Sprite2D" parent="." unique_id=1642158470]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(5237.9, 8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D35" type="Sprite2D" parent="." unique_id=195018953]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(5535.8, 12.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D36" type="Sprite2D" parent="." unique_id=1854656646]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(5837.8, 11.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D37" type="Sprite2D" parent="." unique_id=103752103]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(6139.8, 8.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D38" type="Sprite2D" parent="." unique_id=181120140]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(6441.8, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D39" type="Sprite2D" parent="." unique_id=2038032281]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(6739.7, 11.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D40" type="Sprite2D" parent="." unique_id=1857734811]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(7041.7, 10.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D41" type="Sprite2D" parent="." unique_id=1717947872]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(7341.8, 4)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D42" type="Sprite2D" parent="." unique_id=956732230]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(7643.8, 3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D43" type="Sprite2D" parent="." unique_id=1132796616]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(7941.7, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D44" type="Sprite2D" parent="." unique_id=394125010]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(8243.7, 6.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D45" type="Sprite2D" parent="." unique_id=1642049350]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(8545.7, 3.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D46" type="Sprite2D" parent="." unique_id=564345133]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(8847.7, 2.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D47" type="Sprite2D" parent="." unique_id=789330773]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(9145.6, 6.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D48" type="Sprite2D" parent="." unique_id=199885624]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(9447.6, 5.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D49" type="Sprite2D" parent="." unique_id=2143037612]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(4935.9, 9)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D50" type="Sprite2D" parent="." unique_id=1493191514]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(5237.9, 8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D51" type="Sprite2D" parent="." unique_id=1335474683]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(5535.8, 12.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D52" type="Sprite2D" parent="." unique_id=2094023476]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(5837.8, 11.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D53" type="Sprite2D" parent="." unique_id=1076928420]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(6139.8, 8.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D54" type="Sprite2D" parent="." unique_id=1715118861]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(6441.8, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D55" type="Sprite2D" parent="." unique_id=123383530]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(6739.7, 11.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D56" type="Sprite2D" parent="." unique_id=840135430]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(7041.7, 10.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D57" type="Sprite2D" parent="." unique_id=1772370171]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(7341.8, 4)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D58" type="Sprite2D" parent="." unique_id=192334305]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(7643.8, 3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D59" type="Sprite2D" parent="." unique_id=2111613112]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(7941.7, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D60" type="Sprite2D" parent="." unique_id=783986412]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(8243.7, 6.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D61" type="Sprite2D" parent="." unique_id=380143859]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(8545.7, 3.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D62" type="Sprite2D" parent="." unique_id=1169145217]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(8847.7, 2.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D63" type="Sprite2D" parent="." unique_id=364869729]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(9145.6, 6.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D64" type="Sprite2D" parent="." unique_id=252415273]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(9447.6, 5.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D65" type="Sprite2D" parent="." unique_id=1706451223]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(9749.9, 4)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D66" type="Sprite2D" parent="." unique_id=698397695]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(10051.9, 3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D67" type="Sprite2D" parent="." unique_id=509587975]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(10349.8, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D68" type="Sprite2D" parent="." unique_id=815223522]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(10651.8, 6.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D69" type="Sprite2D" parent="." unique_id=528361466]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(10953.8, 3.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D70" type="Sprite2D" parent="." unique_id=421251295]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(11255.8, 2.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D71" type="Sprite2D" parent="." unique_id=367683166]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(11553.7, 6.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D72" type="Sprite2D" parent="." unique_id=1881475311]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(11855.7, 5.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D73" type="Sprite2D" parent="." unique_id=1272658994]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(12155.8, -1)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D74" type="Sprite2D" parent="." unique_id=191451555]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(12457.8, -2)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D75" type="Sprite2D" parent="." unique_id=251580287]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(12755.7, 2.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D76" type="Sprite2D" parent="." unique_id=1677746517]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(13057.7, 1.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D77" type="Sprite2D" parent="." unique_id=1273486329]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(13359.7, -1.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D78" type="Sprite2D" parent="." unique_id=809186950]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(13661.7, -2.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D79" type="Sprite2D" parent="." unique_id=742441986]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(13959.6, 1.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D80" type="Sprite2D" parent="." unique_id=1439839796]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(14261.6, 3.0517578e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D81" type="Sprite2D" parent="." unique_id=246185157]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(9749.9, 4)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D82" type="Sprite2D" parent="." unique_id=928601795]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(10051.9, 3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D83" type="Sprite2D" parent="." unique_id=1806196365]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(10349.8, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D84" type="Sprite2D" parent="." unique_id=1839985177]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(10651.8, 6.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D85" type="Sprite2D" parent="." unique_id=1365665093]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(10953.8, 3.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D86" type="Sprite2D" parent="." unique_id=1331009669]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(11255.8, 2.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D87" type="Sprite2D" parent="." unique_id=1118335500]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(11553.7, 6.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D88" type="Sprite2D" parent="." unique_id=1066176556]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(11855.7, 5.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D89" type="Sprite2D" parent="." unique_id=2124296452]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(12155.8, -1)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D90" type="Sprite2D" parent="." unique_id=674720089]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(12457.8, -2)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D91" type="Sprite2D" parent="." unique_id=1037324896]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(12755.7, 2.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D92" type="Sprite2D" parent="." unique_id=506146654]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(13057.7, 1.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D93" type="Sprite2D" parent="." unique_id=879185692]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(13359.7, -1.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D94" type="Sprite2D" parent="." unique_id=1603508717]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(13661.7, -2.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D95" type="Sprite2D" parent="." unique_id=923271633]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(13959.6, 1.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D96" type="Sprite2D" parent="." unique_id=1769987768]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(14261.6, 3.0517578e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D97" type="Sprite2D" parent="." unique_id=1498069262]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(14562.8, -2)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D98" type="Sprite2D" parent="." unique_id=1841656124]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(14864.8, -3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D99" type="Sprite2D" parent="." unique_id=1714424454]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(15162.699, 1.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D100" type="Sprite2D" parent="." unique_id=1190950607]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(15464.699, 1.5258789e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D101" type="Sprite2D" parent="." unique_id=2023019330]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(15766.699, -2.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D102" type="Sprite2D" parent="." unique_id=1317786923]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(16068.699, -3.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D103" type="Sprite2D" parent="." unique_id=1410733604]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(16366.6, 3.0517578e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D104" type="Sprite2D" parent="." unique_id=1490664118]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(16668.6, -0.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D105" type="Sprite2D" parent="." unique_id=1575064823]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(16968.7, -7)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D106" type="Sprite2D" parent="." unique_id=126130999]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(17270.7, -8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D107" type="Sprite2D" parent="." unique_id=1372901858]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(17568.6, -3.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D108" type="Sprite2D" parent="." unique_id=751328022]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(17870.6, -4.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D109" type="Sprite2D" parent="." unique_id=454856541]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(18172.6, -7.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D110" type="Sprite2D" parent="." unique_id=1290125069]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(18474.6, -8.999985)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D111" type="Sprite2D" parent="." unique_id=1995053387]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(18772.5, -4.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D112" type="Sprite2D" parent="." unique_id=282207236]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(19074.5, -5.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D113" type="Sprite2D" parent="." unique_id=2050988228]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(14562.8, -2)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D114" type="Sprite2D" parent="." unique_id=1093288016]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(14864.8, -3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D115" type="Sprite2D" parent="." unique_id=537889615]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(15162.699, 1.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D116" type="Sprite2D" parent="." unique_id=1245681607]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(15464.699, 1.5258789e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D117" type="Sprite2D" parent="." unique_id=1151976010]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(15766.699, -2.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D118" type="Sprite2D" parent="." unique_id=595865947]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(16068.699, -3.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D119" type="Sprite2D" parent="." unique_id=473753968]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(16366.6, 3.0517578e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D120" type="Sprite2D" parent="." unique_id=1127900004]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(16668.6, -0.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D121" type="Sprite2D" parent="." unique_id=410222629]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(16968.7, -7)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D122" type="Sprite2D" parent="." unique_id=583447252]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(17270.7, -8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D123" type="Sprite2D" parent="." unique_id=1194383940]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(17568.6, -3.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D124" type="Sprite2D" parent="." unique_id=293463613]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(17870.6, -4.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D125" type="Sprite2D" parent="." unique_id=1316158656]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(18172.6, -7.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D126" type="Sprite2D" parent="." unique_id=847062047]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(18474.6, -8.999985)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D127" type="Sprite2D" parent="." unique_id=618438347]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(18772.5, -4.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D128" type="Sprite2D" parent="." unique_id=2030269882]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(19074.5, -5.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D129" type="Sprite2D" parent="." unique_id=350729361]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(19374.9, 14)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D130" type="Sprite2D" parent="." unique_id=569025922]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(19676.9, 13.000001)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D131" type="Sprite2D" parent="." unique_id=1026746126]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(19974.8, 17.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D132" type="Sprite2D" parent="." unique_id=1545974458]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(20276.8, 16.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D133" type="Sprite2D" parent="." unique_id=1154703415]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(20578.8, 13.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D134" type="Sprite2D" parent="." unique_id=567792795]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(20880.8, 12.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D135" type="Sprite2D" parent="." unique_id=2112391796]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(21178.7, 16.00003)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D136" type="Sprite2D" parent="." unique_id=914428264]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(21480.7, 15.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D137" type="Sprite2D" parent="." unique_id=1817368437]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(21780.8, 9)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D138" type="Sprite2D" parent="." unique_id=213810726]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(22082.8, 8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D139" type="Sprite2D" parent="." unique_id=1825496233]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(22380.7, 12.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D140" type="Sprite2D" parent="." unique_id=919613677]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(22682.7, 11.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D141" type="Sprite2D" parent="." unique_id=289315999]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(22984.7, 8.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D142" type="Sprite2D" parent="." unique_id=33114085]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(23286.7, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D143" type="Sprite2D" parent="." unique_id=525716786]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(23584.6, 11.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D144" type="Sprite2D" parent="." unique_id=1703797842]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(23886.6, 10.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D145" type="Sprite2D" parent="." unique_id=1428963485]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(19374.9, 14)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D146" type="Sprite2D" parent="." unique_id=735000652]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(19676.9, 13.000001)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D147" type="Sprite2D" parent="." unique_id=408855966]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(19974.8, 17.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D148" type="Sprite2D" parent="." unique_id=1648754860]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(20276.8, 16.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D149" type="Sprite2D" parent="." unique_id=1839940845]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(20578.8, 13.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D150" type="Sprite2D" parent="." unique_id=582979792]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(20880.8, 12.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D151" type="Sprite2D" parent="." unique_id=1947180045]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(21178.7, 16.00003)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D152" type="Sprite2D" parent="." unique_id=599172804]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(21480.7, 15.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D153" type="Sprite2D" parent="." unique_id=1589462987]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(21780.8, 9)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D154" type="Sprite2D" parent="." unique_id=1230691027]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(22082.8, 8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D155" type="Sprite2D" parent="." unique_id=803779848]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(22380.7, 12.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D156" type="Sprite2D" parent="." unique_id=1211298663]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(22682.7, 11.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D157" type="Sprite2D" parent="." unique_id=1192198010]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(22984.7, 8.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D158" type="Sprite2D" parent="." unique_id=34946347]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(23286.7, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D159" type="Sprite2D" parent="." unique_id=1347325592]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(23584.6, 11.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D160" type="Sprite2D" parent="." unique_id=115640129]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(23886.6, 10.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D161" type="Sprite2D" parent="." unique_id=1570306783]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(24187.8, 8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D162" type="Sprite2D" parent="." unique_id=928222637]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(24489.8, 7)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D163" type="Sprite2D" parent="." unique_id=1551116128]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(24787.7, 11.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D164" type="Sprite2D" parent="." unique_id=2062686827]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(25089.7, 10.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D165" type="Sprite2D" parent="." unique_id=1819032251]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(25391.7, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D166" type="Sprite2D" parent="." unique_id=530327397]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(25693.7, 6.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D167" type="Sprite2D" parent="." unique_id=1589405843]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(25991.6, 10.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D168" type="Sprite2D" parent="." unique_id=1794843018]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(26293.6, 9.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D169" type="Sprite2D" parent="." unique_id=683288950]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(26593.7, 3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D170" type="Sprite2D" parent="." unique_id=701512984]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(26895.7, 2)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D171" type="Sprite2D" parent="." unique_id=700705974]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(27193.6, 6.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D172" type="Sprite2D" parent="." unique_id=327029272]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(27495.6, 5.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D173" type="Sprite2D" parent="." unique_id=1499999797]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(27797.6, 2.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D174" type="Sprite2D" parent="." unique_id=479408000]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(28099.6, 1.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D175" type="Sprite2D" parent="." unique_id=1143183203]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(28397.5, 5.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D176" type="Sprite2D" parent="." unique_id=1390861963]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(28699.5, 4.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D177" type="Sprite2D" parent="." unique_id=850907163]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(24187.8, 8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D178" type="Sprite2D" parent="." unique_id=774898296]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(24489.8, 7)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D179" type="Sprite2D" parent="." unique_id=1678618931]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(24787.7, 11.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D180" type="Sprite2D" parent="." unique_id=32355845]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(25089.7, 10.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D181" type="Sprite2D" parent="." unique_id=1187999140]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(25391.7, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D182" type="Sprite2D" parent="." unique_id=1387116911]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(25693.7, 6.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D183" type="Sprite2D" parent="." unique_id=553981763]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(25991.6, 10.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D184" type="Sprite2D" parent="." unique_id=239922051]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(26293.6, 9.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D185" type="Sprite2D" parent="." unique_id=1844336022]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(26593.7, 3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D186" type="Sprite2D" parent="." unique_id=2038067386]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(26895.7, 2)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D187" type="Sprite2D" parent="." unique_id=1600036538]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(27193.6, 6.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D188" type="Sprite2D" parent="." unique_id=1602304705]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(27495.6, 5.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D189" type="Sprite2D" parent="." unique_id=1575764965]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(27797.6, 2.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D190" type="Sprite2D" parent="." unique_id=446783934]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(28099.6, 1.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D191" type="Sprite2D" parent="." unique_id=833240922]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(28397.5, 5.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D192" type="Sprite2D" parent="." unique_id=1992394602]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(28699.5, 4.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D193" type="Sprite2D" parent="." unique_id=65137306]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(29001.8, 3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D194" type="Sprite2D" parent="." unique_id=332945759]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(29303.8, 2)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D195" type="Sprite2D" parent="." unique_id=556182720]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(29601.7, 6.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D196" type="Sprite2D" parent="." unique_id=1959738865]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(29903.7, 5.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D197" type="Sprite2D" parent="." unique_id=2049494131]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(30205.7, 2.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D198" type="Sprite2D" parent="." unique_id=417589277]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(30507.7, 1.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D199" type="Sprite2D" parent="." unique_id=1510828855]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(30805.6, 5.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D200" type="Sprite2D" parent="." unique_id=700400931]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(31107.6, 4.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D201" type="Sprite2D" parent="." unique_id=1129588813]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(31407.7, -2)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D202" type="Sprite2D" parent="." unique_id=193877403]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(31709.7, -3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D203" type="Sprite2D" parent="." unique_id=38271215]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(32007.6, 1.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D204" type="Sprite2D" parent="." unique_id=868236613]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(32309.6, 1.5258789e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D205" type="Sprite2D" parent="." unique_id=1392031037]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(32611.6, -2.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D206" type="Sprite2D" parent="." unique_id=1950077568]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(32913.6, -3.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D207" type="Sprite2D" parent="." unique_id=553657981]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(33211.5, 3.0517578e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D208" type="Sprite2D" parent="." unique_id=2060158534]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(33513.5, -0.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D209" type="Sprite2D" parent="." unique_id=980950466]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(29001.8, 3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D210" type="Sprite2D" parent="." unique_id=308818829]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(29303.8, 2)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D211" type="Sprite2D" parent="." unique_id=1115128153]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(29601.7, 6.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D212" type="Sprite2D" parent="." unique_id=382036393]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(29903.7, 5.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D213" type="Sprite2D" parent="." unique_id=2082776507]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(30205.7, 2.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D214" type="Sprite2D" parent="." unique_id=1572998871]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(30507.7, 1.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D215" type="Sprite2D" parent="." unique_id=1693417152]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(30805.6, 5.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D216" type="Sprite2D" parent="." unique_id=247824363]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(31107.6, 4.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D217" type="Sprite2D" parent="." unique_id=899722637]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(31407.7, -2)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D218" type="Sprite2D" parent="." unique_id=1756896863]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(31709.7, -3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D219" type="Sprite2D" parent="." unique_id=1835778240]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(32007.6, 1.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D220" type="Sprite2D" parent="." unique_id=1035684605]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(32309.6, 1.5258789e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D221" type="Sprite2D" parent="." unique_id=237288180]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(32611.6, -2.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D222" type="Sprite2D" parent="." unique_id=263406535]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(32913.6, -3.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D223" type="Sprite2D" parent="." unique_id=1357620461]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(33211.5, 3.0517578e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D224" type="Sprite2D" parent="." unique_id=139690676]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(33513.5, -0.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D225" type="Sprite2D" parent="." unique_id=1766500002]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(33814.7, -3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D226" type="Sprite2D" parent="." unique_id=1838268262]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(34116.7, -4)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D227" type="Sprite2D" parent="." unique_id=1489461361]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(34414.6, 1.5258789e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D228" type="Sprite2D" parent="." unique_id=1845673452]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(34716.6, -0.99998474)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D229" type="Sprite2D" parent="." unique_id=1854757788]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(35018.6, -3.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D230" type="Sprite2D" parent="." unique_id=1310780917]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(35320.6, -4.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D231" type="Sprite2D" parent="." unique_id=618335053]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(35618.5, -0.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D232" type="Sprite2D" parent="." unique_id=242006294]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(35920.5, -1.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D233" type="Sprite2D" parent="." unique_id=141103506]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(36220.6, -8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D234" type="Sprite2D" parent="." unique_id=674564449]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(36522.6, -9)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D235" type="Sprite2D" parent="." unique_id=1809910482]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(36820.5, -4.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D236" type="Sprite2D" parent="." unique_id=1583428515]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(37122.5, -5.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D237" type="Sprite2D" parent="." unique_id=270547065]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(37424.5, -8.999985)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D238" type="Sprite2D" parent="." unique_id=616757481]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(37726.5, -9.999985)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D239" type="Sprite2D" parent="." unique_id=1353055243]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(38024.4, -5.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D240" type="Sprite2D" parent="." unique_id=252432667]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(38326.4, -6.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D241" type="Sprite2D" parent="." unique_id=480269505]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(33814.7, -3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D242" type="Sprite2D" parent="." unique_id=914618076]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(34116.7, -4)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D243" type="Sprite2D" parent="." unique_id=1320518112]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(34414.6, 1.5258789e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D244" type="Sprite2D" parent="." unique_id=580884209]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(34716.6, -0.99998474)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D245" type="Sprite2D" parent="." unique_id=1870854683]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(35018.6, -3.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D246" type="Sprite2D" parent="." unique_id=1343436325]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(35320.6, -4.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D247" type="Sprite2D" parent="." unique_id=1116826292]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(35618.5, -0.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D248" type="Sprite2D" parent="." unique_id=1777966316]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(35920.5, -1.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D249" type="Sprite2D" parent="." unique_id=823139083]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(36220.6, -8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D250" type="Sprite2D" parent="." unique_id=1987839266]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(36522.6, -9)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D251" type="Sprite2D" parent="." unique_id=902771382]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(36820.5, -4.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D252" type="Sprite2D" parent="." unique_id=1399904696]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(37122.5, -5.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D253" type="Sprite2D" parent="." unique_id=1918897909]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(37424.5, -8.999985)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D254" type="Sprite2D" parent="." unique_id=2062491176]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(37726.5, -9.999985)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D255" type="Sprite2D" parent="." unique_id=252126038]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(38024.4, -5.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D256" type="Sprite2D" parent="." unique_id=1909373158]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(38326.4, -6.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D257" type="Sprite2D" parent="." unique_id=1787245659]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(38623.9, 15)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D258" type="Sprite2D" parent="." unique_id=1033289079]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(38925.9, 14.000001)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D259" type="Sprite2D" parent="." unique_id=1302533307]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(39223.8, 18.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D260" type="Sprite2D" parent="." unique_id=1464317985]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(39525.8, 17.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D261" type="Sprite2D" parent="." unique_id=973174271]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(39827.8, 14.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D262" type="Sprite2D" parent="." unique_id=201031951]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(40129.8, 13.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D263" type="Sprite2D" parent="." unique_id=655775199]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(40427.703, 17.00003)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D264" type="Sprite2D" parent="." unique_id=1871513625]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(40729.703, 16.00003)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D265" type="Sprite2D" parent="." unique_id=1089803970]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(41029.8, 10)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D266" type="Sprite2D" parent="." unique_id=423436114]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(41331.8, 9)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D267" type="Sprite2D" parent="." unique_id=785753934]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(41629.703, 13.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D268" type="Sprite2D" parent="." unique_id=1088576090]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(41931.703, 12.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D269" type="Sprite2D" parent="." unique_id=914436437]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(42233.703, 9.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D270" type="Sprite2D" parent="." unique_id=155374649]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(42535.703, 8.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D271" type="Sprite2D" parent="." unique_id=1815757463]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(42833.6, 12.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D272" type="Sprite2D" parent="." unique_id=379558544]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(43135.6, 11.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D273" type="Sprite2D" parent="." unique_id=1120811655]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(38623.9, 15)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D274" type="Sprite2D" parent="." unique_id=1453205281]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(38925.9, 14.000001)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D275" type="Sprite2D" parent="." unique_id=1774203924]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(39223.8, 18.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D276" type="Sprite2D" parent="." unique_id=444588873]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(39525.8, 17.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D277" type="Sprite2D" parent="." unique_id=310541853]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(39827.8, 14.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D278" type="Sprite2D" parent="." unique_id=1263841085]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(40129.8, 13.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D279" type="Sprite2D" parent="." unique_id=62390741]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(40427.703, 17.00003)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D280" type="Sprite2D" parent="." unique_id=1919428025]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(40729.703, 16.00003)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D281" type="Sprite2D" parent="." unique_id=1762468162]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(41029.8, 10)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D282" type="Sprite2D" parent="." unique_id=1939905221]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(41331.8, 9)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D283" type="Sprite2D" parent="." unique_id=1308821373]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(41629.703, 13.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D284" type="Sprite2D" parent="." unique_id=1729518667]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(41931.703, 12.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D285" type="Sprite2D" parent="." unique_id=474118514]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(42233.703, 9.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D286" type="Sprite2D" parent="." unique_id=1670735262]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(42535.703, 8.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D287" type="Sprite2D" parent="." unique_id=1496562955]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(42833.6, 12.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D288" type="Sprite2D" parent="." unique_id=2120965790]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(43135.6, 11.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D289" type="Sprite2D" parent="." unique_id=405736984]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(43436.8, 9)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D290" type="Sprite2D" parent="." unique_id=1798449341]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(43738.8, 8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D291" type="Sprite2D" parent="." unique_id=1864832535]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(44036.7, 12.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D292" type="Sprite2D" parent="." unique_id=813741968]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(44338.7, 11.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D293" type="Sprite2D" parent="." unique_id=834244228]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(44640.7, 8.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D294" type="Sprite2D" parent="." unique_id=1259057038]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(44942.7, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D295" type="Sprite2D" parent="." unique_id=1292396073]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(45240.6, 11.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D296" type="Sprite2D" parent="." unique_id=1306054248]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(45542.6, 10.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D297" type="Sprite2D" parent="." unique_id=1156986504]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(45842.7, 4)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D298" type="Sprite2D" parent="." unique_id=1705724362]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(46144.7, 3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D299" type="Sprite2D" parent="." unique_id=1261590750]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(46442.6, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D300" type="Sprite2D" parent="." unique_id=1776753392]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(46744.6, 6.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D301" type="Sprite2D" parent="." unique_id=818291]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(47046.6, 3.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D302" type="Sprite2D" parent="." unique_id=409426175]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(47348.6, 2.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D303" type="Sprite2D" parent="." unique_id=202292799]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(47646.5, 6.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D304" type="Sprite2D" parent="." unique_id=2124529382]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(47948.5, 5.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D305" type="Sprite2D" parent="." unique_id=2020809344]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(43436.8, 9)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D306" type="Sprite2D" parent="." unique_id=196878635]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(43738.8, 8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D307" type="Sprite2D" parent="." unique_id=1485478047]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(44036.7, 12.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D308" type="Sprite2D" parent="." unique_id=23182264]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(44338.7, 11.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D309" type="Sprite2D" parent="." unique_id=186707532]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(44640.7, 8.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D310" type="Sprite2D" parent="." unique_id=255820159]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(44942.7, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D311" type="Sprite2D" parent="." unique_id=2005341802]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(45240.6, 11.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D312" type="Sprite2D" parent="." unique_id=843878044]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(45542.6, 10.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D313" type="Sprite2D" parent="." unique_id=787818084]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(45842.7, 4)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D314" type="Sprite2D" parent="." unique_id=673794799]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(46144.7, 3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D315" type="Sprite2D" parent="." unique_id=13964076]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(46442.6, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D316" type="Sprite2D" parent="." unique_id=1334273129]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(46744.6, 6.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D317" type="Sprite2D" parent="." unique_id=2071202588]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(47046.6, 3.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D318" type="Sprite2D" parent="." unique_id=1692302033]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(47348.6, 2.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D319" type="Sprite2D" parent="." unique_id=264354374]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(47646.5, 6.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D320" type="Sprite2D" parent="." unique_id=1544481194]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(47948.5, 5.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D321" type="Sprite2D" parent="." unique_id=2029889843]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(48250.8, 4)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D322" type="Sprite2D" parent="." unique_id=1238839332]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(48552.8, 3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D323" type="Sprite2D" parent="." unique_id=150151807]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(48850.7, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D324" type="Sprite2D" parent="." unique_id=1796450562]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(49152.7, 6.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D325" type="Sprite2D" parent="." unique_id=1157265294]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(49454.7, 3.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D326" type="Sprite2D" parent="." unique_id=1993215755]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(49756.7, 2.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D327" type="Sprite2D" parent="." unique_id=1094821644]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(50054.6, 6.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D328" type="Sprite2D" parent="." unique_id=1561203197]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(50356.6, 5.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D329" type="Sprite2D" parent="." unique_id=570668379]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(50656.7, -1)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D330" type="Sprite2D" parent="." unique_id=1157748124]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(50958.7, -2)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D331" type="Sprite2D" parent="." unique_id=1267235078]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(51256.6, 2.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D332" type="Sprite2D" parent="." unique_id=1378364278]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(51558.6, 1.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D333" type="Sprite2D" parent="." unique_id=293658335]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(51860.6, -1.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D334" type="Sprite2D" parent="." unique_id=812614906]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(52162.6, -2.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D335" type="Sprite2D" parent="." unique_id=1093015029]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(52460.5, 1.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D336" type="Sprite2D" parent="." unique_id=186138353]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(52762.5, 3.0517442e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D337" type="Sprite2D" parent="." unique_id=1943098703]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(48250.8, 4)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D338" type="Sprite2D" parent="." unique_id=538393730]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(48552.8, 3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D339" type="Sprite2D" parent="." unique_id=57046824]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(48850.7, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D340" type="Sprite2D" parent="." unique_id=1719514710]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(49152.7, 6.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D341" type="Sprite2D" parent="." unique_id=314406014]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(49454.7, 3.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D342" type="Sprite2D" parent="." unique_id=337608370]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(49756.7, 2.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D343" type="Sprite2D" parent="." unique_id=371206449]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(50054.6, 6.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D344" type="Sprite2D" parent="." unique_id=1293722038]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(50356.6, 5.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D345" type="Sprite2D" parent="." unique_id=2008261029]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(50656.7, -1)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D346" type="Sprite2D" parent="." unique_id=341052468]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(50958.7, -2)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D347" type="Sprite2D" parent="." unique_id=1609924381]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(51256.6, 2.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D348" type="Sprite2D" parent="." unique_id=1587995046]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(51558.6, 1.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D349" type="Sprite2D" parent="." unique_id=1646168527]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(51860.6, -1.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D350" type="Sprite2D" parent="." unique_id=170970557]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(52162.6, -2.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D351" type="Sprite2D" parent="." unique_id=1356322416]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(52460.5, 1.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D352" type="Sprite2D" parent="." unique_id=1401199831]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(52762.5, 3.0517442e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D353" type="Sprite2D" parent="." unique_id=1026195075]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(53063.7, -2)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D354" type="Sprite2D" parent="." unique_id=1401412206]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(53365.7, -3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D355" type="Sprite2D" parent="." unique_id=2113110318]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(53663.6, 1.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D356" type="Sprite2D" parent="." unique_id=770054119]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(53965.6, 1.5258652e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D357" type="Sprite2D" parent="." unique_id=1612147207]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(54267.6, -2.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D358" type="Sprite2D" parent="." unique_id=543228011]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(54569.6, -3.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D359" type="Sprite2D" parent="." unique_id=1386992267]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(54867.5, 3.0517442e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D360" type="Sprite2D" parent="." unique_id=124254363]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(55169.5, -0.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D361" type="Sprite2D" parent="." unique_id=1456630797]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(55469.6, -7)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D362" type="Sprite2D" parent="." unique_id=842138024]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(55771.6, -8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D363" type="Sprite2D" parent="." unique_id=76888297]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(56069.5, -3.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D364" type="Sprite2D" parent="." unique_id=2067290196]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(56371.5, -4.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D365" type="Sprite2D" parent="." unique_id=1419465785]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(56673.5, -7.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D366" type="Sprite2D" parent="." unique_id=234206693]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(56975.5, -8.999985)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D367" type="Sprite2D" parent="." unique_id=1164308293]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(57273.4, -4.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D368" type="Sprite2D" parent="." unique_id=1220860]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(57575.4, -5.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D369" type="Sprite2D" parent="." unique_id=156151044]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(53063.7, -2)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D370" type="Sprite2D" parent="." unique_id=938406637]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(53365.7, -3)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D371" type="Sprite2D" parent="." unique_id=1919900754]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(53663.6, 1.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D372" type="Sprite2D" parent="." unique_id=493046287]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(53965.6, 1.5258652e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D373" type="Sprite2D" parent="." unique_id=1671278371]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(54267.6, -2.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D374" type="Sprite2D" parent="." unique_id=813347574]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(54569.6, -3.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D375" type="Sprite2D" parent="." unique_id=335691225]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(54867.5, 3.0517442e-05)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D376" type="Sprite2D" parent="." unique_id=318925617]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(55169.5, -0.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D377" type="Sprite2D" parent="." unique_id=1056174346]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(55469.6, -7)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D378" type="Sprite2D" parent="." unique_id=1603946979]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(55771.6, -8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D379" type="Sprite2D" parent="." unique_id=1671522728]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(56069.5, -3.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D380" type="Sprite2D" parent="." unique_id=1606439959]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(56371.5, -4.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D381" type="Sprite2D" parent="." unique_id=909199162]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(56673.5, -7.9999847)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D382" type="Sprite2D" parent="." unique_id=65877213]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(56975.5, -8.999985)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D383" type="Sprite2D" parent="." unique_id=1982802270]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(57273.4, -4.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D384" type="Sprite2D" parent="." unique_id=1178966854]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(57575.4, -5.9999695)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D385" type="Sprite2D" parent="." unique_id=886682199]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(57875.8, 14)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D386" type="Sprite2D" parent="." unique_id=1698248412]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(58177.8, 13.000001)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D387" type="Sprite2D" parent="." unique_id=1370562789]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(58475.703, 17.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D388" type="Sprite2D" parent="." unique_id=618537400]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(58777.703, 16.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D389" type="Sprite2D" parent="." unique_id=1079230436]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(59079.703, 13.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D390" type="Sprite2D" parent="." unique_id=87503486]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(59381.703, 12.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D391" type="Sprite2D" parent="." unique_id=2100991273]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(59679.6, 16.00003)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D392" type="Sprite2D" parent="." unique_id=1140641655]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(59981.6, 15.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D393" type="Sprite2D" parent="." unique_id=1144990802]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(60281.703, 9)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D394" type="Sprite2D" parent="." unique_id=1878218084]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(60583.703, 8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D395" type="Sprite2D" parent="." unique_id=1490593051]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(60881.6, 12.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D396" type="Sprite2D" parent="." unique_id=1075498122]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(61183.6, 11.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D397" type="Sprite2D" parent="." unique_id=328066176]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(61485.6, 8.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D398" type="Sprite2D" parent="." unique_id=363226695]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(61787.6, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D399" type="Sprite2D" parent="." unique_id=1348719313]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(62085.5, 11.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D400" type="Sprite2D" parent="." unique_id=99499944]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(62387.5, 10.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D401" type="Sprite2D" parent="." unique_id=34675048]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(57875.8, 14)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D402" type="Sprite2D" parent="." unique_id=388467957]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(58177.8, 13.000001)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D403" type="Sprite2D" parent="." unique_id=1010438658]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(58475.703, 17.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D404" type="Sprite2D" parent="." unique_id=1636778760]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(58777.703, 16.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D405" type="Sprite2D" parent="." unique_id=1915753461]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(59079.703, 13.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D406" type="Sprite2D" parent="." unique_id=1709946484]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(59381.703, 12.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D407" type="Sprite2D" parent="." unique_id=145631559]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(59679.6, 16.00003)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D408" type="Sprite2D" parent="." unique_id=385256536]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(59981.6, 15.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D409" type="Sprite2D" parent="." unique_id=1956440943]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(60281.703, 9)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D410" type="Sprite2D" parent="." unique_id=1129322269]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(60583.703, 8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D411" type="Sprite2D" parent="." unique_id=1306845630]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(60881.6, 12.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D412" type="Sprite2D" parent="." unique_id=1157898552]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(61183.6, 11.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D413" type="Sprite2D" parent="." unique_id=1798773649]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(61485.6, 8.000015)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D414" type="Sprite2D" parent="." unique_id=610281927]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(61787.6, 7.0000153)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D415" type="Sprite2D" parent="." unique_id=20821097]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(62085.5, 11.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D416" type="Sprite2D" parent="." unique_id=179162473]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(62387.5, 10.0000305)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D417" type="Sprite2D" parent="." unique_id=27172091]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(62688.703, 8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")
+
+[node name="Sprite2D433" type="Sprite2D" parent="." unique_id=506245343]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(62688.703, 8)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_wtc4o")

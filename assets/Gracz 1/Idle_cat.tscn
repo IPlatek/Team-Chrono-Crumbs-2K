@@ -515,7 +515,7 @@ zoom = Vector2(0.8, 0.8)
 process_callback = 0
 limit_bottom = 1500
 position_smoothing_enabled = true
-position_smoothing_speed = 2.0
+position_smoothing_speed = 1.5
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=973883693]
 z_index = 1

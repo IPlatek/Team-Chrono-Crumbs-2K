@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bhp04cesevmhr"]
 
 [ext_resource type="Script" uid="uid://u7vj6prinkn2" path="res://scripts/boss_attack.gd" id="1_y7i8w"]
+[ext_resource type="PackedScene" uid="uid://dme87dg5l27qh" path="res://scenes/boss/osdoba.tscn" id="2_cr5i2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3ai1g"]
 size = Vector2(1000, 50)
@@ -25,6 +26,11 @@ one_shot = true
 [node name="attack" type="Timer" parent="." unique_id=553782100]
 wait_time = 2.0
 one_shot = true
+
+[node name="ozdoba" parent="." unique_id=1289001806 instance=ExtResource("2_cr5i2")]
+visible = false
+position = Vector2(-3, 19)
+scale = Vector2(1, 0.7)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="defuse" to="." method="_on_defuse_timeout"]

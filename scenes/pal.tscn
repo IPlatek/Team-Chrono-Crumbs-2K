@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ba6ofpmvc66ds"]
 
-[ext_resource type="Texture2D" uid="uid://diuvfr8srdehr" path="res://assets/sprites/pal.png" id="1_5sbdb"]
+[ext_resource type="Texture2D" uid="uid://7n0edcj0brcl" path="res://assets/miecz.png" id="1_yfv3t"]
 
 [sub_resource type="GDScript" id="GDScript_5sbdb"]
 resource_name = "pal"
@@ -28,8 +28,8 @@ size = Vector2(20, 1024)
 script = SubResource("GDScript_5sbdb")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1991664961]
-position = Vector2(20, 0)
-texture = ExtResource("1_5sbdb")
+position = Vector2(3, 2)
+texture = ExtResource("1_yfv3t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=250002508]
 shape = SubResource("RectangleShape2D_ib6gc")

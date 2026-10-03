@@ -3,6 +3,7 @@ extends Area2D
 @onready var attack = $attack
 @onready var defuse = $defuse
 @onready var boddy = $Polygon2D
+@onready var liscie = $ozdoba
 
 var active = false
 
@@ -15,12 +16,14 @@ func _ready() -> void:
 func _on_defuse_timeout() -> void:
 	position.y = randf_range(260, 1000)
 	boddy.color = Color(0.797, 0.0, 0.205, 0.5)
+	liscie.visible = false
 	active = false
 	attack.start()
 
 
 func _on_attack_timeout() -> void:
 	boddy.color = Color(0.0, 0.0, 0.0, 1.0)
+	liscie.visible = true
 	active = true
 	
 	for body in get_overlapping_bodies():

@@ -128,7 +128,7 @@ scale = Vector2(0.9554673, 0.8970422)
 [node name="ziemia2" type="Node" parent="." unique_id=990069778]
 
 [node name="Trawa8" parent="ziemia2" unique_id=1394754548 instance=ExtResource("6_4yk0h")]
-position = Vector2(19833.5, 904)
+position = Vector2(19837, 904)
 scale = Vector2(-1, 1)
 
 [node name="Podłoże_ziemia" parent="ziemia2" unique_id=439224959 instance=ExtResource("7_vmrhw")]
