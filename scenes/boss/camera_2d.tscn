@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dr62m8dnsa1j5"]
+
+[sub_resource type="GDScript" id="GDScript_xgnjm"]
+resource_name = "camera"
+script/source = "extends Camera2D
+
+@export var gracz: Node2D
+@export var max_dystans: float = 150.0 
+
+func _physics_process(delta: float) -> void:
+	if not gracz:
+		return
+		
+	var pozycja_gracza = global_position.lerp(gracz.global_position, 2 * delta)
+	
+
+	var offset = pozycja_gracza - gracz.global_position
+	
+	if offset.length() > max_dystans:
+		offset = offset.limit_length(max_dystans)
+		
+	global_position = gracz.global_position + offset
+"
+
+[node name="Camera2D" type="Camera2D" unique_id=49503830]
+position_smoothing_enabled = true
+position_smoothing_speed = 2.0
+script = SubResource("GDScript_xgnjm")

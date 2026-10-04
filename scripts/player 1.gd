@@ -13,6 +13,7 @@ var gravity_multiplier = 1.0 #do wody ale wsm też można użyć na jkies speed 
 @onready var next_dash_timer: Timer = $next_dash_timer
 @onready var cam = $Camera2D
 @onready var double_jump_dela: Timer = $double_jump_delay
+@onready var player = $"."
 
 var DASH_SPEED = 1500.0
 var dashing = false
@@ -23,7 +24,6 @@ func _process(_delta: float) -> void:
 	if Global.lifes <= 0:
 		Global.no_move = true
 		velocity.y = 0
-		#dawait get_tree().create_timer(0.5).timeout
 		get_tree().reload_current_scene()
 		Global.lifes = 1
 		Global.grzybki = 0
@@ -35,6 +35,8 @@ func _physics_process(delta: float) -> void:
 	
 	
 	var camera_position = $Camera2D.global_position
+	
+	
 	
 	
 	#stopowanie sterowania
