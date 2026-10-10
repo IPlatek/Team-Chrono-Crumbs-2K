@@ -54,7 +54,7 @@ func _on_levels_pressed() -> void:
 
 
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed("escape"):
 		print("menu")
 	testesc()
