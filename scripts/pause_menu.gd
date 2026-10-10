@@ -43,6 +43,7 @@ func _on_reset_pressed() -> void:
 	get_tree().reload_current_scene()
 	Master_Timer.stop_timer()
 	Master_Timer.start_timer()
+	Global.grzybki = 0
 
 
 func _on_levels_pressed() -> void:
