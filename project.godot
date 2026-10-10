@@ -10,9 +10,10 @@ config_version=5
 
 [application]
 
-config/name="Chrono Crumbs K2"
+config/name="Wandering cat"
 run/main_scene="uid://g082iq7scbhi"
 config/features=PackedStringArray("4.6", "GL Compatibility")
+boot_splash/bg_color=Color(0.11080038, 0.13589543, 0.22510836, 1)
 config/icon="uid://fpmxa0oqibxx"
 
 [autoload]

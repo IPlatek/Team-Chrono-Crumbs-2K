@@ -10,6 +10,6 @@ var jumps = 0
 
 func add_grzybek():
 	grzybki += 1
-	var score_label = get_tree().current_scene.get_node("Player 1/CanvasLayer/ScoreLabel")
-	if score_label:
-		score_label.text = "Grzybki: " + str(grzybki)
+	#var score_label = get_tree().current_scene.get_node("CanvasLayer/ScoreLabel")
+	#if score_label:
+		#score_label.text = "Grzybki: " + str(grzybki)
