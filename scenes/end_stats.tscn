@@ -7,7 +7,7 @@ layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_ljft8")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2088280849]
+[node name="Tlo" type="Sprite2D" parent="." unique_id=2088280849]
 
 [node name="levels" type="Button" parent="." unique_id=1077563240]
 layout_mode = 0
@@ -73,6 +73,12 @@ offset_top = 478.0
 offset_right = 1344.0
 offset_bottom = 540.0
 text = "JUmps:"
+
+[node name="Gwiazdka_1" type="Sprite2D" parent="." unique_id=953567637]
+
+[node name="Gwiazdka_2" type="Sprite2D" parent="." unique_id=91549310]
+
+[node name="Gwiazdka_3" type="Sprite2D" parent="." unique_id=1419671194]
 
 [connection signal="pressed" from="levels" to="." method="_on_levels_pressed"]
 [connection signal="pressed" from="retry" to="." method="_on_retry_pressed"]
