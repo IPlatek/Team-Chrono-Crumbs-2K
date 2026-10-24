@@ -27,10 +27,10 @@ func _ready() -> void:
 		max_time = 45 #sek
 	elif(current_level == 2):
 		max_schrooms = 23
-		max_time = 180
+		max_time = 120
 	elif (current_level == 3):
-		max_schrooms = 0
-		max_time = 140
+		max_schrooms = 7
+		max_time = 80
 	elif(current_level == 4):
 		max_schrooms == 0
 		max_time = 240

@@ -1,0 +1,6 @@
+1.Przedłuzyc drugi level
+2.Dodać animacje duble jumpa 
+3.Zabezpieczyć kotka przed wypadaniem poza kamerę podczas spadania
+4.Dopracować hitboxy, (kotka i klocków trwa która wygląda jak możesz na niej stać nie jest hitboxem), (użyc polygonshape wiem jak tego uzyć ale nie wiem jak podłoczyć zmaist sdrugiego starego niedokładnego)
+5.Wizualnie porawic menu Pause
+6.Poprwić bolowanie kamery na krzdzym levelu oraz dodac horogiewi na każdym levelu

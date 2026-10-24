@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://d2ofgod1pvt78" path="res://scenes/level_up.tscn" id="14_5f5xw"]
 [ext_resource type="PackedScene" uid="uid://g00li45uytj5" path="res://scenes/spikes.tscn" id="17_fhpes"]
 [ext_resource type="PackedScene" uid="uid://fkkepve2r7ol" path="res://scenes/swamp_cat.tscn" id="18_vmg1d"]
+[ext_resource type="PackedScene" uid="uid://bqi4sfncpw2b1" path="res://scenes/grzyb.tscn" id="21_5f5xw"]
 
 [node name="game" type="Node2D" unique_id=2147134106]
 scale = Vector2(1, 1.0044225)
@@ -342,6 +343,10 @@ texture = ExtResource("11_1nwmf")
 
 [node name="platformy" type="Node" parent="." unique_id=580306783]
 
+[node name="Trawa5" parent="platformy" unique_id=1331641654 instance=ExtResource("6_n6eey")]
+position = Vector2(11320.999, 1050)
+scale = Vector2(0.355, 0.35657)
+
 [node name="Trawa" parent="platformy" unique_id=28903157 instance=ExtResource("6_n6eey")]
 position = Vector2(7641, 769)
 
@@ -451,3 +456,33 @@ scale = Vector2(0.5, 1)
 
 [node name="level_up" parent="." unique_id=1647793945 instance=ExtResource("14_5f5xw")]
 position = Vector2(29809, -2264.983)
+
+[node name="Grzybki" type="Node" parent="." unique_id=1053677509]
+
+[node name="Grzyb5" parent="Grzybki" unique_id=1586303537 instance=ExtResource("21_5f5xw")]
+position = Vector2(17187, -5610.9995)
+scale = Vector2(1, 1.0133264)
+
+[node name="Grzyb6" parent="Grzybki" unique_id=159513407 instance=ExtResource("21_5f5xw")]
+position = Vector2(22012, -2411.9998)
+scale = Vector2(1, 1.0133264)
+
+[node name="Grzyb7" parent="Grzybki" unique_id=112352884 instance=ExtResource("21_5f5xw")]
+position = Vector2(29466, -2379)
+scale = Vector2(1, 1.0133264)
+
+[node name="Grzyb2" parent="Grzybki" unique_id=943505945 instance=ExtResource("21_5f5xw")]
+position = Vector2(12127, -13.000051)
+scale = Vector2(1, 1.0088646)
+
+[node name="Grzyb3" parent="Grzybki" unique_id=620400253 instance=ExtResource("21_5f5xw")]
+position = Vector2(11332, 951)
+scale = Vector2(1, 1.0133264)
+
+[node name="Grzyb4" parent="Grzybki" unique_id=2000406065 instance=ExtResource("21_5f5xw")]
+position = Vector2(10353, -558)
+scale = Vector2(1, 1.0088646)
+
+[node name="Grzyb" parent="Grzybki" unique_id=1100738071 instance=ExtResource("21_5f5xw")]
+position = Vector2(7629, 574)
+scale = Vector2(1, 1.0044225)
