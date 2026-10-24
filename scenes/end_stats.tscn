@@ -1,8 +1,13 @@
 [gd_scene format=3 uid="uid://bxn56qh85xv4k"]
 
 [ext_resource type="Script" uid="uid://b8w1i0py7p5n2" path="res://scripts/end_stats.gd" id="1_ljft8"]
+[ext_resource type="Texture2D" uid="uid://b30uigocyradd" path="res://assets/End_screen/Tlo.png" id="2_4bvx8"]
 [ext_resource type="FontFile" uid="uid://y0ftwckxcyqc" path="res://assets/fonts/Rayman2-regular.ttf" id="2_ykals"]
 [ext_resource type="Texture2D" uid="uid://byy6tneplw6xv" path="res://assets/star.png" id="3_3e7ft"]
+[ext_resource type="Texture2D" uid="uid://bu5jejmvdb2s1" path="res://assets/End_screen/przycisk.png" id="3_mdavu"]
+
+[sub_resource type="FontVariation" id="FontVariation_5g070"]
+base_font = ExtResource("2_ykals")
 
 [sub_resource type="FontVariation" id="FontVariation_4bvx8"]
 base_font = ExtResource("2_ykals")
@@ -23,39 +28,86 @@ base_font = ExtResource("2_ykals")
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_ljft8")
-metadata/_edit_vertical_guides_ = [960.0]
+metadata/_edit_vertical_guides_ = [758.0, 60.0, 1860.0, 620.0, 980.0, 1409.0, 1300.0, 1240.0, 680.0]
+metadata/_edit_horizontal_guides_ = [1020.0, 870.0]
 
 [node name="Tlo" type="Sprite2D" parent="." unique_id=2088280849]
+position = Vector2(1006.00006, 548)
+scale = Vector2(1.272, 0.8893333)
+texture = ExtResource("2_4bvx8")
 
-[node name="levels" type="Button" parent="." unique_id=1077563240]
+[node name="levels" type="TextureButton" parent="." unique_id=1248042110]
 layout_mode = 0
-offset_left = 85.0
-offset_top = 872.0
-offset_right = 682.0
-offset_bottom = 1001.0
+offset_left = 60.0
+offset_top = 870.0
+offset_right = 620.0
+offset_bottom = 1020.0
+texture_normal = ExtResource("3_mdavu")
+
+[node name="Label" type="Label" parent="levels" unique_id=1616779593]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
+theme_override_fonts/font = SubResource("FontVariation_5g070")
+theme_override_font_sizes/font_size = 50
 text = "Levels"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="retry" type="Button" parent="." unique_id=2100865157]
+[node name="retry" type="TextureButton" parent="." unique_id=567510957]
 layout_mode = 0
-offset_left = 758.0
-offset_top = 868.0
-offset_right = 1357.0
-offset_bottom = 994.0
+offset_left = 680.0
+offset_top = 870.0
+offset_right = 1240.0
+offset_bottom = 1020.0
+texture_normal = ExtResource("3_mdavu")
+
+[node name="Label" type="Label" parent="retry" unique_id=567154795]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
+theme_override_fonts/font = SubResource("FontVariation_5g070")
+theme_override_font_sizes/font_size = 50
 text = "Retry"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Next_level" type="Button" parent="." unique_id=1446158470]
+[node name="Next_level" type="TextureButton" parent="." unique_id=1618147722]
 layout_mode = 0
-offset_left = 1409.0
-offset_top = 872.0
-offset_right = 1880.0
-offset_bottom = 989.0
-text = "Next level"
+offset_left = 1300.0
+offset_top = 870.0
+offset_right = 1860.0
+offset_bottom = 1020.0
+texture_normal = ExtResource("3_mdavu")
+
+[node name="Label" type="Label" parent="Next_level" unique_id=736748113]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
+theme_override_fonts/font = SubResource("FontVariation_5g070")
+theme_override_font_sizes/font_size = 50
+text = "Next Level"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="You_won" type="Label" parent="." unique_id=866858221]
 layout_mode = 0
 offset_top = 117.0
 offset_right = 1922.0
 offset_bottom = 287.0
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
 theme_override_fonts/font = SubResource("FontVariation_4bvx8")
 theme_override_font_sizes/font_size = 100
 text = "You won level : 1"
@@ -68,6 +120,7 @@ offset_left = 681.0
 offset_top = 490.0
 offset_right = 1225.0
 offset_bottom = 589.0
+theme_override_colors/font_color = Color(0.8206672, 0.4620806, 0.037500016, 1)
 theme_override_fonts/font = SubResource("FontVariation_mdavu")
 theme_override_font_sizes/font_size = 75
 text = "Stats
@@ -81,6 +134,7 @@ offset_left = 516.0
 offset_top = 591.0
 offset_right = 1419.0
 offset_bottom = 673.0
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
 theme_override_fonts/font = SubResource("FontVariation_f4ug2")
 theme_override_font_sizes/font_size = 50
 text = "Time: 62s"
@@ -92,6 +146,7 @@ offset_left = 512.0
 offset_top = 657.0
 offset_right = 1408.0
 offset_bottom = 728.0
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
 theme_override_fonts/font = SubResource("FontVariation_yarh1")
 theme_override_font_sizes/font_size = 50
 text = "Schroms: 283"
@@ -103,6 +158,7 @@ offset_left = 515.0
 offset_top = 732.0
 offset_right = 1417.0
 offset_bottom = 794.0
+theme_override_colors/font_color = Color(0.9882353, 0.58431375, 0.1764706, 1)
 theme_override_fonts/font = SubResource("FontVariation_4apqv")
 theme_override_font_sizes/font_size = 50
 text = "Jumps: 67"
