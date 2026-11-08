@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://bg6a0f6gb3mr7"]
+
+[ext_resource type="FontFile" uid="uid://y0ftwckxcyqc" path="res://assets/fonts/Rayman2-regular.ttf" id="1_8fvqm"]
+[ext_resource type="Script" uid="uid://wkuptlgqfijq" path="res://scripts/start_logo.gd" id="1_fwi2v"]
+[ext_resource type="Texture2D" uid="uid://dhlqvsyhdu5yl" path="res://logo.png" id="2_fwi2v"]
+
+[sub_resource type="Animation" id="Animation_b0u5m"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect2:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_7cxxr"]
+resource_name = "in"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect2:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gr3v7"]
+_data = {
+&"RESET": SubResource("Animation_b0u5m"),
+&"in": SubResource("Animation_7cxxr")
+}
+
+[node name="Loading" type="Node2D" unique_id=677084392]
+script = ExtResource("1_fwi2v")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1357675476]
+offset_left = -998.0
+offset_top = -590.0
+offset_right = 1020.0
+offset_bottom = 578.0
+color = Color(0.18359044, 0.18359044, 0.18359044, 1)
+
+[node name="Timer" type="Timer" parent="." unique_id=740794032]
+wait_time = 6.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=789905701]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=847547055]
+libraries/ = SubResource("AnimationLibrary_gr3v7")
+autoplay = &"in"
+
+[node name="Label" type="Label" parent="." unique_id=1115812783]
+offset_left = -624.0
+offset_top = 228.0
+offset_right = 624.0
+offset_bottom = 374.0
+theme_override_colors/font_color = Color(2.117753e-06, 0.4771427, 0.65360785, 1)
+theme_override_fonts/font = ExtResource("1_8fvqm")
+theme_override_font_sizes/font_size = 120
+text = "BUSH ON K2 GAMES"
+
+[node name="Logo" type="Sprite2D" parent="." unique_id=2032460915]
+position = Vector2(1.4210855e-14, 0)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_fwi2v")
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1527204398]
+offset_left = -1008.0
+offset_top = -601.0
+offset_right = 1021.0
+offset_bottom = 596.0
+color = Color(0, 0, 0, 1)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

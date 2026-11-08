@@ -17,7 +17,6 @@
 [ext_resource type="Texture2D" uid="uid://bfjutma7w4oe5" path="res://assets/sprites/asset_map/liana.png" id="10_pmra4"]
 [ext_resource type="Texture2D" uid="uid://baqwyglq4lshp" path="res://assets/sprites/asset_map/liście.png" id="11_1bx01"]
 [ext_resource type="PackedScene" uid="uid://bcxj1bkq7f4ro" path="res://scenes/klocki/trawa.tscn" id="11_r2vbx"]
-[ext_resource type="PackedScene" uid="uid://d2ofgod1pvt78" path="res://scenes/level_up.tscn" id="12_3i8rq"]
 [ext_resource type="Texture2D" uid="uid://blidqlyywhqhd" path="res://assets/sprites/asset_map/jakieś coś.png" id="12_vq5n0"]
 
 [node name="boss" type="Node2D" unique_id=230621529]
@@ -582,6 +581,3 @@ position = Vector2(67303, 1097)
 
 [node name="Trawa64" parent="trawa" unique_id=667035302 instance=ExtResource("11_r2vbx")]
 position = Vector2(68369, 1124)
-
-[node name="level_up" parent="." unique_id=1647793945 instance=ExtResource("12_3i8rq")]
-position = Vector2(67053, 746)

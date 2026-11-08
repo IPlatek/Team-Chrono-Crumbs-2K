@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://g00li45uytj5" path="res://scenes/spikes.tscn" id="17_fhpes"]
 [ext_resource type="PackedScene" uid="uid://fkkepve2r7ol" path="res://scenes/swamp_cat.tscn" id="18_vmg1d"]
 [ext_resource type="PackedScene" uid="uid://bqi4sfncpw2b1" path="res://scenes/grzyb.tscn" id="21_5f5xw"]
+[ext_resource type="Texture2D" uid="uid://ca2jrqma7fq4a" path="res://assets/sprites/asset_map/flaga.png" id="22_o3ttr"]
 
 [node name="game" type="Node2D" unique_id=2147134106]
 scale = Vector2(1, 1.0044225)
@@ -468,7 +469,7 @@ position = Vector2(22012, -2411.9998)
 scale = Vector2(1, 1.0133264)
 
 [node name="Grzyb7" parent="Grzybki" unique_id=112352884 instance=ExtResource("21_5f5xw")]
-position = Vector2(29466, -2379)
+position = Vector2(28375, -2445.9998)
 scale = Vector2(1, 1.0133264)
 
 [node name="Grzyb2" parent="Grzybki" unique_id=943505945 instance=ExtResource("21_5f5xw")]
@@ -486,3 +487,7 @@ scale = Vector2(1, 1.0088646)
 [node name="Grzyb" parent="Grzybki" unique_id=1100738071 instance=ExtResource("21_5f5xw")]
 position = Vector2(7629, 574)
 scale = Vector2(1, 1.0044225)
+
+[node name="Flaga" type="Sprite2D" parent="." unique_id=1179836519]
+position = Vector2(28856, -2453.151)
+texture = ExtResource("22_o3ttr")

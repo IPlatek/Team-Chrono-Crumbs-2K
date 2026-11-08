@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bxn56qh85xv4k"]
 
 [ext_resource type="Script" uid="uid://b8w1i0py7p5n2" path="res://scripts/end_stats.gd" id="1_ljft8"]
-[ext_resource type="Texture2D" uid="uid://b30uigocyradd" path="res://assets/End_screen/Tlo.png" id="2_4bvx8"]
+[ext_resource type="Texture2D" uid="uid://bu7hqw0do3oj7" path="res://assets/tlo_res.png" id="2_4bvx8"]
 [ext_resource type="FontFile" uid="uid://y0ftwckxcyqc" path="res://assets/fonts/Rayman2-regular.ttf" id="2_ykals"]
 [ext_resource type="Texture2D" uid="uid://byy6tneplw6xv" path="res://assets/star.png" id="3_3e7ft"]
 [ext_resource type="Texture2D" uid="uid://bu5jejmvdb2s1" path="res://assets/End_screen/przycisk.png" id="3_mdavu"]
@@ -31,9 +31,9 @@ script = ExtResource("1_ljft8")
 metadata/_edit_vertical_guides_ = [758.0, 60.0, 1860.0, 620.0, 980.0, 1409.0, 1300.0, 1240.0, 680.0]
 metadata/_edit_horizontal_guides_ = [1020.0, 870.0]
 
-[node name="Tlo" type="Sprite2D" parent="." unique_id=2088280849]
-position = Vector2(1006.00006, 548)
-scale = Vector2(1.272, 0.8893333)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=721068688]
+position = Vector2(947.0001, 559)
+scale = Vector2(3.7321315, 1.1343167)
 texture = ExtResource("2_4bvx8")
 
 [node name="levels" type="TextureButton" parent="." unique_id=1248042110]
